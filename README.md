@@ -34,6 +34,11 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┃ ┣ 🎄 main.py [__main__]
 ┃ ┣ 📂configuration
 ┃ ┣ ┗ 🏩 app_configuration.py
+┃ ┣ ┗ 📡 environment_configuration.py
+┃ ┣ ┗ 🔑 database_configuration.py
+┃ ┣ ┗ 📜 log_configuration.py
+┃ ┣ ┗ 🚧 cors_configuration.py
+┃ ┣ ┗ 📪 swagger_configuration.py
 ┃ ┣ 📂log
 ┃ ┣ ┗ 💬 logging.log
 ┃ ┣ 📂htmlcov
