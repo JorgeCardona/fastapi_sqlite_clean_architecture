@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from typing import List
 from fastapi import Depends
 from sqlalchemy.orm import Session
 from domain.entities.schemas.schema_product import ProductComplete as complete_schema
@@ -8,7 +9,7 @@ from configuration.database.db_config import get_session
 class ProductRepository(ABC):
 
     @abstractmethod
-    def getObjectList(self, session:Session = Depends(get_session)):
+    def getObjectList(self, session:Session = Depends(get_session), offset: int = 0, limit: int = 100):
         pass
 
     @abstractmethod
@@ -18,7 +19,11 @@ class ProductRepository(ABC):
     @abstractmethod
     def addObject(self, entity:complete_schema, session:Session = Depends(get_session)):
         pass
-    
+ 
+    @abstractmethod
+    def addObjectList(self, entity:List[complete_schema], session:Session = Depends(get_session)):
+         pass
+        
     @abstractmethod
     def updateObject(self, id:int, entity:complete_schema, session:Session = Depends(get_session)):
         pass

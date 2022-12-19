@@ -1,3 +1,4 @@
+from typing import List
 from fastapi import Depends
 from fastapi import HTTPException, status
 from sqlalchemy.orm import Session
@@ -11,8 +12,9 @@ from configuration.log.logging import log_api
 
 class ProductUseCases(repository):
      
-    def getObjectList(self, session:Session = Depends(get_session)):
-        object_ = session.query(model).all()
+    def getObjectList(self, session:Session = Depends(get_session), offset: int = 0, limit: int = 100):
+       
+        object_ = session.query(model).offset(offset).limit(limit).all()
         return object_
     
     def getObject(self, id:int, session:Session = Depends(get_session)):
@@ -45,7 +47,29 @@ class ProductUseCases(repository):
         session.commit()
         session.refresh(object_)
         return object_
-           
+
+    def addObjectList(self, entity:List[complete_schema], session:Session = Depends(get_session)):
+        
+        """_summary_
+        entity.dict(exclude_unset=True) -> convierte la entidad en un diccionario
+        model(**object_data) -> crea la instancia del objeto usando el diccionario con los 2 asteriscos previos, **object_data
+        
+        Returns:
+            _type_: _description_
+        """
+        list_objects_ = []
+        
+        for entity_object in entity:
+            object_data = entity_object.dict(exclude_unset=True)
+            object_ = model(**object_data)
+            list_objects_.append(object_)
+        
+        session.add_all(list_objects_)
+        session.commit()
+        session.refresh(object_)
+        return list_objects_
+    
+    
     def updateObject(self, id:int, entity:complete_schema, session:Session = Depends(get_session)):
         """_summary_
 

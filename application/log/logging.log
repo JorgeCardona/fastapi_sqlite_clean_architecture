@@ -1,0 +1,1355 @@
+2022-12-18 20:41:15,061 | INFO | message = Started server process [13420] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:41:15,062 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:41:15,063 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:41:20,184 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:41:20,184 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:41:20,186 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:41:20,188 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:41:20,190 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:41:20,191 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:41:20,193 | INFO | message = [generated in 0.00060s] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:41:20,197 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:41:20,489 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:41:20,490 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:41:20,490 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:41:20,492 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:41:28,381 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:41:28,382 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:41:28,383 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:41:28,384 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:33,662 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:33,688 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:33,713 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:33,725 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:33,733 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:33,739 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:33,739 | INFO | message = [generated in 0.00088s] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:33,743 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:33,751 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:33,754 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:33,755 | INFO | message = [generated in 0.00101s] (6,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:33,758 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:43:36,225 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:36,226 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:36,226 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:36,228 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:36,232 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:36,233 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:36,234 | INFO | message = [cached since 2.496s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:36,239 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:36,247 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:36,249 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:36,251 | INFO | message = [cached since 2.497s ago] (7,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:36,255 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:43:36,674 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:36,675 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:36,676 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:36,678 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:36,682 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:36,683 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:36,684 | INFO | message = [cached since 2.945s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:36,688 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:36,694 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:36,695 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:36,696 | INFO | message = [cached since 2.943s ago] (8,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:36,701 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:43:37,065 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:37,066 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:37,067 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:37,069 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:37,077 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:37,078 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:37,079 | INFO | message = [cached since 3.34s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:37,085 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:37,093 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:37,094 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:37,095 | INFO | message = [cached since 3.342s ago] (9,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:37,101 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:43:37,394 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:37,394 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:37,395 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:37,402 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:37,405 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:37,406 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:37,407 | INFO | message = [cached since 3.669s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:37,414 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:37,425 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:37,426 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:37,428 | INFO | message = [cached since 3.674s ago] (10,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:37,436 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:43:37,729 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:37,729 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:37,731 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:37,733 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:37,737 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:37,738 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:37,739 | INFO | message = [cached since 4.001s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:37,750 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:37,761 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:37,762 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:37,766 | INFO | message = [cached since 4.011s ago] (11,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:37,773 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:43:38,043 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:38,044 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:38,044 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:38,046 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:38,050 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:38,052 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:38,053 | INFO | message = [cached since 4.315s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:38,059 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:38,081 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:38,087 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:38,100 | INFO | message = [cached since 4.346s ago] (12,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:38,108 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:43:38,341 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:38,342 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:38,342 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:38,346 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:38,350 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:38,352 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:38,352 | INFO | message = [cached since 4.614s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:38,358 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:38,369 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:38,371 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:38,373 | INFO | message = [cached since 4.619s ago] (13,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:38,384 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:43:38,625 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:38,626 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:38,627 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:38,632 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:38,636 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:38,638 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:38,638 | INFO | message = [cached since 4.899s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:38,645 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:38,656 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:38,657 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:38,659 | INFO | message = [cached since 4.905s ago] (14,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:38,667 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:43:38,932 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:38,933 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:38,934 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:38,935 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:38,939 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:38,940 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:38,940 | INFO | message = [cached since 5.202s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:38,945 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:38,953 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:38,954 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:38,956 | INFO | message = [cached since 5.202s ago] (15,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:38,962 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:43:39,196 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:39,198 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:39,199 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:39,202 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:39,205 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:39,206 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:39,206 | INFO | message = [cached since 5.468s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:39,210 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:39,220 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:39,220 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:39,221 | INFO | message = [cached since 5.467s ago] (16,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:39,224 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:43:39,461 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:39,462 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:39,462 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:39,466 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:39,469 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:39,471 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:39,472 | INFO | message = [cached since 5.734s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:39,476 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:39,484 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:39,485 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:39,486 | INFO | message = [cached since 5.732s ago] (17,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:39,491 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:43:39,914 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:39,915 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:39,916 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:39,918 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:39,921 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:39,922 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:39,923 | INFO | message = [cached since 6.184s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:39,926 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:39,936 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:39,938 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:39,940 | INFO | message = [cached since 6.186s ago] (18,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:39,943 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:43:40,225 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:40,226 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:40,227 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:40,229 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:40,235 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:40,237 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:40,237 | INFO | message = [cached since 6.499s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:40,242 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:40,254 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:40,255 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:40,257 | INFO | message = [cached since 6.503s ago] (19,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:40,262 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:43:40,891 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:40,891 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:40,892 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:40,894 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:40,898 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:40,899 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:40,900 | INFO | message = [cached since 7.161s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:40,905 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:40,916 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:40,917 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:40,918 | INFO | message = [cached since 7.165s ago] (20,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:40,925 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:43:52,189 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:52,189 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:52,192 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:52,193 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:43:52,198 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:43:52,199 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:43:52,200 | INFO | message = [cached since 152s ago] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:43:52,206 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:45:00,923 | INFO | message = Started server process [16208] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:45:00,924 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:45:00,924 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:45:16,726 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:45:16,727 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:45:16,728 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:45:16,732 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:45:16,741 | ERROR | message = Exception in ASGI application
+ | uvicorn.error | line 375 | package httptools_impl.py | run_asgi
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\z Github\fastapi_sqlite\fastapi_sqlite_clean_architecture\application\.\services\service_product.py", line 22, in Product_List
+    return useCase().getObjectList(session=session)
+  File "C:\z Github\fastapi_sqlite\fastapi_sqlite_clean_architecture\application\.\usescases\usecase_product.py", line 15, in getObjectList
+    object_ = session.query(model).offset(offset).limit(limit).all()
+  File "<string>", line 2, in limit
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\sql\base.py", line 110, in _generative
+    x = fn(self, *args, **kw)
+  File "<string>", line 2, in limit
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\orm\base.py", line 236, in generate
+    fn(self, *args[1:], **kw)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\orm\query.py", line 2707, in limit
+    self._limit_clause = sql_util._offset_or_limit_clause(limit)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\sql\util.py", line 1067, in _offset_or_limit_clause
+    return coercions.expect(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\sql\coercions.py", line 188, in expect
+    resolved = impl._literal_coercion(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\sql\coercions.py", line 804, in _literal_coercion
+    value = util.asint(element)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1280, in asint
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Query'
+2022-12-18 20:45:28,113 | INFO | message = Started server process [15012] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:45:28,115 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:45:28,115 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:45:34,821 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:45:34,822 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:45:34,823 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:45:34,826 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:45:34,831 | ERROR | message = Exception in ASGI application
+ | uvicorn.error | line 375 | package httptools_impl.py | run_asgi
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\z Github\fastapi_sqlite\fastapi_sqlite_clean_architecture\application\.\services\service_product.py", line 22, in Product_List
+    return useCase().getObjectList(session=session)
+  File "C:\z Github\fastapi_sqlite\fastapi_sqlite_clean_architecture\application\.\usescases\usecase_product.py", line 15, in getObjectList
+    object_ = session.query(model).offset(offset).limit(limit).all()
+  File "<string>", line 2, in limit
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\sql\base.py", line 110, in _generative
+    x = fn(self, *args, **kw)
+  File "<string>", line 2, in limit
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\orm\base.py", line 236, in generate
+    fn(self, *args[1:], **kw)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\orm\query.py", line 2707, in limit
+    self._limit_clause = sql_util._offset_or_limit_clause(limit)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\sql\util.py", line 1067, in _offset_or_limit_clause
+    return coercions.expect(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\sql\coercions.py", line 188, in expect
+    resolved = impl._literal_coercion(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\sql\coercions.py", line 804, in _literal_coercion
+    value = util.asint(element)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1280, in asint
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Query'
+2022-12-18 20:46:34,626 | INFO | message = Started server process [4272] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:46:34,628 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:46:34,628 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:46:34,630 | INFO | message = Started server process [21384] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:46:34,632 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:46:34,634 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:46:41,357 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:46:41,360 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:46:41,362 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:46:41,374 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:46:41,391 | ERROR | message = Exception in ASGI application
+ | uvicorn.error | line 375 | package httptools_impl.py | run_asgi
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\z Github\fastapi_sqlite\fastapi_sqlite_clean_architecture\application\.\services\service_product.py", line 22, in Product_List
+    return useCase().getObjectList(session=session)
+  File "C:\z Github\fastapi_sqlite\fastapi_sqlite_clean_architecture\application\.\usescases\usecase_product.py", line 15, in getObjectList
+    object_ = session.exec(model).offset(offset).limit(limit).all()
+AttributeError: 'Session' object has no attribute 'exec'
+2022-12-18 20:46:56,850 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:46:56,852 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:46:56,854 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:46:56,857 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:46:56,862 | ERROR | message = Exception in ASGI application
+ | uvicorn.error | line 375 | package httptools_impl.py | run_asgi
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\z Github\fastapi_sqlite\fastapi_sqlite_clean_architecture\application\.\services\service_product.py", line 22, in Product_List
+    return useCase().getObjectList(session=session)
+  File "C:\z Github\fastapi_sqlite\fastapi_sqlite_clean_architecture\application\.\usescases\usecase_product.py", line 15, in getObjectList
+    object_ = session.exec(model).offset(offset).limit(limit).all()
+AttributeError: 'Session' object has no attribute 'exec'
+2022-12-18 20:47:15,351 | INFO | message = Started server process [15620] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:47:15,351 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:47:15,352 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:47:15,424 | INFO | message = Started server process [18776] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:47:15,425 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:47:15,425 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:47:21,038 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:21,041 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:21,047 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:21,056 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:47:21,072 | ERROR | message = Exception in ASGI application
+ | uvicorn.error | line 375 | package httptools_impl.py | run_asgi
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\z Github\fastapi_sqlite\fastapi_sqlite_clean_architecture\application\.\services\service_product.py", line 22, in Product_List
+    return useCase().getObjectList(session=session)
+  File "C:\z Github\fastapi_sqlite\fastapi_sqlite_clean_architecture\application\.\usescases\usecase_product.py", line 15, in getObjectList
+    object_ = session.query(model).offset(offset).limit(limit).all()
+  File "<string>", line 2, in limit
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\sql\base.py", line 110, in _generative
+    x = fn(self, *args, **kw)
+  File "<string>", line 2, in limit
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\orm\base.py", line 236, in generate
+    fn(self, *args[1:], **kw)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\orm\query.py", line 2707, in limit
+    self._limit_clause = sql_util._offset_or_limit_clause(limit)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\sql\util.py", line 1067, in _offset_or_limit_clause
+    return coercions.expect(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\sql\coercions.py", line 188, in expect
+    resolved = impl._literal_coercion(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\sql\coercions.py", line 804, in _literal_coercion
+    value = util.asint(element)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1280, in asint
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'Query'
+2022-12-18 20:47:32,117 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:32,118 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:32,133 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:32,135 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:47:32,138 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:32,146 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:32,146 | INFO | message = [generated in 0.00057s] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:32,151 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:47:32,162 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:32,166 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:32,168 | INFO | message = [generated in 0.00155s] (21,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:32,176 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:47:33,971 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:33,971 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:33,972 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:33,975 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:47:33,978 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:33,979 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:33,980 | INFO | message = [cached since 1.834s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:33,984 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:47:34,000 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:34,001 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:34,002 | INFO | message = [cached since 1.837s ago] (22,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:34,008 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:47:34,428 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:34,429 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:34,430 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:34,434 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:47:34,439 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:34,440 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:34,442 | INFO | message = [cached since 2.296s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:34,446 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:47:34,456 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:34,459 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:34,461 | INFO | message = [cached since 2.295s ago] (23,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:34,469 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:47:34,756 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:34,757 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:34,758 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:34,759 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:47:34,764 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:34,765 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:34,765 | INFO | message = [cached since 2.62s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:34,769 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:47:34,786 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:34,786 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:34,787 | INFO | message = [cached since 2.621s ago] (24,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:34,792 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:47:45,383 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:45,384 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:45,385 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:45,387 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:47:45,392 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:45,395 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:45,397 | INFO | message = [generated in 0.00197s] (1,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:45,400 | WARNING | message = Resource not found | root | line 26 | package usecase_product.py | getObject
+2022-12-18 20:47:45,401 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:47:49,581 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:49,582 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:49,583 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:49,584 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:47:49,588 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:47:49,589 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:47:49,592 | INFO | message = [cached since 4.198s ago] (10,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:47:49,599 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:51:18,449 | INFO | message = Started server process [20836] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:51:18,450 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:51:18,451 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:51:18,451 | INFO | message = Started server process [19012] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:51:18,452 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:51:18,452 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:51:33,092 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:51:33,094 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:51:33,096 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:51:33,102 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:51:33,116 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:51:33,135 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:51:33,146 | INFO | message = [generated in 0.01312s] (10,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:51:33,155 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:51:37,501 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:51:37,502 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:51:37,503 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:51:37,505 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:51:37,508 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:51:37,510 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:51:37,512 | INFO | message = [generated in 0.00174s] (2, 3) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:51:37,519 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:51:52,615 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:51:52,616 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:51:52,617 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:51:52,619 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:51:52,621 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:51:52,622 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:51:52,623 | INFO | message = [cached since 15.11s ago] (2, 3) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:51:52,627 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:52:15,068 | INFO | message = Started server process [16676] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:52:15,069 | INFO | message = Started server process [8916] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:52:15,073 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:52:15,073 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:52:15,078 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:52:15,077 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:52:27,545 | INFO | message = Started server process [13368] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:52:27,545 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:52:27,547 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:52:27,598 | INFO | message = Started server process [17444] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:52:27,599 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:52:27,600 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:52:30,178 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:52:30,180 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:52:30,182 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:52:30,185 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:52:30,190 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:52:30,193 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:52:30,197 | INFO | message = [generated in 0.00417s] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:52:30,203 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:52:42,109 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:52:42,110 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:52:42,111 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:52:42,114 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:52:42,117 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:52:42,118 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:52:42,120 | INFO | message = [cached since 11.93s ago] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:52:42,126 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:53:37,458 | INFO | message = Started server process [5848] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:53:37,465 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:53:37,473 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:53:37,475 | INFO | message = Started server process [2188] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:53:37,478 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:53:37,480 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:53:51,394 | INFO | message = Started server process [14612] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:53:51,395 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:53:51,396 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:53:51,406 | INFO | message = Started server process [3532] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:53:51,407 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:53:51,408 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:54:00,254 | INFO | message = Started server process [4888] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:54:00,255 | INFO | message = Started server process [10888] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:54:00,256 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:54:00,256 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:54:00,256 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:54:00,257 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:54:03,567 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:54:03,570 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:54:03,571 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:54:03,576 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:54:03,583 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:54:03,590 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:54:03,594 | INFO | message = [generated in 0.00348s] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:54:03,609 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:54:46,095 | INFO | message = Started server process [14212] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:54:46,095 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:54:46,096 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:54:46,098 | INFO | message = Started server process [16112] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:54:46,099 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:54:46,099 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:54:50,205 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:54:50,205 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:54:50,206 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:54:50,208 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:54:50,213 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:54:50,218 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:54:50,219 | INFO | message = [generated in 0.00119s] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:54:50,224 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:55:03,089 | INFO | message = Shutting down | uvicorn.error | line 252 | package server.py | shutdown
+2022-12-18 20:55:07,889 | INFO | message = Started server process [13032] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:55:07,890 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:55:07,890 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:55:13,108 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:55:13,109 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:55:13,110 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:55:13,111 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:55:13,114 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:55:13,115 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:55:13,117 | INFO | message = [cached since 22.9s ago] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:55:13,122 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:56:17,264 | INFO | message = Started server process [17724] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:56:17,265 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:56:17,266 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:56:17,287 | INFO | message = Started server process [16508] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:56:17,288 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:56:17,290 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:56:20,908 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:56:20,912 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:56:20,915 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:56:20,927 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 20:56:20,935 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 20:56:20,942 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 20:56:20,943 | INFO | message = [generated in 0.00192s] (1, 2) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 20:56:20,948 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 20:56:40,195 | INFO | message = Started server process [792] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:56:40,196 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:56:40,197 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:56:40,201 | INFO | message = Started server process [17652] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:56:40,202 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:56:40,204 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:56:47,395 | INFO | message = Started server process [8916] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:56:47,395 | INFO | message = Started server process [17532] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:56:47,396 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:56:47,396 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:56:47,397 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:56:47,397 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:56:53,107 | INFO | message = Started server process [11024] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:56:53,107 | INFO | message = Started server process [2876] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:56:53,108 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:56:53,108 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:56:53,108 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:56:53,109 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:58:06,771 | INFO | message = Started server process [21016] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:58:06,773 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:58:06,775 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 20:58:06,785 | INFO | message = Started server process [6844] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 20:58:06,786 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 20:58:06,787 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:08:38,061 | INFO | message = Started server process [11972] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:08:38,062 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:08:38,063 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:08:38,066 | INFO | message = Started server process [14116] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:08:38,067 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:08:38,069 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:11:28,318 | INFO | message = Started server process [20300] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:11:28,318 | INFO | message = Started server process [14636] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:11:28,319 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:11:28,319 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:11:28,320 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:11:28,320 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:12:01,088 | INFO | message = Started server process [13180] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:12:01,088 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:12:01,089 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:12:01,100 | INFO | message = Started server process [8444] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:12:01,102 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:12:01,103 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:12:04,628 | INFO | message = Started server process [18220] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:12:04,628 | INFO | message = Started server process [16800] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:12:04,629 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:12:04,629 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:12:04,630 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:12:04,630 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:12:32,450 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:12:32,451 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:12:32,452 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:12:32,455 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:12:32,460 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:12:32,463 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:12:32,463 | INFO | message = [generated in 0.00065s] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:12:32,468 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:12:32,468 | INFO | message = [cached since 0.005211s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:12:32,469 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:12:32,470 | INFO | message = [cached since 0.006492s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:12:32,471 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:12:32,478 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:12:32,481 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:12:32,482 | INFO | message = [generated in 0.00088s] (27,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:12:32,485 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:13:10,507 | INFO | message = Started server process [9968] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:13:10,508 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:13:10,512 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:13:10,515 | INFO | message = Started server process [13720] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:13:10,519 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:13:10,522 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:13:16,487 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:13:16,488 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:13:16,490 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:13:16,494 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:13:16,501 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:13:16,506 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:13:16,509 | INFO | message = [generated in 0.00242s] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:13:16,517 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:13:16,519 | INFO | message = [cached since 0.0116s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:13:16,523 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:13:16,525 | INFO | message = [cached since 0.01826s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:13:16,527 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:13:16,535 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:13:16,541 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:13:16,542 | INFO | message = [generated in 0.00154s] (30,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:13:16,549 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:14:08,416 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:14:08,417 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:14:08,417 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:14:08,419 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:14:08,424 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:14:08,425 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:14:08,427 | INFO | message = [generated in 0.00164s] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:14:08,435 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:14:53,256 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:14:53,258 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:14:53,259 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:14:53,270 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:14:53,276 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:14:53,279 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:14:53,282 | INFO | message = [cached since 96.78s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:14:53,291 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:14:53,291 | INFO | message = [cached since 96.78s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:14:53,293 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:14:53,300 | INFO | message = [cached since 96.79s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:14:53,301 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:14:53,303 | INFO | message = [cached since 96.8s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:14:53,304 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:14:53,306 | INFO | message = [cached since 96.8s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:14:53,309 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:14:53,322 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:14:53,324 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:14:53,324 | INFO | message = [cached since 96.78s ago] (35,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:14:53,332 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:15:11,418 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:15:11,419 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:15:11,420 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:15:11,422 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:15:11,424 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:15:11,425 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:15:11,426 | INFO | message = [cached since 63s ago] (100, 30) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:15:11,433 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:15:19,752 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:15:19,754 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:15:19,755 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:15:19,762 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:15:19,768 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:15:19,770 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:15:19,785 | INFO | message = [cached since 71.36s ago] (100, 25) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:15:19,795 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:15:56,474 | INFO | message = Started server process [12164] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:15:56,476 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:15:56,476 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:15:56,494 | INFO | message = Started server process [19904] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:15:56,495 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:15:56,496 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:16:07,110 | INFO | message = Started server process [14236] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:16:07,112 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:16:07,113 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:16:07,340 | INFO | message = Started server process [12504] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:16:07,341 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:16:07,342 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:16:13,889 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:16:13,892 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:13,894 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:13,899 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:16:13,906 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:16:13,909 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:13,910 | INFO | message = [generated in 0.00133s] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:13,914 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:13,915 | INFO | message = [cached since 0.005959s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:13,916 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:13,917 | INFO | message = [cached since 0.00787s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:13,917 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:13,918 | INFO | message = [cached since 0.009167s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:13,921 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:13,922 | INFO | message = [cached since 0.01284s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:13,923 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:16:13,930 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:16:13,934 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:13,936 | INFO | message = [generated in 0.00207s] (40,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:13,943 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:16:15,352 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:16:15,353 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:15,353 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:15,355 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:16:15,359 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:16:15,360 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:15,361 | INFO | message = [cached since 1.452s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:15,364 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:15,365 | INFO | message = [cached since 1.456s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:15,366 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:15,367 | INFO | message = [cached since 1.458s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:15,368 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:15,369 | INFO | message = [cached since 1.459s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:15,373 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:15,373 | INFO | message = [cached since 1.464s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:15,374 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:16:15,391 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:16:15,392 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:15,393 | INFO | message = [cached since 1.46s ago] (45,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:15,400 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:16:16,137 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:16:16,138 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:16,139 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:16,140 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:16:16,144 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:16:16,144 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:16,145 | INFO | message = [cached since 2.236s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:16,148 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:16,148 | INFO | message = [cached since 2.24s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:16,150 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:16,150 | INFO | message = [cached since 2.242s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:16,154 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:16,154 | INFO | message = [cached since 2.246s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:16,156 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:16,156 | INFO | message = [cached since 2.248s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:16,157 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:16:16,173 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:16:16,174 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:16:16,174 | INFO | message = [cached since 2.24s ago] (50,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:16:16,177 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:17:16,239 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:17:16,241 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:17:16,242 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:17:16,247 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:17:16,252 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:17:16,254 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:17:16,255 | INFO | message = [cached since 62.35s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:17:16,261 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:17:16,272 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:17:16,274 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:17:16,274 | INFO | message = [cached since 62.34s ago] (51,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:17:16,280 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:17:21,682 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:17:21,682 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:17:21,684 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:17:21,689 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:17:21,701 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:17:21,703 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:17:21,704 | INFO | message = [cached since 67.79s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:17:21,707 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:17:21,708 | INFO | message = [cached since 67.8s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:17:21,708 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:17:21,709 | INFO | message = [cached since 67.8s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:17:21,710 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:17:21,711 | INFO | message = [cached since 67.8s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:17:21,714 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:17:21,715 | INFO | message = [cached since 67.81s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:17:21,717 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:17:21,724 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:17:21,725 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:17:21,726 | INFO | message = [cached since 67.79s ago] (56,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:17:21,732 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:18:39,387 | INFO | message = Started server process [19096] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:18:39,387 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:18:39,389 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:18:39,437 | INFO | message = Started server process [9328] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:18:39,438 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:18:39,439 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:18:46,343 | INFO | message = Started server process [17532] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:18:46,343 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:18:46,344 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:18:46,360 | INFO | message = Started server process [18576] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:18:46,361 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:18:46,361 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:19:01,092 | INFO | message = Started server process [2340] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:19:01,093 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:19:01,095 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:19:01,244 | INFO | message = Started server process [9656] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:19:01,246 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:19:01,246 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:26:14,203 | INFO | message = Started server process [14624] | uvicorn.error | line 75 | package server.py | serve
+2022-12-18 21:26:14,206 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2022-12-18 21:26:14,207 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2022-12-18 21:26:16,840 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:16,841 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:16,842 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:16,847 | INFO | message = PRAGMA temp.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:16,848 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:16,850 | INFO | message = 
+CREATE TABLE products (
+	id INTEGER NOT NULL, 
+	name VARCHAR(256), 
+	categorie VARCHAR(256), 
+	price INTEGER, 
+	PRIMARY KEY (id)
+)
+
+ | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:16,853 | INFO | message = [no key 0.00288s] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:16,865 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:26:16,869 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:16,873 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:16,874 | INFO | message = [generated in 0.00123s] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:16,883 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:26:17,183 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:17,184 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:17,184 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:17,186 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:26:21,698 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:21,699 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:21,700 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:21,702 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:26:31,222 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:31,223 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:31,223 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:31,226 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:26:31,229 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:31,231 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:31,233 | INFO | message = [cached since 14.36s ago] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:31,236 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:26:41,012 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:41,013 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:41,013 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:41,016 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:26:41,020 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:41,022 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:41,025 | INFO | message = [generated in 0.00222s] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:41,030 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:26:41,043 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:41,046 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:41,048 | INFO | message = [generated in 0.00157s] (1,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:41,054 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:26:41,515 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:41,516 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:41,516 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:41,517 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:26:41,522 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:41,522 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:41,524 | INFO | message = [cached since 0.5018s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:41,528 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:26:41,535 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:41,535 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:41,537 | INFO | message = [cached since 0.4907s ago] (2,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:41,545 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:26:42,057 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:42,058 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:42,058 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:42,060 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:26:42,065 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:42,067 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:42,075 | INFO | message = [cached since 1.052s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:42,080 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:26:42,092 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:42,094 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:42,095 | INFO | message = [cached since 1.048s ago] (3,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:42,102 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:26:42,450 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:42,451 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:42,452 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:42,456 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:26:42,459 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:42,461 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:42,462 | INFO | message = [cached since 1.44s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:42,466 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:26:42,478 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:42,478 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:42,480 | INFO | message = [cached since 1.434s ago] (4,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:42,487 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:26:42,841 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:42,842 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:42,842 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:42,844 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:26:42,847 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:42,848 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:42,849 | INFO | message = [cached since 1.827s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:42,855 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:26:42,864 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:26:42,865 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:26:42,868 | INFO | message = [cached since 1.822s ago] (5,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:26:42,872 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:27:37,479 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:27:37,480 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:27:37,480 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:27:37,483 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:27:37,489 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:27:37,491 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:27:37,493 | INFO | message = [cached since 56.47s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:27:37,509 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:27:37,510 | INFO | message = [cached since 56.49s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:27:37,511 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:27:37,511 | INFO | message = [cached since 56.49s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:27:37,512 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:27:37,514 | INFO | message = [cached since 56.49s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:27:37,515 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:27:37,516 | INFO | message = [cached since 56.49s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:27:37,521 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:27:37,529 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:27:37,529 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:27:37,530 | INFO | message = [cached since 56.48s ago] (10,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:27:37,534 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:28:12,233 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:28:12,242 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:28:12,245 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:28:12,253 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:28:12,261 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:28:12,265 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:28:12,268 | INFO | message = [generated in 0.00349s] (1,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:28:12,284 | INFO | message = UPDATE products SET name=?, categorie=?, price=? WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:28:12,286 | INFO | message = [generated in 0.00126s] ('rr', 'yyyyyyyy', 12345, 1) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:28:12,291 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:28:12,304 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:28:12,306 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:28:12,308 | INFO | message = [cached since 91.26s ago] (1,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:28:12,317 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:28:19,167 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:28:19,168 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:28:19,169 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:28:19,172 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:28:19,176 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:28:19,178 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:28:19,185 | INFO | message = [cached since 122.3s ago] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:28:19,191 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:28:36,942 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:28:36,951 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:28:36,953 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:28:36,960 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:28:36,983 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:28:36,987 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:28:36,991 | INFO | message = [cached since 24.73s ago] (1,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:28:37,008 | INFO | message = UPDATE products SET name=?, categorie=?, price=? WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:28:37,022 | INFO | message = [cached since 24.74s ago] ('string', 'string', 0, 1) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:28:37,032 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:28:37,068 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:28:37,068 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:28:37,069 | INFO | message = [cached since 116s ago] (1,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:28:37,074 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:28:40,771 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:28:40,772 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:28:40,772 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:28:40,775 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:28:40,779 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:28:40,801 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:28:40,814 | INFO | message = [cached since 143.9s ago] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:28:40,819 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:29:17,516 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:29:17,516 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:29:17,517 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:29:17,519 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:29:17,522 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:29:17,525 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:29:17,527 | INFO | message = [cached since 65.26s ago] (1,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:29:17,534 | INFO | message = UPDATE products SET price=? WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:29:17,535 | INFO | message = [generated in 0.00168s] (12345, 1) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:29:17,538 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:29:17,549 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:29:17,550 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:29:17,552 | INFO | message = [cached since 156.5s ago] (1,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:29:17,561 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:29:24,472 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:29:24,473 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:29:24,476 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:29:24,479 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:29:24,483 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:29:24,484 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:29:24,485 | INFO | message = [cached since 187.6s ago] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:29:24,493 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:29:36,616 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:29:36,616 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:29:36,617 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:29:36,621 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:29:36,626 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:29:36,628 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:29:36,631 | INFO | message = [cached since 84.37s ago] (1,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:29:36,637 | INFO | message = DELETE FROM products WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:29:36,638 | INFO | message = [generated in 0.00107s] (1,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:29:36,643 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:29:36,652 | ERROR | message = Exception in ASGI application
+ | uvicorn.error | line 375 | package httptools_impl.py | run_asgi
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 68, in app
+    await response(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\responses.py", line 162, in __call__
+    await send({"type": "http.response.body", "body": self.body})
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 79, in sender
+    await send(message)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 153, in send
+    await send(message)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 159, in _send
+    await send(message)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 501, in send
+    raise RuntimeError("Response content longer than Content-Length")
+RuntimeError: Response content longer than Content-Length
+2022-12-18 21:29:41,733 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:29:41,734 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:29:41,735 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:29:41,739 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:29:41,746 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:29:41,747 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:29:41,749 | INFO | message = [cached since 204.9s ago] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:29:41,760 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2022-12-18 21:29:45,371 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:29:45,371 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:29:45,372 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:29:45,374 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2022-12-18 21:29:45,378 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2022-12-18 21:29:45,379 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2022-12-18 21:29:45,381 | INFO | message = [cached since 93.12s ago] (1,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2022-12-18 21:29:45,384 | WARNING | message = Resource not found | root | line 28 | package usecase_product.py | getObject
+2022-12-18 21:29:45,389 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
