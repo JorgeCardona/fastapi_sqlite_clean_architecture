@@ -119,10 +119,10 @@ Save unit testing coverage information about the application code.
 Contains transversal resources for the application, that is not possible to include in other layers.
 
 # Entities
-is a package that contains modules, the module it's a plain script, it contains only the class definition, no logic in the classes.
+is a package that contains modules, like Models and Schemas, the module it's a plain script, it contains only the class definition and no logic in the classes.
 - Models: are modules that contain the fields from a table on the database and it is represented by a class.
 - Schemas: these are modules that contain the fields Used to validate data we receive as well as to reformat the data that we want to send to the client/browser, so just contains the fields that we want to return in the request.
-- 
+
 # Interfaces
 are interfaces that contain only the methods that need to be implemented in the use cases one directory by class.
 - Repository: Contains modules with methods that are needed to communicate with the database by class.
