@@ -9,29 +9,33 @@ from configuration.database.db_config import get_session
 class ProductRepository(ABC):
 
     @abstractmethod
-    def getObjectList(self, session:Session = Depends(get_session), offset: int = 0, limit: int = 100):
+    def get_object_list(self, session:Session = Depends(get_session), offset: int = 0, limit: int = 100):
         pass
 
     @abstractmethod
-    def getObject(self, id:int, session:Session = Depends(get_session)):
+    def get_object(self, id:int, session:Session = Depends(get_session)):
         pass
 
     @abstractmethod
-    def addObject(self, entity:complete_schema, session:Session = Depends(get_session)):
+    def add_object(self, entity:complete_schema, session:Session = Depends(get_session)):
         pass
  
     @abstractmethod
-    def addObjectList(self, entity:List[complete_schema], session:Session = Depends(get_session)):
+    def add_object_list(self, entity:List[complete_schema], session:Session = Depends(get_session)):
          pass
-        
+    
     @abstractmethod
-    def updateObject(self, id:int, entity:complete_schema, session:Session = Depends(get_session)):
+    def __update_rows__(self, id:int, entity:object, session:Session = Depends(get_session)):    
+        pass
+       
+    @abstractmethod
+    def update_object(self, id:int, entity:complete_schema, session:Session = Depends(get_session)):
         pass
 
     @abstractmethod
-    def patchObject(self, id:int, entity:patch_schema, session:Session = Depends(get_session)):
+    def patch_object(self, id:int, entity:patch_schema, session:Session = Depends(get_session)):
         pass
     
     @abstractmethod
-    def deleteObject(self, id:int, session:Session = Depends(get_session)):
+    def delete_object(self, id:int, session:Session = Depends(get_session)):
         pass

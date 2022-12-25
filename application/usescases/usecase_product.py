@@ -12,12 +12,12 @@ from configuration.log.logging import log_api
 
 class ProductUseCases(repository):
      
-    def getObjectList(self, session:Session = Depends(get_session), offset: int = 0, limit: int = 100):
+    def get_object_list(self, session:Session = Depends(get_session), offset: int = 0, limit: int = 100):
        
         object_ = session.query(model).offset(offset).limit(limit).all()
         return object_
     
-    def getObject(self, id:int, session:Session = Depends(get_session)):
+    def get_object(self, id:int, session:Session = Depends(get_session)):
         
         object_ = session.query(model).get(id)
         
@@ -31,7 +31,7 @@ class ProductUseCases(repository):
                 detail=message
             )
             
-    def addObject(self, entity:complete_schema, session:Session = Depends(get_session)):
+    def add_object(self, entity:complete_schema, session:Session = Depends(get_session)):
         
         """_summary_
         entity.dict(exclude_unset=True) -> convierte la entidad en un diccionario
@@ -48,7 +48,7 @@ class ProductUseCases(repository):
         session.refresh(object_)
         return object_
 
-    def addObjectList(self, entity:List[complete_schema], session:Session = Depends(get_session)):
+    def add_object_list(self, entity:List[complete_schema], session:Session = Depends(get_session)):
         
         """_summary_
         entity.dict(exclude_unset=True) -> convierte la entidad en un diccionario
@@ -69,10 +69,10 @@ class ProductUseCases(repository):
         session.refresh(object_)
         return list_objects_
     
-    
-    def updateObject(self, id:int, entity:complete_schema, session:Session = Depends(get_session)):
+    def __update_rows__(self, id:int, entity:object, session:Session = Depends(get_session)):
         """_summary_
-
+        esta implementacion funciona tanto para UPDATE y PATCH dado que con el for declarado
+        se garantiza que se actualicen solo los vlores enviados
         Args:
             id (int): _description_
             entity (complete_model): _description_
@@ -86,7 +86,8 @@ class ProductUseCases(repository):
         Returns:
             _type_: _description_
         """
-        object_ = self.getObject(id=id, session=session)
+        
+        object_ = self.get_object(id=id, session=session)
         object_data = entity.dict(exclude_unset=True)
             
         for key, value in object_data.items():
@@ -95,22 +96,17 @@ class ProductUseCases(repository):
         session.commit()
         session.refresh(object_)
         return object_
-            
-    def patchObject(self, id:int, entity:patch_schema, session:Session = Depends(get_session)):
+        
+    def update_object(self, id:int, entity:complete_schema, session:Session = Depends(get_session)):
 
-        object_ = self.getObject(id=id, session=session)
-        object_data = entity.dict(exclude_unset=True)
+        return self.__update_rows__(id=id, entity=entity, session=session)
             
-        for key, value in object_data.items():
-            setattr(object_, key, value)
-        session.add(object_)
-        session.commit()
-        session.refresh(object_)
-        return object_
-    
-    
-    def deleteObject(self, id:int, session:Session = Depends(get_session)):
-        object_ = self.getObject(id=id, session=session)
+    def patch_object(self, id:int, entity:patch_schema, session:Session = Depends(get_session)):
+
+        return self.__update_rows__(id=id, entity=entity, session=session)
+
+    def delete_object(self, id:int, session:Session = Depends(get_session)):
+        object_ = self.get_object(id=id, session=session)
 
         session.delete(object_)
         session.commit()

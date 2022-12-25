@@ -1,0 +1,7 @@
+SEARCH_ALL_PRODUCTS = 'Get Product List'
+SEARCH_SPECIFIC_PRODUCT = 'Get Product'
+ADD_NEW_PRODUCT = 'Add New Product'
+ADD_NEW_PRODUCT_LIST = 'Add New Product List'
+REMOVE_PRODUCT = 'Delete Product'
+UPDATE_PRODUCT = 'Update Product'
+PATCH_PRODUCT = 'Update Product Partially'

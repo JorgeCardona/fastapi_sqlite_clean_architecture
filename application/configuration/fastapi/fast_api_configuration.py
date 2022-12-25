@@ -44,3 +44,21 @@ clean_architecture.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# METADATA CONFIG, agrupa los endpoints en el swagger y muestra su etiqueta y descripcion relacionada
+tags_metadata = [
+    {
+        "name": "products",
+        "description": "Operations with users. The **login** logic is also here.",
+    },
+    {
+        "name": "items",
+        "description": "Manage items. So _fancy_ they have their own docs.",
+        "externalDocs": {
+            "description": "Items external docs",
+            "url": "https://fastapi.tiangolo.com/",
+        },
+    },
+]
+
+clean_architecture.openapi_tags = tags_metadata
