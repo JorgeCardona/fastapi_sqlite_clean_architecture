@@ -7,7 +7,7 @@ from configuration.fastapi.fast_api_configuration import clean_architecture
 from configuration.database.db_config import get_session
 from domain.entities.schemas.schema_product import ProductComplete as complete_schema
 from domain.entities.schemas.schema_product import ProductPatch as patch_schema
-from usescases.usecase_product import ProductUseCases as useCase
+from usecases.usecase_product import ProductUseCases as useCase
 from configuration.end_points.product import SEARCH_ALL_PRODUCTS, SEARCH_SPECIFIC_PRODUCT, ADD_NEW_PRODUCT, ADD_NEW_PRODUCT_LIST
 from configuration.end_points.product import UPDATE_PRODUCT, PATCH_PRODUCT, REMOVE_PRODUCT
 # https://github.com/JorgeCardona/AI/blob/master/URL%20Challenge/BACK%20FastAPI/database/models/Entity.py
@@ -39,7 +39,7 @@ class ProductServices:
     def update_object(id:int, entity:complete_schema, session: Session = Depends(get_session)):
         return useCase().update_object(id=id, entity=entity, session=session)
 
-    @clean_architecture.patch("/{id}", include_in_schema=False)
+    @clean_architecture.patch("/{id}")
     def patch_object(id:int, entity:patch_schema, session: Session = Depends(get_session)):
         return useCase().patch_object(id=id, entity=entity, session=session)
     
