@@ -2,9 +2,9 @@ from abc import ABC, abstractmethod
 from typing import List
 from fastapi import Depends
 from sqlalchemy.orm import Session
-from domain.entities.schemas.schema_product import ProductComplete as complete_schema
-from domain.entities.schemas.schema_product import ProductPatch as patch_schema
 from configuration.database.db_config import get_session
+from domain.entities.schemas.schema_products import ProductComplete as complete_schema
+from domain.entities.schemas.schema_products import ProductPatch as patch_schema
 
 class ProductRepository(ABC):
 

@@ -1,0 +1,8 @@
+BASE_PATH = '/products'
+SEARCH_ALL_OBJECTS = 'Get Product List'
+SEARCH_SPECIFIC_OBJECT = 'Get Product'
+ADD_NEW_OBJECT = 'Add New Product'
+ADD_NEW_OBJECT_LIST = 'Add New Product List'
+REMOVE_OBJECT = 'Delete Product'
+UPDATE_OBJECT = 'Update Product'
+PATCH_OBJECT = 'Update Product Partially'

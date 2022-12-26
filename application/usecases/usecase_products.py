@@ -1,16 +1,11 @@
-from typing import List
-from fastapi import Depends
 from fastapi import HTTPException, status
-from sqlalchemy.orm import Session
-from domain.interfaces.repositories.repository_product import ProductRepository as repository
-
-from domain.entities.models.model_product import Product as model
-from domain.entities.schemas.schema_product import ProductComplete as complete_schema
-from domain.entities.schemas.schema_product import ProductPatch as patch_schema
-from configuration.database.db_config import get_session
+from domain.interfaces.repositories.repository_products import ProductRepository as repository
+from domain.interfaces.repositories.repository_products import Session, get_session, Depends, List
+from domain.interfaces.repositories.repository_products import complete_schema, patch_schema
+from domain.entities.models.model_products import Product as model
 from configuration.log.logging import log_api
 
-class ProductUseCases(repository):
+class ProductsUseCases(repository):
      
     def get_object_list(self, session:Session = Depends(get_session), offset: int = 0, limit: int = 100):
        
@@ -111,4 +106,3 @@ class ProductUseCases(repository):
         session.delete(object_)
         session.commit()
         session.close()
-        #return 'object_ was deleted...'
