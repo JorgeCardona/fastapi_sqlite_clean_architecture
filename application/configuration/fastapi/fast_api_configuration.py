@@ -49,14 +49,14 @@ clean_architecture.add_middleware(
 tags_metadata = [
     {
         "name": "products",
-        "description": "Operations with users. The **login** logic is also here.",
+        "description": "Operations with products. All operations and logic is also here.",
     },
     {
-        "name": "items",
-        "description": "Manage items. So _fancy_ they have their own docs.",
+        "name": "users",
+        "description": "Manage Users. So _fancy_ they have their own docs.",
         "externalDocs": {
-            "description": "Items external docs",
-            "url": "https://fastapi.tiangolo.com/",
+            "description": "Users external docs",
+            "url": "https://jorgecardona.com/",
         },
     },
 ]
