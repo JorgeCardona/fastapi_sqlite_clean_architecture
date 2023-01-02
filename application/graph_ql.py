@@ -1,5 +1,5 @@
 # uvicorn graph_ql:app --host localhost --reload --port 5555
-# http://localhost:5555/graphql
+# http://localhost:5555/graphql, en postman siempre metodo post
 """ 
 query user_info{
   user{
