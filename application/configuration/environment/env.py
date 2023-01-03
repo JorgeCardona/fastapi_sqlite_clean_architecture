@@ -94,10 +94,13 @@ class Environment:
         # esta relacionado con la variable definida al inicio de la clase
         self.Base.metadata.create_all(self.engine)
         
-        SessionLocal = sessionmaker(bind=self.engine, expire_on_commit=False)
-        
-        session = SessionLocal()
+        session = self.session_local()
         try:
             yield session
         finally:
             session.close()
+            
+    # para graphql        
+    def get_connection(self):
+        
+        return self.engine.connect()

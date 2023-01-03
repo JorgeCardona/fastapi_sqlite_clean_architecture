@@ -37,7 +37,7 @@ class ProductsUseCases(repository):
         """
         object_data = entity.dict(exclude_unset=True)
         object_ = model(**object_data)
-        
+
         session.add(object_)
         session.commit()
         session.refresh(object_)

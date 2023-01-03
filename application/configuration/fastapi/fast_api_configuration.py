@@ -62,3 +62,10 @@ tags_metadata = [
 ]
 
 clean_architecture.openapi_tags = tags_metadata
+
+"""
+from usecases.usecase_graphql import graphql_app
+
+clean_architecture.add_route("/graphql", graphql_app)
+clean_architecture.add_websocket_route("/graphql", graphql_app)
+"""
