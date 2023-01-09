@@ -66,14 +66,17 @@ tags_metadata = [
     },
 ]
 
+# adicionadas configuracion de rutas personalizadas para la documentacion de SWAGGER
 clean_architecture.docs_url = SWAGGER_ROUTE
 clean_architecture.redoc_url = SWAGGER_REDOC_ROUTE
 
+# adicionados la informacion para mostrar en swagger
 clean_architecture.openapi_tags = tags_metadata
 
 # REDIRECCIONAMIENTO DE PETICIONES A OTRAS URL
 from starlette.responses import RedirectResponse
 
+# funcion que ejecuta el redireccionamiento solicitado
 def redirect_url_response(url):
     return RedirectResponse(url=f"{url}")
 
