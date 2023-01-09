@@ -1,8 +1,13 @@
 from fastapi import FastAPI
 from fastapi.openapi.utils import get_openapi
-from ..cors.cross_origin_config import CORSMiddleware, origins 
+# importacion de modulos con ruta RELATIVA completa del proyecto desde el inicio de cada carpeta para no tener que usar los puntos '...'
+from configuration.graphql.graphql_config import GRAPHQL_ROUTE
+from configuration.cors.cross_origin_config import CORSMiddleware, origins 
+from configuration.swagger.swagger_configuration import SWAGGER_ROUTE, SWAGGER_REDOC_ROUTE
 
+# INSTANCIA DE FASTAPI, PARA CONFIGURACION E INICIO DE LA APLICACION
 clean_architecture = FastAPI()
+
 
 def custom_openapi():
     if clean_architecture.openapi_schema:
@@ -61,28 +66,29 @@ tags_metadata = [
     },
 ]
 
+clean_architecture.docs_url = SWAGGER_ROUTE
+clean_architecture.redoc_url = SWAGGER_REDOC_ROUTE
+
 clean_architecture.openapi_tags = tags_metadata
 
+# REDIRECCIONAMIENTO DE PETICIONES A OTRAS URL
 from starlette.responses import RedirectResponse
 
 def redirect_url_response(url):
-    return RedirectResponse(url=f"/{url}")
+    return RedirectResponse(url=f"{url}")
 
 # redireccionamiento a la documentacion cuando se abre el path principal en el navegador
 # include_in_schema=False, oculta el endpoint de la documentacion de swagger
 @clean_architecture.get("/", include_in_schema=False)
-def swagger_url(url='docs'):
+def swagger_url(url=SWAGGER_ROUTE):
+    return redirect_url_response(url)
+
+# redireccionamiento para redoc
+@clean_architecture.get("/rd", include_in_schema=False)
+def swagger_redoc_url(url=SWAGGER_REDOC_ROUTE):
     return redirect_url_response(url)
 
 # redireccionamiento a la consola graphql cuando se pone un alias
 @clean_architecture.get("/gql", include_in_schema=False)
-def graphql_url(url='graphql'):
+def graphql_url(url=GRAPHQL_ROUTE):
     return redirect_url_response(url)
-
-
-"""
-from usecases.usecase_graphql import graphql_app
-
-clean_architecture.add_route("/graphql", graphql_app)
-clean_architecture.add_websocket_route("/graphql", graphql_app)
-"""

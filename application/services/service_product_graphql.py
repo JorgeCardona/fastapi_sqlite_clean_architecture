@@ -1,5 +1,6 @@
 from domain.entities.schemas.schema_product_graphql import ProductGraphQl
 from usecases.usecase_graphql import ProductsUseCasesGraphQL
+from configuration.graphql.graphql_config import GRAPHQL_ROUTE
 
 import strawberry
 from strawberry.asgi import GraphQL
