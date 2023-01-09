@@ -63,6 +63,23 @@ tags_metadata = [
 
 clean_architecture.openapi_tags = tags_metadata
 
+from starlette.responses import RedirectResponse
+
+def redirect_url_response(url):
+    return RedirectResponse(url=f"/{url}")
+
+# redireccionamiento a la documentacion cuando se abre el path principal en el navegador
+# include_in_schema=False, oculta el endpoint de la documentacion de swagger
+@clean_architecture.get("/", include_in_schema=False)
+def swagger_url(url='docs'):
+    return redirect_url_response(url)
+
+# redireccionamiento a la consola graphql cuando se pone un alias
+@clean_architecture.get("/gql", include_in_schema=False)
+def graphql_url(url='graphql'):
+    return redirect_url_response(url)
+
+
 """
 from usecases.usecase_graphql import graphql_app
 
