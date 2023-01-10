@@ -86,8 +86,23 @@ class ProductsUseCasesGraphQL:
         
         return results_as_dict
       
+    def get_record(self, id):
+          
+        with Environment('dev').get_connection() as connection:
+          
+          query = select(model).where(model.id == id)
+
+          response = connection.execute(query)
+          
+          result = response.mappings().all()
+        
+        return result
+      
     def delete_record(self, id) -> int:
     
+      record = self.get_record(id)
+      
+      if record:
         with Environment('dev').get_connection() as connection:
             
             query = delete(model).where(model.id == id)
@@ -95,35 +110,32 @@ class ProductsUseCasesGraphQL:
             
         return result
       
-      
-    def get_record(self, id):
-          
-        with Environment('dev').get_connection() as connection:
-          
-          query = select(model).where(model.id == id)
+      else:
+            return None
 
-          result = connection.execute(query)
+
+    def update_record(self, entity=None) -> int:
+
+        record = self.get_record(entity.id)
         
-        return result
-      
-      
-    def update_record(self, id, name=None, categorie=None, price=None) -> int:
+        if record:
           
-        record = self.get_record(id)
-        
-        if record :
-          values = {'name':name,
-                    'categorie':categorie,
-                    'price':price
-                    }
-          
+          # convierte un objecto a un diccionario con el metodo 'vars'
+          values_dictionary = vars(entity)
+          values = dict()
+
+          # selecciona solo las llaves que fueron enviadas en el objeto entity para actualizar los datos
+          for key, value in values_dictionary.items():
+                if value is not None:
+                  values[key] = value
+
           with Environment('dev').get_connection() as connection:
               
-              query = update(model).where(model.id == id).values(
+              query = update(model).where(model.id == entity.id).values(
                 values
               )
               result = connection.execute(query)
               
-          return result
-        
+          return str(self.get_record(entity.id))
+
         return None

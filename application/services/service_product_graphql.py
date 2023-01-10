@@ -37,12 +37,14 @@ class Mutation:
     @strawberry.mutation
     def remove_product(self, id: int) -> str:
         object_ = ProductsUseCasesGraphQL().delete_record(id=id)
-        return f'record with id={id} deleted succesfully'
+        return f'record with id={id} deleted succesfully' if  object_ else f'record with id={id} does not exists'
 
     @strawberry.mutation
     def upgrade_product(self, id: int, name: str = None, categorie: str = None, price: int = None) -> str:
-        object_ = ProductsUseCasesGraphQL().update_record(id=id,name=name,categorie=categorie,price=price)
-        return f'record with id={id} updated succesfully'
+        entity = ProductGraphQl(id=id,name=name,categorie=categorie,price=price)
+        
+        object_ = ProductsUseCasesGraphQL().update_record(entity=entity)
+        return object_ if object_ else f'record with id={id} does not exists'
                               
 @strawberry.type
 class Subscription:
