@@ -1,7 +1,7 @@
 from configuration.environment.env import Environment
 from sqlalchemy import text
 from domain.entities.schemas.schema_product_graphql import ProductGraphQl
-from sqlalchemy import insert
+from sqlalchemy import select, insert, delete, update
 
 from domain.interfaces.repositories.repository_products import Session, get_session, Depends, List
 from domain.entities.models.model_products import Product as model
@@ -65,7 +65,6 @@ class ProductsUseCasesGraphQL:
 
         with Environment('dev').get_connection() as connection:
             result = connection.execute(text("SELECT * FROM products"))
-            print('por aqui tiriri')
             results_as_dict = result.mappings().first()
         
         return results_as_dict
@@ -86,3 +85,45 @@ class ProductsUseCasesGraphQL:
             results_as_dict = result.mappings().all()
         
         return results_as_dict
+      
+    def delete_record(self, id) -> int:
+    
+        with Environment('dev').get_connection() as connection:
+            
+            query = delete(model).where(model.id == id)
+            result = connection.execute(query)
+            
+        return result
+      
+      
+    def get_record(self, id):
+          
+        with Environment('dev').get_connection() as connection:
+          
+          query = select(model).where(model.id == id)
+
+          result = connection.execute(query)
+        
+        return result
+      
+      
+    def update_record(self, id, name=None, categorie=None, price=None) -> int:
+          
+        record = self.get_record(id)
+        
+        if record :
+          values = {'name':name,
+                    'categorie':categorie,
+                    'price':price
+                    }
+          
+          with Environment('dev').get_connection() as connection:
+              
+              query = update(model).where(model.id == id).values(
+                values
+              )
+              result = connection.execute(query)
+              
+          return result
+        
+        return None

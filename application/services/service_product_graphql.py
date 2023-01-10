@@ -29,11 +29,21 @@ class Query:
 @strawberry.type
 class Mutation:
     @strawberry.mutation
-    def add_book(self, name: str, categorie: str, price: int) -> ProductGraphQl:
+    def add_product(self, name: str, categorie: str, price: int) -> ProductGraphQl:
         entity = ProductGraphQl(id=1,name=name,categorie=categorie,price=price)
         object_ = ProductsUseCasesGraphQL().insert_one_record(name=name,categorie=categorie,price=price)
         return entity
-                      
+    
+    @strawberry.mutation
+    def remove_product(self, id: int) -> str:
+        object_ = ProductsUseCasesGraphQL().delete_record(id=id)
+        return f'record with id={id} deleted succesfully'
+
+    @strawberry.mutation
+    def upgrade_product(self, id: int, name: str = None, categorie: str = None, price: int = None) -> str:
+        object_ = ProductsUseCasesGraphQL().update_record(id=id,name=name,categorie=categorie,price=price)
+        return f'record with id={id} updated succesfully'
+                              
 @strawberry.type
 class Subscription:
     @strawberry.subscription

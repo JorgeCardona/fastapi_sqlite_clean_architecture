@@ -95,3 +95,8 @@ def swagger_redoc_url(url=SWAGGER_REDOC_ROUTE):
 @clean_architecture.get("/gql", include_in_schema=False)
 def graphql_url(url=GRAPHQL_ROUTE):
     return redirect_url_response(url)
+
+# definicion de parametros de configuracion para la API
+API_PORT = 5555
+API_HOST = 'localhost'
+API_APP  = clean_architecture
