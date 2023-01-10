@@ -99,4 +99,3 @@ def graphql_url(url=GRAPHQL_ROUTE):
 # definicion de parametros de configuracion para la API
 API_PORT = 5555
 API_HOST = 'localhost'
-API_APP  = clean_architecture
