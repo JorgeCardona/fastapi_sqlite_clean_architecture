@@ -23,15 +23,35 @@ class UsersUseCases(repository):
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail=message
             )
-            
-    def add_object(self, entity:complete_schema, session:Session = Depends(get_session)):        
-        object_data = entity.dict(exclude_unset=True)
-        object_ = model(**object_data)
+
+    def get_object_by_unique_field(self, unique_field:str, session:Session = Depends(get_session)):
         
-        session.add(object_)
-        session.commit()
-        session.refresh(object_)
-        return object_
+        object_ = session.query(model).filter(model.email == unique_field).all()
+        
+        if object_:
+            message = "ERROR!!!, the value of the Unique key 'EMAIL' is duplicated"
+            log_api.warning(message)
+            raise HTTPException(
+                status_code=status.HTTP_409_CONFLICT,
+                detail=message
+            )
+        else:
+            return False
+                    
+    def add_object(self, entity:complete_schema, session:Session = Depends(get_session)):
+        
+        record_exists = self.get_object_by_unique_field(unique_field= entity.email, session=session)
+        
+        if not record_exists:
+        
+            object_data = entity.dict(exclude_unset=True)
+            object_ = model(**object_data)
+
+            session.add(object_)
+            session.commit()
+            session.refresh(object_)
+            return object_
+
 
     def add_object_list(self, entity:List[complete_schema], session:Session = Depends(get_session)):        
         list_objects_ = []
