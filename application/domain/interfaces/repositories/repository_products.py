@@ -3,7 +3,7 @@ from typing import List
 from fastapi import Depends
 from sqlalchemy.orm import Session
 from configuration.database.db_config import get_session
-from domain.entities.schemas.schema_products import ProductComplete as complete_schema
+from domain.entities.schemas.schema_products import ProductFull as complete_schema
 from domain.entities.schemas.schema_products import ProductPatch as patch_schema
 
 class ProductRepository(ABC):
