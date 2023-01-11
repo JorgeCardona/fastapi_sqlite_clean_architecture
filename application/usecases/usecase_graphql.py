@@ -43,13 +43,32 @@ subscription subscripcion{
 """
 class ProductsUseCasesGraphQL:
 
-    def get_object_list(self, offset: int = 0, limit: int = 100):
-           
+    def get_all_records(self):
+          
         with Environment('dev').get_connection() as connection:
-            result = connection.execute(text("SELECT * FROM products"))
-            
-            results_as_dict = result.mappings().all()
+          # las 2 lineas siguientes son equivalente          
+          query = select(model)
+          query_alternativo = text("SELECT * FROM products")
+
+          #result = connection.execute(query_alternativo)
+          result = connection.execute(query)
+
+          results_as_dict = result.mappings().all()
+        
         return results_as_dict
+      
+    def get_record(self, id) -> model:
+          
+        with Environment('dev').get_connection() as connection:
+          
+          query = select(model).where(model.id == id)
+
+          response = connection.execute(query)
+          
+          result = response.mappings().all()
+        
+        return result
+      
            
     def insert_one_record(self, name, categorie, price) -> int:
     
@@ -61,7 +80,7 @@ class ProductsUseCasesGraphQL:
             
         return result
     
-    def get_first_record(self):
+    def get_first_record(self) -> model:
 
         with Environment('dev').get_connection() as connection:
             result = connection.execute(text("SELECT * FROM products"))
@@ -69,7 +88,7 @@ class ProductsUseCasesGraphQL:
         
         return results_as_dict
     
-    def get_last_record(self):
+    def get_last_record(self) -> model:
     
         with Environment('dev').get_connection() as connection:
             result = connection.execute(text("SELECT * FROM products ORDER BY id DESC"))
@@ -78,25 +97,7 @@ class ProductsUseCasesGraphQL:
         
         return results_as_dict
            
-    def get_all_records(self):
-        with Environment('dev').get_connection() as connection:
-            result = connection.execute(text("SELECT * FROM products"))
-            
-            results_as_dict = result.mappings().all()
-        
-        return results_as_dict
-      
-    def get_record(self, id):
-          
-        with Environment('dev').get_connection() as connection:
-          
-          query = select(model).where(model.id == id)
 
-          response = connection.execute(query)
-          
-          result = response.mappings().all()
-        
-        return result
       
     def delete_record(self, id) -> int:
     
@@ -114,7 +115,7 @@ class ProductsUseCasesGraphQL:
             return None
 
 
-    def update_record(self, entity=None) -> int:
+    def update_record(self, entity=None) -> model:
 
         record = self.get_record(entity.id)
         

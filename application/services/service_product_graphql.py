@@ -13,7 +13,7 @@ class Query:
     @strawberry.field
     def get_object_list(self) -> List[ProductGraphQl]:
 
-        return ProductsUseCasesGraphQL().get_object_list()
+        return ProductsUseCasesGraphQL().get_all_records()
     
     @strawberry.field
     def get_first_object(self) -> ProductGraphQl:
@@ -25,6 +25,10 @@ class Query:
 
         return ProductsUseCasesGraphQL().get_last_record()
 
+    @strawberry.field
+    def get_specific_record(self, id: int) -> List[ProductGraphQl]:
+
+        return ProductsUseCasesGraphQL().get_record(id=id) 
     
 @strawberry.type
 class Mutation:
