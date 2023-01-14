@@ -2,7 +2,7 @@
 # https://gist.github.com/rxaviers/7360908
 Repository with projects especially focused on Computer Science and Natural Sciences.
 
-![Alt text](clean_architecture.jpg)
+![Alt text](resources/clean_architecture.jpg)
 # 🐍 SCAFFOLDING FOR CLEAN ARCHITECTURE IN MICROSERVICES
 
 ```
@@ -18,7 +18,7 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┃ ┣ 📂htmlcov
 ┃ ┣ 📂utils
 ┃ ┣ 📂domain [package]
-┃ ┃ ┣ 📂models [package]
+┃ ┃ ┣ 📂entities [package]
 ┃ ┃ ┣ 📂interfaces [package]
 ┃ ┃ ┃ ┗ 📂repositories [package]
 ┃ ┃ ┃ ┗ 📂business [package]
@@ -33,12 +33,18 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┗ 📂application [package]
 ┃ ┣ 🎄 main.py [__main__]
 ┃ ┣ 📂configuration
-┃ ┣ ┗ 🏩 app_configuration.py
-┃ ┣ ┗ 📡 environment_configuration.py
-┃ ┣ ┗ 🔑 database_configuration.py
-┃ ┣ ┗ 📜 log_configuration.py
-┃ ┣ ┗ 🚧 cors_configuration.py
-┃ ┣ ┗ 📪 swagger_configuration.py
+┃ ┣ ┗ 📂 rest
+┃ ┃ ┣ ┗ 🏩 app_configuration.py
+┃ ┣ ┗ 📂 environment
+┃ ┃ ┣ ┗ 📡 environment_configuration.py
+┃ ┣ ┗ 📂  database
+┃ ┃ ┣ ┗ 🔑 database_configuration.py
+┃ ┣ ┗ 📂 log
+┃ ┃ ┣ ┗ 📜 log_configuration.py
+┃ ┣ ┗ 📂 cors
+┃ ┃ ┣ ┗ 🚧 cors_configuration.py
+┃ ┣ ┗ 📂 swagger
+┃ ┃ ┣ ┗ 📪 swagger_configuration.py
 ┃ ┣ 📂log
 ┃ ┣ ┗ 💬 logging.log
 ┃ ┣ 📂htmlcov
@@ -49,12 +55,15 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┃ ┣ ┗ 📜 image.jpg
 ┃ ┣ 📂domain [package]
 ┃ ┃ ┣ 📂models [package]
-┃ ┃ ┃ ┣ 📂entity_one
-┃ ┃ ┃ ┃ ┗ 🐍 Entity_ONE.py
-┃ ┃ ┃ ┣ 📂entity_two
-┃ ┃ ┃ ┃ ┗ 🐍 Entity_TWO.py
-┃ ┃ ┃ ┣ 📂entity_n
-┃ ┃ ┃ ┃ ┗ 🐍 Entity_N.py
+┃ ┃ ┃ ┣ 📂model_one
+┃ ┃ ┃ ┃ ┗ 🐍 entity_for_model_ONE.py
+┃ ┃ ┃ ┃ ┗ 💦 schema_for_model_ONE.py
+┃ ┃ ┃ ┣ 📂model_two
+┃ ┃ ┃ ┃ ┗ 🐍 entity_for_model_TWO.py
+┃ ┃ ┃ ┃ ┗ 💦 schema_for_model_TWO.py
+┃ ┃ ┃ ┣ 📂model_n
+┃ ┃ ┃ ┃ ┗ 🐍 entity_for_model_N.py
+┃ ┃ ┃ ┃ ┗ 💦 schema_for_model_N.py
 ┃ ┃ ┣ 📂interfaces [package]
 ┃ ┃ ┃ ┗ 📂repositories [package]
 ┃ ┃ ┃ ┃ ┣ 📂repository_model_one
