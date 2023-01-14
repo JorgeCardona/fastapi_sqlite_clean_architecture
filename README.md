@@ -21,7 +21,7 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┃ ┃ ┣ 📂entities [package]
 ┃ ┃ ┣ 📂interfaces [package]
 ┃ ┃ ┃ ┗ 📂repositories [package]
-┃ ┃ ┃ ┗ 📂business [package]
+┃ ┃ ┃ ┗ 📂business_logic [package]
 ┃ ┃ ┣ 📂usecases [package]
 ┃ ┃ ┣ 📂services [package]
 ┃ ┣ main.py [__main__]
@@ -54,44 +54,32 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┃ ┣ ┗ 🎰 file.yaml
 ┃ ┣ ┗ 📜 image.jpg
 ┃ ┣ 📂domain [package]
-┃ ┃ ┣ 📂models [package]
-┃ ┃ ┃ ┣ 📂model_one
-┃ ┃ ┃ ┃ ┗ 🐍 entity_for_model_ONE.py
-┃ ┃ ┃ ┃ ┗ 💦 schema_for_model_ONE.py
-┃ ┃ ┃ ┣ 📂model_two
-┃ ┃ ┃ ┃ ┗ 🐍 entity_for_model_TWO.py
-┃ ┃ ┃ ┃ ┗ 💦 schema_for_model_TWO.py
-┃ ┃ ┃ ┣ 📂model_n
-┃ ┃ ┃ ┃ ┗ 🐍 entity_for_model_N.py
-┃ ┃ ┃ ┃ ┗ 💦 schema_for_model_N.py
+┃ ┃ ┣ 📂entities [package]
+┃ ┃ ┃ ┣ 📂entity_one
+┃ ┃ ┃ ┃ ┗ 🐍 model_for_entity_ONE.py
+┃ ┃ ┃ ┃ ┗ 💦 schema_for_entity_ONE.py
+┃ ┃ ┃ ┣ 📂entity_two
+┃ ┃ ┃ ┃ ┗ 🐍 model_for_entity_TWO.py
+┃ ┃ ┃ ┃ ┗ 💦 schema_for_entity_TWO.py
+┃ ┃ ┃ ┣ 📂entity_n
+┃ ┃ ┃ ┃ ┗ 🐍 model_for_entity_N.py
+┃ ┃ ┃ ┃ ┗ 💦 schema_for_entity_N.py
 ┃ ┃ ┣ 📂interfaces [package]
 ┃ ┃ ┃ ┗ 📂repositories [package]
-┃ ┃ ┃ ┃ ┣ 📂repository_model_one
 ┃ ┃ ┃ ┃ ┃ ┗ 🐟 database_method_model_Entity_ONE.py
-┃ ┃ ┃ ┃ ┣ 📂repository_model_two
 ┃ ┃ ┃ ┃ ┃ ┗ 🐟 database_method_model_Entity_TWO.py
-┃ ┃ ┃ ┃ ┣ 📂repository_model_n
 ┃ ┃ ┃ ┃ ┃ ┗ 🐟 database_method_model_Entity_N.py
-┃ ┃ ┃ ┗ 📂business [package]
-┃ ┃ ┃ ┃ ┣ 📂business_model_one
-┃ ┃ ┃ ┃ ┃ ┗ 🐦 business_method_model_Entity_ONE.py
-┃ ┃ ┃ ┃ ┣ 📂business_model_two
-┃ ┃ ┃ ┃ ┃ ┗ 🐦 business_method_model_Entity_TWO.py
-┃ ┃ ┃ ┃ ┣ 📂business_model_n
-┃ ┃ ┃ ┃ ┃ ┗ 🐦 business_method_model_Entity_N.py
+┃ ┃ ┃ ┗ 📂business_logic [package]
+┃ ┃ ┃ ┃ ┃ ┗ 🐦 business_logic_method_model_Entity_ONE.py
+┃ ┃ ┃ ┃ ┃ ┗ 🐦 business_logic_method_model_Entity_TWO.py
+┃ ┃ ┃ ┃ ┃ ┗ 🐦 business_logic_method_model_Entity_N.py
 ┃ ┃ ┣ 📂usecases [package]
-┃ ┃ ┃ ┣ 📂usecase_model_one
 ┃ ┃ ┃ ┃ ┗ 🎎 use_case_implementation_business_repository_logic_model_ONE.py
-┃ ┃ ┃ ┣ 📂usecase_model_two
 ┃ ┃ ┃ ┃ ┗ 🎎 use_case_implementation_business_repository_logic_model_TWO.py
-┃ ┃ ┃ ┣ 📂usecase_model_n
 ┃ ┃ ┃ ┃ ┗ 🎎 use_case_implementation_business_repository_logic_model_N.py
 ┃ ┃ ┣ 📂services [package]
-┃ ┃ ┃ ┣ 📂service_model_one
 ┃ ┃ ┃ ┃ ┗ ✈️ services_use_case_implementation_model_ONE.py
-┃ ┃ ┃ ┣ 📂service_model_two
 ┃ ┃ ┃ ┃ ┗ ✈️ services_use_case_implementation_model_TWO.py
-┃ ┃ ┃ ┣ 📂service_model_n
 ┃ ┃ ┃ ┃ ┗ ✈️ services_use_case_implementation_model_N.py
 ┗ 📂deployment [package]
 ┃ ┗ 🐳 Dockerfile

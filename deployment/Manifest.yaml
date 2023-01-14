@@ -1,0 +1,49 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: multicontainer-pod-testing-loadbalancer-pod # base del selector
+  name: multicontainer-pod-loadbalancer # nombre del HOSTNAME del POD
+spec:
+  containers:
+  - name: python # nombre que va a tener el contenedor dentro del POD
+    image: myimage:latest # imagen con la que se va a crear el contenedor
+    
+  - name: java # nombre que va a tener el contenedor dentro del POD
+    image: postgres:latest # imagen con la que se va a crear el contenedor
+
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: multicontainer-pod-testing-loadbalancer-service
+  name: multicontainer-pod-svc-loadbalancer
+  namespace: default
+spec:
+  sessionAffinity: None
+  type: LoadBalancer
+  selector:
+    run: multicontainer-pod-testing-loadbalancer-pod
+  ports:
+
+  - name: port-java # se puede poner el nombre que se quiera, lo importante es el puerto que TIENE que ser el del contenedor
+    protocol: TCP
+    targetPort: 5432 # puerto original donde se expone el contenedor de la imagen 
+    port: 5432 # puerto en el que se quiere exponer la aplicacion, solo porque esta declarada la propiedad targetPort
+    
+  - name: port-python
+    protocol: TCP
+    targetPort: 5000 # puerto original donde se expone el contenedor de la imagen 
+    port: 5555 # puerto en el que se quiere exponer la aplicacion, solo porque esta declarada la propiedad targetPort
+
+# http://localhost:3333/java
+# http://localhost:7777/python
+
+# kubectl expose pod multicontainer-pod-loadbalancer --name=multicontainer-pod-svc-loadbalancer --type=LoadBalancer
+# kubectl get services
+# kubectl describe svc multicontainer-pod-svc-loadbalancer
+# kubectl describe pod multicontainer-pod-loadbalancer

@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from fastapi.openapi.utils import get_openapi
 # importacion de modulos con ruta RELATIVA completa del proyecto desde el inicio de cada carpeta para no tener que usar los puntos '...'
-from configuration.graphql.graphql_config import GRAPHQL_ROUTE
+from configuration.graphql.graphql_config import GRAPHQL_ROUTE, GRAPHQL_ALIAS
 from configuration.cors.cross_origin_config import CORSMiddleware, origins 
-from configuration.swagger.swagger_configuration import SWAGGER_ROUTE, SWAGGER_REDOC_ROUTE
+from configuration.swagger.swagger_configuration import SWAGGER_ROUTE, SWAGGER_REDOC_ROUTE, SWAGGER_REDOC_ALIAS
 
 # INSTANCIA DE FASTAPI, PARA CONFIGURACION E INICIO DE LA APLICACION
 clean_architecture = FastAPI()
@@ -87,15 +87,24 @@ def swagger_url(url=SWAGGER_ROUTE):
     return redirect_url_response(url)
 
 # redireccionamiento para redoc
-@clean_architecture.get("/rd", include_in_schema=False)
+@clean_architecture.get(f"{SWAGGER_REDOC_ALIAS}", include_in_schema=False)
 def swagger_redoc_url(url=SWAGGER_REDOC_ROUTE):
     return redirect_url_response(url)
 
 # redireccionamiento a la consola graphql cuando se pone un alias
-@clean_architecture.get("/gql", include_in_schema=False)
+@clean_architecture.get(f"{GRAPHQL_ALIAS}", include_in_schema=False)
 def graphql_url(url=GRAPHQL_ROUTE):
     return redirect_url_response(url)
 
 # definicion de parametros de configuracion para la API
 API_PORT = 5555
 API_HOST = 'localhost'
+
+# metodo para iniciar la aplicacion equivalente a uvicorn main:clean_architecture --host localhost --reload --port 5555
+def run_application():
+    import uvicorn
+    uvicorn.run(app='main:clean_architecture', 
+                host=API_HOST, 
+                port=API_PORT,
+                reload=True
+                )

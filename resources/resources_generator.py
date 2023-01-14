@@ -1,143 +1,28 @@
+from resources_components import Resources
+
 class CreateResources:
     
-    def __init__(self, name='application', application_type='REST'):
-        
-        self.application_directory_name = name
+    def __init__(self, main_directory_name, application_type):
+
+        self.application_directory_name = str(main_directory_name).lower()
         self.application_application_type = str(application_type).upper()
-        
-        self.configurations_directory = f'{self.application_directory_name}/configuration'
-        self.domain_directory         = f'{self.application_directory_name}/domain'
-        self.entities_directory       = f'{self.domain_directory}/entities'
-        self.models_directory         = f'{self.entities_directory}/models'
-        self.schemas_directory        = f'{self.entities_directory}/schemas'
-        self.interfaces_directory     = f'{self.domain_directory}/interfaces'
-        self.repositories_directory   = f'{self.interfaces_directory}/repositories'
-        self.business_directory       = f'{self.interfaces_directory}/business'
-        self.usecases_directory       = f'{self.application_directory_name}/usecases'
-        self.services_directory       = f'{self.application_directory_name}/services'
-        self.basic_directory          = ['test',
-                                        'deployment',
-                                        'requirements']
-        # TODO --------- eliminar la linea siguiente, es solo para que no genere otros directorios en las pruebas
-        self.basic_directory= []            
-        self.scaffolding_directories_list = [self.usecases_directory, self.services_directory]
-        
-        # dictionary for creates resource
-        self.resources ={
-            'entity':{
-                'directory':[self.models_directory, self.schemas_directory],
-                'suffix': ['_model.py','_schema.py'],
-                'template':[]
-            },
-            'model':{
-                'directory':[self.models_directory],
-                'suffix': ['_model.py'],
-                'template':['code_templates/09_model_template.py']
-            },            
-            'schema':{
-                'directory':[self.schemas_directory],
-                'suffix': ['_schema.py'],
-                'template':[]
-            },
-            'interface':{
-                'directory':[self.repositories_directory, self.business_directory],
-                'suffix': ['_repository.py', '_business.py'],
-                'template':[]
-            },            
-            'repository':{
-                'directory':[self.repositories_directory],
-                'suffix': ['_repository.py'],
-                'template':[]
-            },    
-            'business':{
-                'directory':[self.business_directory],
-                'suffix': ['_business.py'],
-                'template':[]
-            },   
-            'usecase':{
-                'directory':[self.usecases_directory],
-                'suffix': ['_usecase.py'],
-                'template':[]
-            },    
-            'service':{
-                'directory':[self.services_directory],
-                'suffix': ['_service.py'],
-                'template':[]
-            },  
-            'all':{
-                'directory':[self.models_directory, 
-                             self.schemas_directory,
-                             self.repositories_directory, 
-                             self.business_directory, 
-                             self.usecases_directory, 
-                             self.services_directory
-                            ],
-                'suffix': [
-                           '_model.py',
-                           '_schema.py',
-                           '_repository.py',
-                           '_business.py',
-                           '_usecase.py',
-                           '_service.py'                           
-                           ],
-                'template':[]
-            },  
-        }
-                 
-    def __basics_directories_list__(self):
-        
-        self.scaffolding_directories_list.extend(self.basic_directory)
-        return [self.basic_directory]
+                
+        resources_instance = Resources(main_directory_name=self.application_directory_name, application_type=self.application_application_type)
+        self.complete_directory_list = resources_instance.complete_directory_list
+        self.resources = resources_instance.resources           
+       
 
-    def __configurations_directories_list__(self):
+    def create_file(file, template):
         
-        api_type_directory = '/graphql' if self.application_application_type == 'GRAPHQL' else '/rest'
+        with open(file,'w') as escribir:
+            escribir.write(template)
+        #print(template)
         
-        configurations_directories = [
-                       api_type_directory,
-                       '/environment',
-                       '/database',
-                       '/utils',
-                       '/cors',
-                       '/log'                       
-                       ]
-        
-        directories = [self.configurations_directory + directory for directory in  configurations_directories]
-        # add configurations_directories_list
-        self.scaffolding_directories_list.extend(directories)
-        
-        return [self.configurations_directory + directory for directory in directories]
-        
-    def __domain_directories_list__(self):
-        
-        directories = [
-                       self.models_directory,
-                       self.schemas_directory,
-                       self.repositories_directory,
-                       self.business_directory,
-                      ]
-
-        # add configurations_directories_list
-        self.scaffolding_directories_list.extend(directories)
-        
-        return directories
-
-    def __scaffolding_directories_list__(self):
-
-        # load every list from every function and add to scaffolding list
-        self.__basics_directories_list__()
-        self.__configurations_directories_list__()
-        self.__domain_directories_list__  ()     
-        
-        # order list by name
-        self.scaffolding_directories_list.sort()
-        
-        return self.scaffolding_directories_list
-
+    
     def create_file(self, file, template=None):
         
         """_summary_
-        create every python file required
+        create every python module required
 
         Args:
             file (_type_): name of file to create
@@ -148,11 +33,16 @@ class CreateResources:
 
         # if exists file does not replace it
         if not path.exists(file):            
-            with open(f'{file}','w') as file_create:
+            with open(f'{file}','w') as file_to_create:
                 if template:
-                    with open(f'{template}','r') as file_read:
-                        print(file_read.read())
+                    file_to_create.write(template)
+        elif '__init__' not in file:
+            print(f'Unable to create file {file}, because it already exists')
+              
+    def create_init_file(self, directory):
         
+        self.create_file(f'{directory}/__init__.py')
+          
     def create_scaffolding(self):
         """_summary_
 
@@ -161,9 +51,10 @@ class CreateResources:
             _type_: successfull mesage
         """
         from os import makedirs
-        
-        directories_list = self.__scaffolding_directories_list__()
 
+        directories_list = self.complete_directory_list
+        
+        # get all directories that is necessary creates
         for directory in directories_list:
             
             # creates every directory on the list, if a directory exists ignore creating it
@@ -171,11 +62,52 @@ class CreateResources:
             
             #  if the directory is inside the source code folder, creates __init__.py
             if directory.__contains__('/'):
-                self.create_file(f'{directory}/__init__.py')    
-
-        return 'All Directories were created Successfully'
+                self.create_init_file(directory)
         
-    def create_resource(self, resource_type, file_name):
+        # add the main module in the root of the project
+        self.create_file(f'{self.application_directory_name}/main.py')  
+
+        print('All Directories were created Successfully')
+    
+    def create_configuration_files_from_templates(self, resources_dictionary, resource_name):
+    
+        from templates import core_template, rest_template, end_points_template, environment_template, cors_template, mix_template 
+        from templates import database_template, log_template, swagger_template, utils_template, graphql_template
+        
+        configuration_directories = resources_dictionary.get('configuration_directories')
+        
+        for directory in configuration_directories:
+            
+            file_name = str(directory).split('/')[-1]
+            
+            file_to_create = f'{directory}/{file_name}_configuration.py'
+
+            if 'end_points' in file_name:
+                
+                file_to_create = f'{directory}/{resource_name}_{file_name}_configuration.py'
+                            
+            # get the function for processing the template
+            select_template = f'{file_name}_template'
+            
+            # get text from template for create the module, converts string on variable o function using 'locals()' like preffix
+            template_code = locals()[select_template](resource_name)
+            
+            # creates the file with the content
+            self.create_file(file=file_to_create, template=template_code)
+            
+        print('All Configuration Files has been Created!!!')     
+        
+    def create_clean_architecture_components_from_template(self, selected_template, resource_name, file_to_create):
+        
+        # get the function for processing the template
+        select_template = selected_template
+        # get text from template for create the module
+        template_code = select_template(resource_name)
+        
+        # creates the file with the content
+        self.create_file(file=file_to_create, template=template_code)        
+                
+    def create_resource(self, resource_type, resource_name, template):
         """_summary_
         Creates every resource python file into folder
         it depends from resource_type
@@ -183,19 +115,52 @@ class CreateResources:
         Args:
             resource_type (_type_): every diferent resource type
             file_name (_type_): name of file to create
-        """
-        
-        dictionary = self.resources.get(resource_type)
-        
-        directory = dictionary.get('directory')
-        resource_name =  dictionary.get('suffix')
-        file = str(file_name).lower()
+        """        
         
         self.create_scaffolding()
         
-        for index, directory_value in enumerate(directory):
+        if resource_name:
+            
+            dictionary = self.resources.get(resource_type)
+        
+            base_directories = dictionary.get('base_directories')
+            directory_suffixes =  dictionary.get('directory_suffixes')
+            module_suffixes = dictionary.get('module_suffixes')
+            resource_name = resource_name
+            module_template = dictionary.get('module_template')
 
-            self.create_file(f'{directory_value}/{file}{resource_name[index]}')
+            # option if wants to create resources from template
+            if template == 1 and 'all' in resource_type:
+                
+                self.create_configuration_files_from_templates(resources_dictionary= dictionary, resource_name=resource_name)
+                            
+            for index, directory_value in enumerate(base_directories):
+                
+                if 'entities' in directory_value:                
+                    # crea el nombre del directorio basado en el nombre del archivo
+                    directory_value = f'{directory_value}/{resource_name}{directory_suffixes[index]}' 
+                    # si los archivos estan dentro de un mismo directorio con nombre unificado
+                    from os import makedirs              
+                    makedirs(directory_value, exist_ok=True)
+                # creates _init_.py file if does not exists into the directory
+                self.create_init_file(f'{directory_value}')
+                
+                # define the file and directory to creates the module
+                file_to_create = f'{directory_value}/{resource_name}{module_suffixes[index]}'
+                
+                # option if wants to create from template
+                if template == 1:
+
+                    # get the function for processing the template
+                    select_template = module_template[index]
+                    # creates, models, schemas, repositories, business_logic, usecases, services using templates                                        
+                    self.create_clean_architecture_components_from_template(selected_template=select_template, 
+                                                                            resource_name=resource_name, 
+                                                                            file_to_create=file_to_create)
+                else:
+                    # create the file into the folder
+                    self.create_file(file_to_create)
+            
      
     def create_resource_from_template(self, resource_type, file_name):
         """_summary_
@@ -219,9 +184,3 @@ class CreateResources:
         for index, directory_value in enumerate(directory):
 
             self.create_file(file=f'{directory_value}/{file}{resource_name[index]}', template=template_base)
-                        
-"""
-s = CreateResources(name='clean_architecture', application_type='graphql')
-#s.create_scaffolding()
-s.create_resource_from_template(resource_type='all',file_name='CORINCHA_el_que_relincha')
-"""

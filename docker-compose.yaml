@@ -1,0 +1,30 @@
+version: "3.1"
+services:
+  postgres:
+    image: mdillon/postgis:10-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: clean_architecture_db
+    ports: 
+      - 5432:5432
+  api:
+    build:
+      context: .
+      dockerfile: deployment/Dockerfile
+    container_name: clean-architecture-fastapi-clean_architecture
+    environment:
+      DB_DIALECT: postgresql 
+      DB_USER: postgres
+      DB_PASS: postgres
+      DB_HOST: host.docker.internal
+      DB_PORT: 5432
+      DB_NAME: clean_architecture_db
+    volumes:
+      - ./clean_architecture:/application
+    ports:
+      - '5555:5000'
+    restart: "no"
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5555", "--reload"]
+    depends_on:
+    - postgres
