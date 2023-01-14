@@ -54,16 +54,16 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┃ ┣ ┗ 🎰 file.yaml
 ┃ ┣ ┗ 📜 image.jpg
 ┃ ┣ 📂domain [package]
-┃ ┃ ┣ 📂models [package]
-┃ ┃ ┃ ┣ 📂model_one
-┃ ┃ ┃ ┃ ┗ 🐍 entity_for_model_ONE.py
-┃ ┃ ┃ ┃ ┗ 💦 schema_for_model_ONE.py
-┃ ┃ ┃ ┣ 📂model_two
-┃ ┃ ┃ ┃ ┗ 🐍 entity_for_model_TWO.py
-┃ ┃ ┃ ┃ ┗ 💦 schema_for_model_TWO.py
-┃ ┃ ┃ ┣ 📂model_n
-┃ ┃ ┃ ┃ ┗ 🐍 entity_for_model_N.py
-┃ ┃ ┃ ┃ ┗ 💦 schema_for_model_N.py
+┃ ┃ ┣ 📂entities [package]
+┃ ┃ ┃ ┣ 📂entity_one
+┃ ┃ ┃ ┃ ┗ 🐍 model_for_entity_ONE.py
+┃ ┃ ┃ ┃ ┗ 💦 schema_for_entity_ONE.py
+┃ ┃ ┃ ┣ 📂entity_two
+┃ ┃ ┃ ┃ ┗ 🐍 model_for_entity_TWO.py
+┃ ┃ ┃ ┃ ┗ 💦 schema_for_entity_TWO.py
+┃ ┃ ┃ ┣ 📂entity_n
+┃ ┃ ┃ ┃ ┗ 🐍 model_for_entity_N.py
+┃ ┃ ┃ ┃ ┗ 💦 schema_for_entity_N.py
 ┃ ┃ ┣ 📂interfaces [package]
 ┃ ┃ ┃ ┗ 📂repositories [package]
 ┃ ┃ ┃ ┃ ┣ 📂repository_model_one
