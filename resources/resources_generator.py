@@ -25,17 +25,20 @@ class CreateResources:
         # dictionary for creates resource
         self.resources ={
             'entity':{
-                'directory':[self.models_directory, self.schemas_directory],
+                'directory':[self.entities_directory, self.entities_directory],
+                'shared_directory': ['entity_', 'entity_'],
                 'suffix': ['_model.py','_schema.py'],
                 'template':[]
             },
             'model':{
-                'directory':[self.models_directory],
+                'directory':[self.entities_directory],
+                'shared_directory': ['entity_'],
                 'suffix': ['_model.py'],
                 'template':['code_templates/09_model_template.py']
             },            
             'schema':{
-                'directory':[self.schemas_directory],
+                'directory':[self.entities_directory],
+                'shared_directory': ['entity_'],
                 'suffix': ['_schema.py'],
                 'template':[]
             },
@@ -65,8 +68,8 @@ class CreateResources:
                 'template':[]
             },  
             'all':{
-                'directory':[self.models_directory, 
-                             self.schemas_directory,
+                'directory':[self.entities_directory, 
+                             self.entities_directory,
                              self.repositories_directory, 
                              self.business_directory, 
                              self.usecases_directory, 
@@ -111,8 +114,7 @@ class CreateResources:
     def __domain_directories_list__(self):
         
         directories = [
-                       self.models_directory,
-                       self.schemas_directory,
+                       self.entities_directory,
                        self.repositories_directory,
                        self.business_directory,
                       ]
@@ -149,9 +151,7 @@ class CreateResources:
         # if exists file does not replace it
         if not path.exists(file):            
             with open(f'{file}','w') as file_create:
-                if template:
-                    with open(f'{template}','r') as file_read:
-                        print(file_read.read())
+                pass
         
     def create_scaffolding(self):
         """_summary_
@@ -190,10 +190,18 @@ class CreateResources:
         directory = dictionary.get('directory')
         resource_name =  dictionary.get('suffix')
         file = str(file_name).lower()
+        shared_directory = dictionary.get('shared_directory')
         
         self.create_scaffolding()
         
         for index, directory_value in enumerate(directory):
+            
+            # si los archivos estan dentro de un mismo directorio con nombre unificado
+            if shared_directory:
+                from os import makedirs
+                # crea el nombre del directorio basado en el nombre del archivo
+                directory_value = f'{directory_value}/{shared_directory[index]}{file}'               
+                makedirs(directory_value, exist_ok=True)
 
             self.create_file(f'{directory_value}/{file}{resource_name[index]}')
      
@@ -219,9 +227,3 @@ class CreateResources:
         for index, directory_value in enumerate(directory):
 
             self.create_file(file=f'{directory_value}/{file}{resource_name[index]}', template=template_base)
-                        
-"""
-s = CreateResources(name='clean_architecture', application_type='graphql')
-#s.create_scaffolding()
-s.create_resource_from_template(resource_type='all',file_name='CORINCHA_el_que_relincha')
-"""
