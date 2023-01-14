@@ -18,51 +18,55 @@ class CreateResources:
         self.basic_directory          = ['test',
                                         'deployment',
                                         'requirements']
-        # TODO --------- eliminar la linea siguiente, es solo para que no genere otros directorios en las pruebas
-        self.basic_directory= []            
+        
         self.scaffolding_directories_list = [self.usecases_directory, self.services_directory]
         
         # dictionary for creates resource
         self.resources ={
             'entity':{
+                'prefix_directory': ['entity_', 'entity_'],
                 'directory':[self.entities_directory, self.entities_directory],
-                'shared_directory': ['entity_', 'entity_'],
                 'suffix': ['_model.py','_schema.py'],
                 'template':[]
             },
             'model':{
+                'prefix_directory': ['entity_'],
                 'directory':[self.entities_directory],
-                'shared_directory': ['entity_'],
                 'suffix': ['_model.py'],
                 'template':['code_templates/09_model_template.py']
             },            
             'schema':{
+                'prefix_directory': ['entity_'],
                 'directory':[self.entities_directory],
-                'shared_directory': ['entity_'],
                 'suffix': ['_schema.py'],
                 'template':[]
             },
             'interface':{
+                'prefix_directory': ['repository_', 'business_'], 
                 'directory':[self.repositories_directory, self.business_directory],
                 'suffix': ['_repository.py', '_business.py'],
                 'template':[]
             },            
             'repository':{
+                'prefix_directory': ['repository_'],                
                 'directory':[self.repositories_directory],
                 'suffix': ['_repository.py'],
                 'template':[]
             },    
             'business':{
+                'prefix_directory': ['business_'],                
                 'directory':[self.business_directory],
                 'suffix': ['_business.py'],
                 'template':[]
             },   
             'usecase':{
+                'prefix_directory': ['usecase_'],
                 'directory':[self.usecases_directory],
                 'suffix': ['_usecase.py'],
                 'template':[]
             },    
             'service':{
+                'prefix_directory': ['service_'],
                 'directory':[self.services_directory],
                 'suffix': ['_service.py'],
                 'template':[]
@@ -75,6 +79,13 @@ class CreateResources:
                              self.usecases_directory, 
                              self.services_directory
                             ],
+                'prefix_directory': ['entity_', 
+                                     'entity_',
+                                     'repository_', 
+                                     'business_',
+                                     'usecase_',
+                                     'service_'
+                                     ],
                 'suffix': [
                            '_model.py',
                            '_schema.py',
@@ -190,20 +201,20 @@ class CreateResources:
         directory = dictionary.get('directory')
         resource_name =  dictionary.get('suffix')
         file = str(file_name).lower()
-        shared_directory = dictionary.get('shared_directory')
+        prefix_directory = dictionary.get('prefix_directory')
         
         self.create_scaffolding()
         
         for index, directory_value in enumerate(directory):
             
+            # crea el nombre del directorio basado en el nombre del archivo
+            final_directory = f'{directory_value}/{prefix_directory[index]}{file}' 
             # si los archivos estan dentro de un mismo directorio con nombre unificado
-            if shared_directory:
-                from os import makedirs
-                # crea el nombre del directorio basado en el nombre del archivo
-                directory_value = f'{directory_value}/{shared_directory[index]}{file}'               
-                makedirs(directory_value, exist_ok=True)
 
-            self.create_file(f'{directory_value}/{file}{resource_name[index]}')
+            from os import makedirs              
+            makedirs(final_directory, exist_ok=True)
+
+            self.create_file(f'{final_directory}/{file}{resource_name[index]}')
      
     def create_resource_from_template(self, resource_type, file_name):
         """_summary_
