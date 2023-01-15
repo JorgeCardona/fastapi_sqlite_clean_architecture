@@ -18,7 +18,9 @@ class CreateResources:
         self.basic_directory          = ['test',
                                         'deployment',
                                         'requirements']
-     
+        # TODO --------- eliminar la linea siguiente, es solo para que no genere otros directorios en las pruebas
+        self.basic_directory= []
+        self.configurations_directories   = None   
         self.scaffolding_directories_list = [self.interfaces_directory, self.usecases_directory, self.services_directory]
         
         # dictionary for creates resource
@@ -26,19 +28,44 @@ class CreateResources:
         
     def get_resources_list(self):
         
+        from templates import model_template, schema_template, repository_template, business_logic_template, usecase_template, service_template
         
         self.entity_directory_suffix         = '_entity'
         self.model_module_suffix             = '_model.py'
         self.schema_module_suffix            = '_schema.py'
+
+        self.model_module_template           = model_template
+        self.schema_module_template          = schema_template
+        
+        
         self.repository_directory_suffix     = '_repository'
         self.repository_module_suffix        = '_repository.py'
+        self.repository_module_template      = repository_template
+        
+        
         self.business_logic_directory_suffix = '_business'
         self.business_logic_module_suffix    = '_business_logic.py'
+        self.business_logic_module_template  = business_logic_template
+                
+        
         self.usecase_directory_suffix        = '_usecase'
-        self.usecase_module_suffix           = '_usecase.py'                
+        self.usecase_module_suffix           = '_usecase.py'
+        self.usecase_module_template         = usecase_template
+                
+                        
         self.service_directory_suffix        = '_service'
         self.service_module_suffix           = '_service.py'
+        self.service_module_template         = service_template
         
+        self.all_module_templates = [
+                                      self.model_module_template, 
+                                      self.schema_module_template,
+                                      self.repository_module_template, 
+                                      self.business_logic_module_template, 
+                                      self.usecase_module_template, 
+                                      self.service_module_template
+                                    ]  
+                        
         self.all_base_directories = [
                                       self.entities_directory, 
                                       self.entities_directory,
@@ -65,63 +92,74 @@ class CreateResources:
                                     self.usecase_module_suffix,
                                     self.service_module_suffix
                                    ]
-  
+
+        self.configuration_directories = self.__configurations_directories_list__()
+        
         list_of_resources = {
 
             'entity':{
                 'directory_suffixes': [self.entity_directory_suffix] * 2,
                 'base_directories':[self.entities_directory] * 2,
                 'module_suffixes': [self.model_module_suffix, self.schema_module_suffix],
-                'template':[]
+                'module_template':[self.model_module_template, self.schema_module_template],
+                'configuration_directories' : self.configuration_directories
             },
             'model':{
                 'directory_suffixes': [self.entity_directory_suffix],
                 'base_directories':[self.entities_directory],
                 'module_suffixes': [self.model_module_suffix],
-                'template':['code_templates/09_model_template.py']
+                'module_template':[self.model_module_template],
+                'configuration_directories' : self.configuration_directories
             },            
             'schema':{
-                'prefix_directory': [self.entity_directory_suffix],
+                'directory_suffixes': [self.entity_directory_suffix],
                 'base_directories':[self.entities_directory],
                 'module_suffixes': [self.schema_module_suffix],
-                'template':[]
+                'module_template':[self.schema_module_template],
+                'configuration_directories' : self.configuration_directories
             },
             'interface':{
-                'prefix_directory': [self.repository_directory_suffix, self.business_logic_directory_suffix], 
+                'directory_suffixes': [self.repository_directory_suffix, self.business_logic_directory_suffix], 
                 'base_directories':[self.repositories_directory, self.business_logic_directory],
                 'module_suffixes': [self.repository_module_suffix, self.business_logic_module_suffix],
-                'template':[]
+                'module_template':[self.repository_module_template, self.business_logic_module_template],
+                'configuration_directories' : self.configuration_directories
             },            
             'repository':{
                 'directory_suffixes': [self.repository_directory_suffix],                
                 'base_directories':[self.repositories_directory],
                 'module_suffixes': [self.repository_module_suffix],
-                'template':[]
+                'module_template':[self.repository_module_template],
+                'configuration_directories' : self.configuration_directories
             },    
             'business':{
                 'directory_suffixes': [self.business_logic_directory_suffix],                
                 'base_directories':[self.business_logic_directory],
                 'module_suffixes': [self.business_logic_module_suffix],
-                'template':[]
+                'module_template':[self.business_logic_module_template],
+                'configuration_directories' : self.configuration_directories
             }, 
        
             'usecase':{
                 'directory_suffixes': [self.usecase_directory_suffix],
                 'base_directories':[self.usecases_directory],
                 'module_suffixes': [self.usecase_module_suffix],
-                'template':[]
+                'module_template':[self.usecase_module_template],
+                'configuration_directories' : self.configuration_directories
             },    
             'service':{
                 'directory_suffixes': [self.service_directory_suffix],
                 'base_directories':[self.services_directory],
                 'module_suffixes': [self.service_module_suffix],
-                'template':[]
+                'module_template':[self.service_module_template],
+                'configuration_directories' : self.configuration_directories
             },  
             'all':{
                 'base_directories': self.all_base_directories,
                 'directory_suffixes': self.all_directory_suffixes,
                 'module_suffixes': self.all_module_suffixes,
-                'template':[]
+                'module_template': self.all_module_templates,
+                'configuration_directories' : self.configuration_directories
             },  
         }
         
@@ -136,21 +174,21 @@ class CreateResources:
         
         api_type_directory = '/graphql' if self.application_application_type == 'GRAPHQL' else '/rest'
         
-        configurations_directories = [
+        self.configurations_directories = [
                        api_type_directory,
                        '/environment',
                        '/end_points',
                        '/database',
-                       '/utils',
                        '/cors',
-                       '/log'                       
+                       '/log',
+                       '/utils'                     
                        ]
         
-        directories = [self.configurations_directory + directory for directory in  configurations_directories]
+        directories = [self.configurations_directory + directory for directory in self.configurations_directories]
         # add configurations_directories_list
         self.scaffolding_directories_list.extend(directories)
         
-        return [self.configurations_directory + directory for directory in directories]
+        return [directory for directory in directories]
         
     def __domain_directories_list__(self):
         
@@ -224,7 +262,7 @@ class CreateResources:
 
         print('All Directories were created Successfully')
         
-    def create_resource(self, resource_type, resource_name):
+    def create_resource(self, resource_type, resource_name, template):
         """_summary_
         Creates every resource python file into folder
         it depends from resource_type
@@ -244,7 +282,32 @@ class CreateResources:
             directory_suffixes =  dictionary.get('directory_suffixes')
             module_suffixes = dictionary.get('module_suffixes')
             resource_name = resource_name
-        
+            module_template = dictionary.get('module_template')
+
+            # option if wants to create from template
+            if template == 1:
+                
+                from templates import create_file, rest_template, end_points_template,environment_template, cors_template, database_template, log_template, utils_template
+                
+                configuration_directories = dictionary.get('configuration_directories')
+                
+                for directory in configuration_directories:
+                    
+                    file_name = str(directory).split('/')[-1]
+                    
+                    file_to_create = f'{directory}/{file_name}_configuration.py'
+                    
+                    # get the function for processing the template
+                    select_template = f'{file_name}_template'
+                    
+                    # get text from template for create the module, converts string on variable o function using 'locals()' like preffix
+                    template_code = locals()[select_template](resource_name)
+                
+                    print('directory_template', file_to_create, select_template)
+                    
+                    # creates the file with the content
+                    create_file(file=file_to_create, template=template_code)
+                            
             for index, directory_value in enumerate(base_directories):
                 
                 if 'entities' in directory_value:                
@@ -255,8 +318,25 @@ class CreateResources:
                     makedirs(directory_value, exist_ok=True)
                 # creates _init_.py file if does not exists into the directory
                 self.create_init_file(f'{directory_value}')
-                # create the file into the folder
-                self.create_file(f'{directory_value}/{resource_name}{module_suffixes[index]}')
+                
+                # define the file and directory to creates the module
+                file_to_create = f'{directory_value}/{resource_name}{module_suffixes[index]}'
+                
+                # option if wants to create from template
+                if template == 1:
+                    
+                    from templates import create_file
+                    
+                    # get the function for processing the template
+                    select_template = module_template[index]
+                    # get text from template for create the module
+                    template_code = select_template(resource_name)
+                    
+                    # creates the file with the content
+                    create_file(file=file_to_create, template=template_code)
+                else:
+                    # create the file into the folder
+                    self.create_file(file_to_create)
             
      
     def create_resource_from_template(self, resource_type, file_name):

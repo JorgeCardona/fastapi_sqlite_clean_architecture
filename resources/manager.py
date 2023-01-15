@@ -27,7 +27,7 @@ class ResourceManager:
         return CreateResources(main_directory_name=main_directory_name, application_type=application_type)
     
     
-    def generate_resource(self, main_directory_name, application_type, resource_type, resource_name):
+    def generate_resource(self, main_directory_name, application_type, resource_type, resource_name, template):
         
         resources = self.resources_list()
         
@@ -37,7 +37,7 @@ class ResourceManager:
             
                 application_instance =  self.create_instance(main_directory_name=main_directory_name, application_type=application_type)
                 
-                execute = application_instance.create_resource(resource_type=resource_type, resource_name=resource_name)
+                execute = application_instance.create_resource(resource_type=resource_type, resource_name=resource_name, template=template)
                 
                 print(f'resource type {resource_type} Created Successfully')
                 
