@@ -3,7 +3,7 @@ from domain.interfaces.repositories.repository_users import UsersRepository as r
 from domain.interfaces.repositories.repository_users import Session, get_session, Depends, List
 from domain.interfaces.repositories.repository_users import complete_schema, patch_schema
 from domain.entities.models.model_users import User as model
-#from configuration.log.logging import log_api
+from configuration.log.logging import log_api
 
 class UsersUseCases(repository):
      
@@ -18,7 +18,7 @@ class UsersUseCases(repository):
             return object_ 
         else:
             message = "Resource not found"
-            #log_api.warning(message)
+            log_api.warning(message)
             raise HTTPException(
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail=message
