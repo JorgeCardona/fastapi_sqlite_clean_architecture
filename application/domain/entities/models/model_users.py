@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Boolean
 from sqlalchemy.orm import relationship
-from configuration.environment.env import Environment
+from configuration.environment.environment_config import Environment
 
 class User(Environment.Base):
     __tablename__ = "users"

@@ -18,7 +18,7 @@ class CreateResources:
         self.basic_directory          = ['test',
                                         'deployment',
                                         'requirements']
-                  
+     
         self.scaffolding_directories_list = [self.interfaces_directory, self.usecases_directory, self.services_directory]
         
         # dictionary for creates resource
@@ -139,6 +139,7 @@ class CreateResources:
         configurations_directories = [
                        api_type_directory,
                        '/environment',
+                       '/end_points',
                        '/database',
                        '/utils',
                        '/cors',

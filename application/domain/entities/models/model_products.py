@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String
-from configuration.environment.env import Environment
+from configuration.environment.environment_config import Environment
 
 class Product(Environment.Base):
     __tablename__ = 'products'

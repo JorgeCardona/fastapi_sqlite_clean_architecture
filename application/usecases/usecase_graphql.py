@@ -1,4 +1,4 @@
-from configuration.environment.env import Environment
+from configuration.environment.environment_config import Environment
 from sqlalchemy import text
 from domain.entities.schemas.schema_product_graphql import ProductGraphQl
 from sqlalchemy import select, insert, delete, update
