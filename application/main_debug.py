@@ -1,4 +1,4 @@
-from configuration.fastapi.fast_api_configuration import API_HOST, API_PORT
+from configuration.rest.rest_api_configuration import API_HOST, API_PORT
 from main import clean_architecture
 # INICIAR ESTE SCRIPT EN MODO DEBUG PARA DEBUGGEAR LA APLICACION
 import uvicorn

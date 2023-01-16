@@ -3,7 +3,10 @@ from typing import List
 from fastapi import Depends
 from sqlalchemy.orm import Session
 from configuration.database.db_config import get_session
-from domain.entities.schemas.schema_products import ProductFull as complete_schema
+from domain.entities.models.model_products  import Product as model
+from domain.entities.schemas.schema_products import ProductSearch as get_schema
+from domain.entities.schemas.schema_products import ProductAdd as post_schema
+from domain.entities.schemas.schema_products import ProductUpdate as put_schema
 from domain.entities.schemas.schema_products import ProductPatch as patch_schema
 
 class ProductRepository(ABC):
@@ -17,11 +20,11 @@ class ProductRepository(ABC):
         pass
 
     @abstractmethod
-    def add_object(self, entity:complete_schema, session:Session = Depends(get_session)):
+    def add_object(self, entity:post_schema, session:Session = Depends(get_session)):
         pass
  
     @abstractmethod
-    def add_object_list(self, entity:List[complete_schema], session:Session = Depends(get_session)):
+    def add_object_list(self, entity:List[post_schema], session:Session = Depends(get_session)):
          pass
     
     @abstractmethod
@@ -29,7 +32,7 @@ class ProductRepository(ABC):
         pass
        
     @abstractmethod
-    def update_object(self, id:int, entity:complete_schema, session:Session = Depends(get_session)):
+    def update_object(self, id:int, entity:put_schema, session:Session = Depends(get_session)):
         pass
 
     @abstractmethod

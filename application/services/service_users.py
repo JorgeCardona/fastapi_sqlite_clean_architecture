@@ -1,5 +1,5 @@
 from fastapi import status
-from configuration.fastapi.fast_api_configuration import clean_architecture
+from configuration.rest.rest_api_configuration import clean_architecture
 
 from usecases.usecase_users import UsersUseCases as useCase
 from usecases.usecase_users import Session, get_session, Depends, List

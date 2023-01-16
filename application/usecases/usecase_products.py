@@ -1,8 +1,8 @@
 from fastapi import HTTPException, status
 from domain.interfaces.repositories.repository_products import ProductRepository as repository
 from domain.interfaces.repositories.repository_products import Session, get_session, Depends, List
-from domain.interfaces.repositories.repository_products import complete_schema, patch_schema
-from domain.entities.models.model_products import Product as model
+from domain.interfaces.repositories.repository_products import get_schema, post_schema, put_schema, patch_schema
+from domain.interfaces.repositories.repository_products import model
 from configuration.log.logging import log_api
 
 class ProductsUseCases(repository):
@@ -26,7 +26,7 @@ class ProductsUseCases(repository):
                 detail=message
             )
             
-    def add_object(self, entity:complete_schema, session:Session = Depends(get_session)):
+    def add_object(self, entity:post_schema, session:Session = Depends(get_session)):
         
         """_summary_
         entity.dict(exclude_unset=True) -> convierte la entidad en un diccionario
@@ -43,7 +43,7 @@ class ProductsUseCases(repository):
         session.refresh(object_)
         return object_
 
-    def add_object_list(self, entity:List[complete_schema], session:Session = Depends(get_session)):
+    def add_object_list(self, entity:List[post_schema], session:Session = Depends(get_session)):
         
         """_summary_
         entity.dict(exclude_unset=True) -> convierte la entidad en un diccionario
@@ -92,7 +92,7 @@ class ProductsUseCases(repository):
         session.refresh(object_)
         return object_
         
-    def update_object(self, id:int, entity:complete_schema, session:Session = Depends(get_session)):
+    def update_object(self, id:int, entity:put_schema, session:Session = Depends(get_session)):
 
         return self.__update_rows__(id=id, entity=entity, session=session)
             

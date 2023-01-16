@@ -4,5 +4,5 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from configuration.environment.environment_config import Environment
 
-instance = Environment('dev')
+instance = Environment()
 get_session = instance.get_session
