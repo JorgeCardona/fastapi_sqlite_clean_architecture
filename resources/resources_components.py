@@ -182,7 +182,7 @@ class Resources:
                 'base_directories':[self.services_directory],
                 'module_suffixes': [self.service_module_suffix],
                 'module_template':[self.service_module_template],
-                'configuration_directories' : self.configurations_directory
+                'configuration_directories' : [self.services_directory]
             },      
         }
         
@@ -249,15 +249,11 @@ class Resources:
                              
         self.get_all_resources_components()
         
-        list_of_resources = {
-            'entity':self.entities_resources.get('entity'),
-            'model':self.entities_resources.get('model'),            
-            'schema':self.entities_resources.get('schema'),
-            'interface':self.interfaces_resources.get('interface'),            
-            'repository':self.interfaces_resources.get('repository'),    
-            'business':self.interfaces_resources.get('business'), 
-            'usecase':self.use_cases_resources.get('usecase'),    
-            'service':self.services_resources.get('service'),
-            'all':self.all_resources_dictionary.get('all'),   
-        }
+        list_of_resources = dict()
+        components = ['entity','model','schema','interface','repository','business_logic','usecase','service','all']
+        
+        # creates a dictionary with all key:value for resources
+        for resource in components:            
+            list_of_resources[resource] = self.all_resources_dictionary.get(resource)
+            
         return list_of_resources

@@ -36,6 +36,8 @@ class CreateResources:
             with open(f'{file}','w') as file_to_create:
                 if template:
                     file_to_create.write(template)
+        elif '__init__' not in file:
+            print(f'Unable to create file {file}, because it already exists')
               
     def create_init_file(self, directory):
         
@@ -69,7 +71,8 @@ class CreateResources:
     
     def create_configuration_files_from_templates(self, resources_dictionary, resource_name):
     
-        from templates import core_template, rest_template, end_points_template, environment_template, cors_template, database_template, log_template, swagger_template, utils_template
+        from templates import core_template, rest_template, end_points_template, environment_template, cors_template 
+        from templates import database_template, log_template, swagger_template, utils_template, graphql_template
         
         configuration_directories = resources_dictionary.get('configuration_directories')
         
@@ -127,7 +130,7 @@ class CreateResources:
             module_template = dictionary.get('module_template')
 
             # option if wants to create resources from template
-            if template == 1:
+            if template == 1 and 'all' in resource_type:
                 
                 self.create_configuration_files_from_templates(resources_dictionary= dictionary, resource_name=resource_name)
                             

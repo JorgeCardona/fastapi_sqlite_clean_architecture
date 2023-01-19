@@ -22,6 +22,7 @@ from configuration.swagger.swagger_configuration import SWAGGER_ROUTE, SWAGGER_R
 
 def graphql_template(name:str):
     content = f"""{core}
+GRAPHQL_ROUTE = "/graphql"
     """ 
     return content
 def swagger_template(name:str):
@@ -115,8 +116,7 @@ class Environment:
     def get_connection(self):
         
         return self.engine.connect()
-        
-        
+              
     def get_database_url(self):
         
         # if does not exist environment defined, use the local environment database connection
@@ -272,7 +272,6 @@ from domain.entities.{schema_name}_entity.{schema_name}_schema import {class_nam
 from domain.entities.{schema_name}_entity.{schema_name}_schema import {class_name}Update as put_schema
 from domain.entities.{schema_name}_entity.{schema_name}_schema import {class_name}Patch as patch_schema
 
-
 class {complete_class_name}(ABC):
 
     @abstractmethod
@@ -402,6 +401,7 @@ def services_template(name:str, complement='Service'):
     class_name = name.capitalize()
     schema_name = name.lower()
     tag = 'TAG'
+    id = '{id}'
     complete_class_name = class_name + complement
     content = f"""{core}   
 from fastapi import status
