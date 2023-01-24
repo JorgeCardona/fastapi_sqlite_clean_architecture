@@ -18,10 +18,7 @@ class ProductsServices:
         this service allows to RECOVERY A LIST of records from database
         """
         data = use_case().get_object_list(session=session, offset=offset, limit=limit)
-
-        
         response = use_case().get_response_format(data, offset=offset, limit=limit, page_number=page_number, page_size=page_size)
-
         return response
 
 
@@ -57,7 +54,6 @@ class ProductsServices:
         this service allows to CREATE a new the record of database
         """
         data = use_case().add_object(entity=entity, session=session)
-
         response = use_case().get_response_format(data=data)
         return response
     
@@ -68,7 +64,6 @@ class ProductsServices:
         this service allows to CREATE a LIST of new the record of database
         """
         data = use_case().add_object_list(entity=entity, session=session)
-
         response = use_case().get_response_format(data=data)
         return response
         
@@ -95,14 +90,4 @@ class ProductsServices:
         DESCRIPTION \\
         this service allows to REMOVE the record of database
         """
-        data = use_case().delete_object(id=id, session=session)
-        print('dddddddddddddddddddddddddddd', data)
-
-        response = use_case().get_response_format(data=data)
-        
-        print('responseeeeeeeeeee',response)
-        
-        from fastapi.responses import JSONResponse
-        object_={}
-        #response = JSONResponse(status_code=status.HTTP_204_NO_CONTENT, content=object_) if object_ else JSONResponse(status_code=status.HTTP_404_NOT_FOUND, content=object_)
-        return response
+        return use_case().delete_object(id=id, session=session)

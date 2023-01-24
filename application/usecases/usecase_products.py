@@ -38,10 +38,10 @@ class ProductsUseCases(repository, business_logic):
                 response_data['pagination']['next'] = f'{BASE_PATH}/?offset={offset}&limit={limit}&page_number={page_number+1}&page_size={page_size}'
                  
         elif type(data) == dict:
-            response_data = {data} if 'error' not in data else data
+            response_data = data if 'error' not in data else data
             
         else:
-            response_data = data
+            response_data = {'data':data}
             
         return response_data 
              

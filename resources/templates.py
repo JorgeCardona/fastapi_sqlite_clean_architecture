@@ -244,13 +244,17 @@ class {class_name}Patch(BaseModel):
 def business_logic_template(name:str, complement='BusinessLogic'):
     
     class_name = name.capitalize()
-    schema_name = name.lower()
     complete_class_name = class_name + complement
+    
     content = f"""{core}
 from abc import ABC, abstractmethod
 
 class {complete_class_name}(ABC):
-    pass
+
+    @abstractmethod
+    def get_response_format(self, data, offset: int = 0, limit: int = 100, page_number : int = 1, page_size : int = 10):
+        pass     
+
     """ 
     return content
     
@@ -313,21 +317,66 @@ def usecases_template(name:str, complement='UseCase'):
     class_name = name.capitalize()
     schema_name = name.lower()
     complete_class_name = class_name + complement
+    
+    id = '{id}'
+    data = 'data'
+
+    llave_abre = '{'
+    llave_cierra = '}'
+
     content = f"""{core}
 from fastapi import HTTPException, status
-
+from fastapi.responses import JSONResponse
 from domain.interfaces.repositories.{schema_name}_repository import {class_name}Repository as repository
+from domain.interfaces.business_logic.{schema_name}_business_logic import {class_name}BusinessLogic as business_logic
 from domain.interfaces.repositories.{schema_name}_repository import Session, get_session, Depends, List
 from domain.interfaces.repositories.{schema_name}_repository import model, get_schema, post_schema, put_schema, patch_schema
+from configuration.end_points.{schema_name}_end_points_configuration import BASE_PATH
 from configuration.log.log_configuration import log_api
 
-class {complete_class_name}s(repository):
-     
+class {complete_class_name}s(repository, business_logic):
+
+    def get_response_format(self, data, offset: int = 0, limit: int = 100, page_number : int = 1, page_size : int = 10):
+        
+        if type(data) == list:
+            import math
+            start = (page_number - 1) * page_size
+            end = start + page_size
+            total_data = len(data)
+            total_pages = math.ceil(total_data / page_size)
+            
+            response_data = {llave_abre}
+                
+                'data':data[start:end],            
+                'count':page_size,
+                'total':len(data),
+                'page': f'{llave_abre}page_number{llave_cierra} from {llave_abre}total_pages{llave_cierra}',
+                'pagination':{llave_abre}
+                            'previous':None,
+                            'next':None
+                            {llave_cierra}
+            {llave_cierra}
+                        
+            if page_number > 1:
+                response_data['pagination']['previous'] = f'{llave_abre}BASE_PATH{llave_cierra}/?offset={llave_abre}offset{llave_cierra}&limit={llave_abre}limit{llave_cierra}&page_number={llave_abre}page_number-1{llave_cierra}&page_size={llave_abre}page_size{llave_cierra}'
+                
+            if end < total_data:
+                response_data['pagination']['next'] = f'{llave_abre}BASE_PATH{llave_cierra}/?offset={llave_abre}offset{llave_cierra}&limit={llave_abre}limit{llave_cierra}&page_number={llave_abre}page_number+1{llave_cierra}&page_size={llave_abre}page_size{llave_cierra}'
+                 
+        elif type(data) == dict:
+            response_data = {llave_abre}data{llave_cierra} if 'error' not in data else data
+            
+        else:
+            response_data = {llave_abre}'data':data{llave_cierra}
+            
+        return response_data 
+             
     def get_object_list(self, session:Session = Depends(get_session), offset: int = 0, limit: int = 100):
            
         object_ = session.query(model).offset(offset).limit(limit).all()
         return object_
     
+
     def get_object(self, id:int, session:Session = Depends(get_session)):
         
         object_ = session.query(model).get(id)
@@ -335,13 +384,18 @@ class {complete_class_name}s(repository):
         if object_:
             return object_ 
         else:
-            message = "Resource not found"
+            message = f"Resource with id {id} not found"
             log_api.warning(message)
-            raise HTTPException(
-                status_code=status.HTTP_404_NOT_FOUND,
-                detail=message
-            )
             
+            response = {llave_abre}
+                        'error': {llave_abre}
+                            'code': status.HTTP_404_NOT_FOUND,
+                            'message': message
+                        {llave_cierra}
+            {llave_cierra}
+            
+            return JSONResponse(status_code=status.HTTP_404_NOT_FOUND, content=response)
+                        
     def add_object(self, entity:post_schema, session:Session = Depends(get_session)):
 
         object_data = entity.dict(exclude_unset=True)
@@ -369,13 +423,16 @@ class {complete_class_name}s(repository):
     def __update_rows__(self, id:int, entity:object, session:Session = Depends(get_session)):
 
         object_ = self.get_object(id=id, session=session)
-        object_data = entity.dict(exclude_unset=True)
-            
-        for key, value in object_data.items():
-            setattr(object_, key, value)
-        session.add(object_)
-        session.commit()
-        session.refresh(object_)
+
+        if object_.__dict__.get('status_code') != 404:
+            object_data = entity.dict(exclude_unset=True)
+                
+            for key, value in object_data.items():
+                setattr(object_, key, value)
+            session.add(object_)
+            session.commit()
+            session.refresh(object_)
+
         return object_
         
     def update_object(self, id:int, entity:put_schema, session:Session = Depends(get_session)):
@@ -387,11 +444,21 @@ class {complete_class_name}s(repository):
         return self.__update_rows__(id=id, entity=entity, session=session)
 
     def delete_object(self, id:int, session:Session = Depends(get_session)):
+        
         object_ = self.get_object(id=id, session=session)
+             
+        if isinstance(object_, model):
 
-        session.delete(object_)
-        session.commit()
-        session.close()
+            session.delete(object_)
+            session.commit()
+            session.close()
+            
+            # delete sqlalchemy key
+            object_.__dict__.pop('_sa_instance_state')
+            return JSONResponse(status_code=status.HTTP_204_NO_CONTENT, content=object_.__dict__)           
+            
+        else:
+            return object_
     """ 
     return content
         
@@ -418,17 +485,23 @@ class {complete_class_name}:
     
     # retorna UNA LISTA DE OBJETOS con los campos que tenga el ESQUEMA DEL RESPONSE MODEL en este caso TODOS LOS CAMPOS
     @clean_architecture.get(BASE_PATH + "/", response_model=List[get_schema], name=SEARCH_ALL_OBJECTS)
-    def get_object_list(session: Session = Depends(get_session), offset: int = 0, limit: int = 100):
-        return use_case().get_object_list(session=session, offset=offset, limit=limit)
+    def get_object_list(session: Session = Depends(get_session), offset: int = 0, limit: int = 100, page_number : int = 1, page_size : int = 10):
+        data = use_case().get_object_list(session=session, offset=offset, limit=limit)
+        response = use_case().get_response_format(data, offset=offset, limit=limit, page_number=page_number, page_size=page_size)
+        return response
 
     # retorna UN OBJETO con los campos que tenga el ESQUEMA DEL RESPONSE MODEL en este caso todos los campos EXCEPTO EL CAMPO ID
     @clean_architecture.get(BASE_PATH + "/{id}",response_model=get_schema, name=SEARCH_SPECIFIC_OBJECT, tags=[{tag}] )
     def get_object(id:int, session: Session = Depends(get_session)):
-        return use_case().get_object(id=id, session=session)
+        data = use_case().get_object(id=id, session=session)
+        response = use_case().get_response_format(data=data)
+        return response
 
     @clean_architecture.post(BASE_PATH + "/", name=ADD_NEW_OBJECT, status_code=status.HTTP_201_CREATED, tags=[{tag}])
     def add_object(entity:post_schema, session: Session = Depends(get_session)):
-        return use_case().add_object(entity=entity, session=session)
+        data = use_case().add_object(entity=entity, session=session)
+        response = use_case().get_response_format(data=data)
+        return response
 
     @clean_architecture.post(BASE_PATH + "/all", name=ADD_NEW_OBJECT_LIST, status_code=status.HTTP_201_CREATED, tags=[{tag}])
     def add_object_list(entity:List[post_schema], session: Session = Depends(get_session)):
@@ -443,7 +516,7 @@ class {complete_class_name}:
         return use_case().patch_object(id=id, entity=entity, session=session)
     
     # status_code=status.HTTP_204_NO_CONTENT, genera excepcion porque retorna mensaje
-    @clean_architecture.delete(BASE_PATH + "/{id}", status_code=status.HTTP_204_NO_CONTENT, name=REMOVE_OBJECT, tags=[{tag}])
+    @clean_architecture.delete(BASE_PATH + "/{id}", name=REMOVE_OBJECT, tags=[{tag}])
     def delete_object(id:int, session: Session = Depends(get_session)):
         return use_case().delete_object(id=id, session=session)
     """
