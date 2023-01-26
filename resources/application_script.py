@@ -4,7 +4,7 @@ from manager import ResourceManager
 
 parser = argparse.ArgumentParser(description='manual to this script')
 parser.add_argument('--main_directory_name', type=str, default = 'src')
-parser.add_argument('--application_type', type=str, default = 'rest')
+parser.add_argument('--application_type', type=str, default = 'mix')
 parser.add_argument('--application_name', type=str, default = 'clean_architecture')
 parser.add_argument('--resource_type', type=str, default = 'all')
 parser.add_argument('--resource_name', type=str, default = 'ggg')

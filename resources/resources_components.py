@@ -222,7 +222,7 @@ class Resources:
         
     def get_configuration_resources(self):
         
-        api_type_directory = '/graphql' if self.application_application_type == 'GRAPHQL' else '/rest'
+        api_type_directory = '/graphql' if self.application_application_type == 'GRAPHQL' else '/rest' if self.application_application_type == 'REST' else '/mix'
         
         self.configurations_directories = [
                        api_type_directory,

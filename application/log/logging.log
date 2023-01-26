@@ -10373,3 +10373,424 @@ WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py |
 FROM products 
 WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
 2023-01-23 23:19:41,373 | INFO | message = [generated in 0.00097s] (123,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:21:05,789 | DEBUG | message = Using proactor: IocpProactor | asyncio | line 630 | package proactor_events.py | __init__
+2023-01-23 23:21:05,860 | INFO | message = Started server process [496] | uvicorn.error | line 75 | package server.py | serve
+2023-01-23 23:21:05,862 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-23 23:21:05,864 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-23 23:21:05,873 | INFO | message = Uvicorn running on http://localhost:5555 (Press CTRL+C to quit) | uvicorn.error | line 206 | package server.py | _log_started_message
+2023-01-23 23:21:08,129 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:21:08,130 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:21:08,131 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:21:08,134 | INFO | message = PRAGMA main.table_info("users") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:21:08,135 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:21:08,136 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-23 23:21:08,144 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:21:08,150 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:21:08,151 | INFO | message = [generated in 0.00075s] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:21:08,154 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-23 23:21:08,165 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:21:08,169 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:21:08,170 | INFO | message = [generated in 0.00093s] (124,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:21:14,606 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-23 23:24:07,509 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:24:07,510 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:24:07,511 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:24:07,513 | INFO | message = PRAGMA main.table_info("users") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:24:07,521 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:24:07,541 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-23 23:24:07,548 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:24:07,549 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (?, ?, ?) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:24:07,550 | INFO | message = [cached since 179.4s ago] ('string', 'string', 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:24:07,557 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-23 23:24:07,565 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:24:07,566 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:24:07,568 | INFO | message = [cached since 179.4s ago] (125,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:24:14,720 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-23 23:24:28,235 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:24:28,237 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:24:28,238 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:24:28,241 | INFO | message = PRAGMA main.table_info("users") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:24:28,241 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:24:28,245 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-23 23:24:28,255 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:24:28,265 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:24:28,270 | INFO | message = [generated in 0.00607s] (1000, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:24:28,294 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-23 23:24:43,519 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:24:43,519 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:24:43,519 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:24:43,525 | INFO | message = PRAGMA main.table_info("users") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:24:43,525 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:24:43,529 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-23 23:24:43,537 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:24:43,542 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:24:43,545 | INFO | message = [generated in 0.00280s] (85,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:24:43,552 | WARNING | message = Resource with id 85 not found | root | line 62 | package usecase_products.py | get_object
+2023-01-23 23:24:43,555 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-23 23:24:51,129 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:24:51,129 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:24:51,131 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:24:51,135 | INFO | message = PRAGMA main.table_info("users") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:24:51,135 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:24:51,135 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-23 23:24:51,145 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:24:51,151 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:24:51,154 | INFO | message = [cached since 7.611s ago] (125,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:24:51,168 | INFO | message = DELETE FROM products WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:24:51,169 | INFO | message = [generated in 0.00126s] (125,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:24:51,174 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-23 23:24:51,190 | ERROR | message = Exception in ASGI application
+ | uvicorn.error | line 375 | package httptools_impl.py | run_asgi
+Traceback (most recent call last):
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 68, in app
+    await response(scope, receive, send)
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\responses.py", line 162, in __call__
+    await send({"type": "http.response.body", "body": self.body})
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 79, in sender
+    await send(message)
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 159, in _send
+    await send(message)
+  File "c:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 501, in send
+    raise RuntimeError("Response content longer than Content-Length")
+RuntimeError: Response content longer than Content-Length
+2023-01-23 23:25:03,416 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:25:03,417 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:25:03,419 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:25:03,421 | INFO | message = PRAGMA main.table_info("users") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:25:03,422 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:25:03,428 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-23 23:25:03,433 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:25:03,439 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:25:03,440 | INFO | message = [cached since 19.9s ago] (1,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:25:03,440 | WARNING | message = Resource with id 1 not found | root | line 62 | package usecase_products.py | get_object
+2023-01-23 23:25:03,451 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-23 23:25:11,178 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:25:11,178 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:25:11,179 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:25:11,182 | INFO | message = PRAGMA main.table_info("users") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:25:11,186 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:25:11,193 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-23 23:25:11,198 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:25:11,200 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:25:11,201 | INFO | message = [cached since 27.66s ago] (86,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:25:11,203 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-23 23:25:11,231 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:25:11,247 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:25:11,252 | INFO | message = [cached since 243.1s ago] (86,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:25:11,268 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-23 23:25:24,945 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:25:24,950 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:25:24,952 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:25:24,956 | INFO | message = PRAGMA main.table_info("users") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:25:24,957 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:25:24,960 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-23 23:25:24,966 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:25:24,971 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:25:24,973 | INFO | message = [cached since 41.43s ago] (1,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:25:24,978 | WARNING | message = Resource with id 1 not found | root | line 62 | package usecase_products.py | get_object
+2023-01-23 23:25:24,986 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-23 23:25:31,102 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:25:31,103 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:25:31,104 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:25:31,107 | INFO | message = PRAGMA main.table_info("users") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:25:31,109 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:25:31,136 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-23 23:25:31,144 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:25:31,147 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:25:31,149 | INFO | message = [cached since 47.61s ago] (86,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:25:31,153 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-23 23:25:31,154 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-23 23:25:31,154 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-23 23:25:31,154 | INFO | message = [cached since 263s ago] (86,) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-23 23:25:31,174 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-23 23:31:36,170 | DEBUG | message = Using proactor: IocpProactor | asyncio | line 630 | package proactor_events.py | __init__
+2023-01-23 23:31:36,251 | INFO | message = Started server process [16156] | uvicorn.error | line 75 | package server.py | serve
+2023-01-23 23:31:36,252 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-23 23:31:36,253 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-23 23:31:36,270 | INFO | message = Uvicorn running on http://localhost:5555 (Press CTRL+C to quit) | uvicorn.error | line 206 | package server.py | _log_started_message
+2023-01-25 18:37:25,134 | WARNING | message = You must pass the application as an import string to enable 'reload' or 'workers'. | uvicorn.error | line 450 | package main.py | run
+2023-01-25 18:37:42,074 | DEBUG | message = Using proactor: IocpProactor | asyncio | line 630 | package proactor_events.py | __init__
+2023-01-25 18:37:42,136 | INFO | message = Started server process [5904] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 18:37:42,137 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 18:37:42,137 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-25 18:37:42,144 | INFO | message = Uvicorn running on http://localhost:5555 (Press CTRL+C to quit) | uvicorn.error | line 206 | package server.py | _log_started_message
+2023-01-25 18:37:55,549 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-25 18:37:55,551 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-25 18:37:55,552 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-25 18:37:55,557 | INFO | message = PRAGMA main.table_info("users") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-25 18:37:55,558 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-25 18:37:55,563 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-25 18:37:55,596 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-25 18:37:55,627 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-25 18:37:55,631 | INFO | message = [generated in 0.00573s] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-25 18:37:55,645 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-25 18:38:11,436 | INFO | message = Shutting down | uvicorn.error | line 252 | package server.py | shutdown
+2023-01-25 18:38:11,543 | INFO | message = Waiting for application shutdown. | uvicorn.error | line 64 | package on.py | shutdown
+2023-01-25 18:38:11,544 | INFO | message = Application shutdown complete. | uvicorn.error | line 75 | package on.py | shutdown
+2023-01-25 18:38:11,546 | INFO | message = Finished server process [5904] | uvicorn.error | line 85 | package server.py | serve
+2023-01-25 18:38:21,159 | WARNING | message = You must pass the application as an import string to enable 'reload' or 'workers'. | uvicorn.error | line 450 | package main.py | run
+2023-01-25 18:39:59,098 | INFO | message = Will watch for changes in these directories: ['C:\\z Github\\fastapi_sqlite_clean_architecture\\application'] | uvicorn.error | line 342 | package config.py | __init__
+2023-01-25 18:39:59,102 | INFO | message = Uvicorn running on http://localhost:5555 (Press CTRL+C to quit) | uvicorn.error | line 564 | package config.py | bind_socket
+2023-01-25 18:39:59,119 | INFO | message = Started reloader process [13220] using watchgod | uvicorn.error | line 56 | package basereload.py | startup
+2023-01-25 18:40:00,314 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:40:00,316 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:40:00,363 | INFO | message = Started server process [2768] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 18:40:00,364 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 18:40:00,364 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-25 18:40:19,717 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:40:21,010 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:40:21,011 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:40:21,058 | INFO | message = Started server process [5940] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 18:40:21,058 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 18:40:21,059 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-25 18:43:48,823 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\configuration\\rest\\rest_api_configuration.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:43:50,160 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:43:50,160 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:43:50,219 | INFO | message = Started server process [16952] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 18:43:50,220 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 18:43:50,220 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-25 18:44:02,170 | INFO | message = Shutting down | uvicorn.error | line 252 | package server.py | shutdown
+2023-01-25 18:44:02,283 | INFO | message = Waiting for application shutdown. | uvicorn.error | line 64 | package on.py | shutdown
+2023-01-25 18:44:02,285 | INFO | message = Application shutdown complete. | uvicorn.error | line 75 | package on.py | shutdown
+2023-01-25 18:44:02,285 | INFO | message = Finished server process [16952] | uvicorn.error | line 85 | package server.py | serve
+2023-01-25 18:44:02,319 | INFO | message = Stopping reloader process [13220] | uvicorn.error | line 87 | package basereload.py | shutdown
+2023-01-25 18:45:09,702 | INFO | message = Will watch for changes in these directories: ['C:\\z Github\\fastapi_sqlite_clean_architecture\\application'] | uvicorn.error | line 342 | package config.py | __init__
+2023-01-25 18:45:09,712 | INFO | message = Uvicorn running on http://localhost:5555 (Press CTRL+C to quit) | uvicorn.error | line 564 | package config.py | bind_socket
+2023-01-25 18:45:09,732 | INFO | message = Started reloader process [2328] using watchgod | uvicorn.error | line 56 | package basereload.py | startup
+2023-01-25 18:45:10,955 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:45:10,956 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:45:11,005 | ERROR | message = Error loading ASGI app. Attribute "<fastapi.applications.FastAPI object at 0x000001E7D16D7D60>" not found in module "main". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:46:39,098 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\configuration\\rest\\rest_api_configuration.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:46:40,595 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:46:40,597 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:46:40,646 | ERROR | message = Error loading ASGI app. Attribute "<fastapi.applications.FastAPI object at 0x000001E7D16D7D60>" not found in module "main". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:47:08,241 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:47:20,957 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:47:22,461 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:47:22,462 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:47:22,511 | ERROR | message = Error loading ASGI app. Attribute "<fastapi.applications.FastAPI object at 0x000001E7D16D7D60>" not found in module "main". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:47:53,386 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\configuration\\rest\\rest_api_configuration.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:48:06,634 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:48:07,912 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:48:07,913 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:48:07,970 | ERROR | message = Error loading ASGI app. Attribute "<fastapi.applications.FastAPI object at 0x000001E7D16D7D60>" not found in module "main". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:48:16,965 | INFO | message = Stopping reloader process [2328] | uvicorn.error | line 87 | package basereload.py | shutdown
+2023-01-25 18:48:24,602 | INFO | message = Will watch for changes in these directories: ['C:\\z Github\\fastapi_sqlite_clean_architecture\\application'] | uvicorn.error | line 342 | package config.py | __init__
+2023-01-25 18:48:24,619 | INFO | message = Uvicorn running on http://localhost:5555 (Press CTRL+C to quit) | uvicorn.error | line 564 | package config.py | bind_socket
+2023-01-25 18:48:24,639 | INFO | message = Started reloader process [16280] using watchgod | uvicorn.error | line 56 | package basereload.py | startup
+2023-01-25 18:48:25,906 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:48:25,907 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:48:25,952 | ERROR | message = Error loading ASGI app. Attribute "<fastapi.applications.FastAPI object at 0x000001C813547D60>" not found in module "main". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:48:41,816 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:48:43,058 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:48:43,060 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:48:43,103 | ERROR | message = Error loading ASGI app. Attribute "<fastapi.applications.FastAPI object at 0x000001C813547D60>" not found in module "main". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:48:50,546 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:48:51,784 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:48:51,786 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:48:51,840 | ERROR | message = Error loading ASGI app. Attribute "<fastapi.applications.FastAPI object at 0x000001C813547D60>" not found in module "main". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:48:59,324 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:49:00,551 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:49:00,553 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:49:00,607 | ERROR | message = Error loading ASGI app. Attribute "<fastapi.applications.FastAPI object at 0x000001C813547D60>" not found in module "main". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:49:04,082 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\configuration\\rest\\rest_api_configuration.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:49:05,605 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:49:05,606 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:49:05,658 | ERROR | message = Error loading ASGI app. Attribute "<fastapi.applications.FastAPI object at 0x000001C813547D60>" not found in module "main". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:49:11,211 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main_debug.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:49:12,345 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:49:12,347 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:49:12,405 | ERROR | message = Error loading ASGI app. Attribute "<fastapi.applications.FastAPI object at 0x000001C813547D60>" not found in module "main". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:49:26,120 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:49:27,833 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:49:27,836 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:49:27,890 | ERROR | message = Error loading ASGI app. Attribute "<fastapi.applications.FastAPI object at 0x000001C813547D60>" not found in module "main". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:49:33,039 | INFO | message = Stopping reloader process [16280] | uvicorn.error | line 87 | package basereload.py | shutdown
+2023-01-25 18:50:42,839 | DEBUG | message = Using proactor: IocpProactor | asyncio | line 630 | package proactor_events.py | __init__
+2023-01-25 18:50:42,881 | INFO | message = Started server process [17296] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 18:50:42,887 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 18:50:42,888 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-25 18:50:42,897 | INFO | message = Uvicorn running on http://localhost:5555 (Press CTRL+C to quit) | uvicorn.error | line 206 | package server.py | _log_started_message
+2023-01-25 18:51:24,396 | INFO | message = Shutting down | uvicorn.error | line 252 | package server.py | shutdown
+2023-01-25 18:51:24,516 | INFO | message = Waiting for application shutdown. | uvicorn.error | line 64 | package on.py | shutdown
+2023-01-25 18:51:24,517 | INFO | message = Application shutdown complete. | uvicorn.error | line 75 | package on.py | shutdown
+2023-01-25 18:51:24,518 | INFO | message = Finished server process [17296] | uvicorn.error | line 85 | package server.py | serve
+2023-01-25 18:51:42,846 | INFO | message = Will watch for changes in these directories: ['C:\\z Github\\fastapi_sqlite_clean_architecture\\application'] | uvicorn.error | line 342 | package config.py | __init__
+2023-01-25 18:51:42,858 | INFO | message = Uvicorn running on http://localhost:5555 (Press CTRL+C to quit) | uvicorn.error | line 564 | package config.py | bind_socket
+2023-01-25 18:51:42,876 | INFO | message = Started reloader process [16992] using watchgod | uvicorn.error | line 56 | package basereload.py | startup
+2023-01-25 18:51:44,196 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:51:44,199 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:51:44,243 | ERROR | message = Error loading ASGI app. Import string "<fastapi.applications.FastAPI object at 0x000001AB9004BDF0>" must be in format "<module>:<attribute>". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:51:57,679 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:51:59,084 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:51:59,086 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:51:59,133 | ERROR | message = Error loading ASGI app. Import string "<fastapi.applications.FastAPI object at 0x000001AB9004BDF0>" must be in format "<module>:<attribute>". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:52:11,000 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:52:12,328 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:52:12,329 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:52:12,373 | ERROR | message = Error loading ASGI app. Import string "<fastapi.applications.FastAPI object at 0x000001AB9004BDF0>" must be in format "<module>:<attribute>". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:55:00,244 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:55:01,734 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:55:01,734 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:55:01,785 | ERROR | message = Error loading ASGI app. Import string "<fastapi.applications.FastAPI object at 0x000001AB9004BDF0>" must be in format "<module>:<attribute>". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:55:11,135 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:55:12,394 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:55:12,397 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:55:12,457 | ERROR | message = Error loading ASGI app. Import string "<fastapi.applications.FastAPI object at 0x000001AB9004BDF0>" must be in format "<module>:<attribute>". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:55:59,455 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:56:00,739 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:56:00,741 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:56:00,794 | ERROR | message = Error loading ASGI app. Import string "<fastapi.applications.FastAPI object at 0x000001AB9004BDF0>" must be in format "<module>:<attribute>". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:56:22,786 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:56:24,172 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:56:24,173 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:56:24,215 | ERROR | message = Error loading ASGI app. Import string "<fastapi.applications.FastAPI object at 0x000001AB9004BDF0>" must be in format "<module>:<attribute>". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:58:35,298 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 18:58:36,600 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:58:36,600 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:58:36,651 | ERROR | message = Error loading ASGI app. Import string "<fastapi.applications.FastAPI object at 0x000001AB9004BDF0>" must be in format "<module>:<attribute>". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 18:58:39,800 | INFO | message = Stopping reloader process [16992] | uvicorn.error | line 87 | package basereload.py | shutdown
+2023-01-25 18:59:01,366 | INFO | message = Will watch for changes in these directories: ['C:\\z Github\\fastapi_sqlite_clean_architecture\\application'] | uvicorn.error | line 342 | package config.py | __init__
+2023-01-25 18:59:01,377 | INFO | message = Uvicorn running on http://localhost:5555 (Press CTRL+C to quit) | uvicorn.error | line 564 | package config.py | bind_socket
+2023-01-25 18:59:01,391 | INFO | message = Started reloader process [7964] using watchgod | uvicorn.error | line 56 | package basereload.py | startup
+2023-01-25 18:59:02,599 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 18:59:02,601 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 18:59:02,656 | INFO | message = Started server process [16912] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 18:59:02,657 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 18:59:02,658 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-25 19:06:06,979 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 19:06:08,297 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 19:06:08,298 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 19:06:08,364 | INFO | message = Started server process [13924] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 19:06:08,365 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 19:06:08,366 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-25 19:06:10,398 | INFO | message = Shutting down | uvicorn.error | line 252 | package server.py | shutdown
+2023-01-25 19:06:10,490 | INFO | message = Stopping reloader process [7964] | uvicorn.error | line 87 | package basereload.py | shutdown
+2023-01-25 19:06:16,665 | INFO | message = Will watch for changes in these directories: ['C:\\z Github\\fastapi_sqlite_clean_architecture\\application'] | uvicorn.error | line 342 | package config.py | __init__
+2023-01-25 19:06:16,677 | INFO | message = Uvicorn running on http://localhost:5555 (Press CTRL+C to quit) | uvicorn.error | line 564 | package config.py | bind_socket
+2023-01-25 19:06:16,685 | INFO | message = Started reloader process [6056] using watchgod | uvicorn.error | line 56 | package basereload.py | startup
+2023-01-25 19:06:17,920 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 19:06:17,921 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 19:06:17,962 | ERROR | message = Error loading ASGI app. Attribute "<fastapi.applications.FastAPI object at 0x00000138E270BDF0>" not found in module "main". | uvicorn.error | line 460 | package config.py | load
+2023-01-25 19:06:27,025 | INFO | message = Stopping reloader process [6056] | uvicorn.error | line 87 | package basereload.py | shutdown
+2023-01-25 19:06:34,171 | INFO | message = Will watch for changes in these directories: ['C:\\z Github\\fastapi_sqlite_clean_architecture\\application'] | uvicorn.error | line 342 | package config.py | __init__
+2023-01-25 19:06:34,184 | INFO | message = Uvicorn running on http://localhost:5555 (Press CTRL+C to quit) | uvicorn.error | line 564 | package config.py | bind_socket
+2023-01-25 19:06:34,197 | INFO | message = Started reloader process [9204] using watchgod | uvicorn.error | line 56 | package basereload.py | startup
+2023-01-25 19:06:35,376 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 19:06:35,379 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 19:06:35,423 | INFO | message = Started server process [9996] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 19:06:35,425 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 19:06:35,426 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-25 19:07:56,888 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\configuration\\rest\\rest_api_configuration.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 19:07:58,598 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 19:07:58,601 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 19:07:58,688 | INFO | message = Started server process [3376] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 19:07:58,690 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 19:07:58,692 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-25 19:08:10,397 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 19:08:11,629 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 19:08:11,630 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 19:08:11,685 | INFO | message = Started server process [4392] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 19:08:11,686 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 19:08:11,687 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-25 19:08:13,523 | INFO | message = Shutting down | uvicorn.error | line 252 | package server.py | shutdown
+2023-01-25 19:08:13,581 | INFO | message = Stopping reloader process [9204] | uvicorn.error | line 87 | package basereload.py | shutdown
+2023-01-25 19:08:16,538 | INFO | message = Will watch for changes in these directories: ['C:\\z Github\\fastapi_sqlite_clean_architecture\\application'] | uvicorn.error | line 342 | package config.py | __init__
+2023-01-25 19:08:16,548 | INFO | message = Uvicorn running on http://localhost:5555 (Press CTRL+C to quit) | uvicorn.error | line 564 | package config.py | bind_socket
+2023-01-25 19:08:16,558 | INFO | message = Started reloader process [15600] using watchgod | uvicorn.error | line 56 | package basereload.py | startup
+2023-01-25 19:08:17,765 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 19:08:17,766 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 19:08:17,803 | INFO | message = Started server process [2480] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 19:08:17,811 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 19:08:17,811 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-25 19:09:13,962 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main_debug.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 19:09:15,245 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 19:09:15,248 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 19:09:15,294 | INFO | message = Started server process [8452] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 19:09:15,297 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 19:09:15,298 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-25 19:09:17,443 | INFO | message = Stopping reloader process [15600] | uvicorn.error | line 87 | package basereload.py | shutdown
+2023-01-25 19:09:35,124 | INFO | message = Will watch for changes in these directories: ['C:\\z Github\\fastapi_sqlite_clean_architecture\\application'] | uvicorn.error | line 342 | package config.py | __init__
+2023-01-25 19:09:35,129 | INFO | message = Uvicorn running on http://localhost:5555 (Press CTRL+C to quit) | uvicorn.error | line 564 | package config.py | bind_socket
+2023-01-25 19:09:35,160 | INFO | message = Started reloader process [1548] using watchgod | uvicorn.error | line 56 | package basereload.py | startup
+2023-01-25 19:09:37,809 | WARNING | message = The --reload flag should not be used in production on Windows. | uvicorn.error | line 10 | package asyncio.py | asyncio_setup
+2023-01-25 19:09:37,819 | DEBUG | message = Using selector: SelectSelector | asyncio | line 54 | package selector_events.py | __init__
+2023-01-25 19:09:37,897 | INFO | message = Started server process [12992] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 19:09:37,908 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 19:09:37,910 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-25 19:09:48,631 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-25 19:09:48,635 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-25 19:09:48,661 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-25 19:09:48,669 | INFO | message = PRAGMA main.table_info("users") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-25 19:09:48,671 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-25 19:09:48,675 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-25 19:09:48,687 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-25 19:09:48,697 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-25 19:09:48,698 | INFO | message = [generated in 0.00441s] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-25 19:09:48,736 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-25 19:10:01,356 | WARNING | message = WatchGodReload detected file change in '['C:\\z Github\\fastapi_sqlite_clean_architecture\\application\\main_debug.py']'. Reloading... | uvicorn.error | line 149 | package watchgodreload.py | should_restart
+2023-01-25 19:10:03,795 | INFO | message = Stopping reloader process [1548] | uvicorn.error | line 87 | package basereload.py | shutdown
+2023-01-25 19:12:18,281 | INFO | message = Started server process [9180] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 19:12:18,292 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 19:12:18,295 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-25 19:47:26,376 | INFO | message = Started server process [11404] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 19:47:26,378 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 19:47:26,381 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-25 19:48:40,184 | INFO | message = Started server process [12504] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 19:48:40,186 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 19:48:40,188 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-25 19:49:07,489 | INFO | message = Started server process [12508] | uvicorn.error | line 75 | package server.py | serve
+2023-01-25 19:49:07,491 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-25 19:49:07,495 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup

@@ -71,7 +71,7 @@ class CreateResources:
     
     def create_configuration_files_from_templates(self, resources_dictionary, resource_name):
     
-        from templates import core_template, rest_template, end_points_template, environment_template, cors_template 
+        from templates import core_template, rest_template, end_points_template, environment_template, cors_template, mix_template 
         from templates import database_template, log_template, swagger_template, utils_template, graphql_template
         
         configuration_directories = resources_dictionary.get('configuration_directories')

@@ -45,4 +45,4 @@ class ResourceManager:
                 raise InvalidResourceTypeException
             
         except InvalidResourceTypeException:
-            print(f'the resource {resource_type} does not exists, the available resources that are possible creates are {resources}')
+            print(f'the resource {resource_type} does not exists or you do not imports it on create_configuration_files_from_templates from templates, the available resources that are possible creates are {resources}')

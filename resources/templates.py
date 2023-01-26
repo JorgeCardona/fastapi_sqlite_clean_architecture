@@ -1,34 +1,272 @@
 core = '# created by Jorge Cardona - https://github.com/JorgeCardona'
+llave_abre = '{'
+llave_cierra = '}'
 
+def main_debug(name:str):
+    content = f"""{core}
+from configuration.rest.rest_configuration import run_application
+
+# start this Script on debug Mode for debugging the application
+if __name__ == "__main__":
+    run_application()
+    """ 
+    return content
+    
 def core_template(name:str):
     content = f"""{core}
     """ 
     return content
- 
+
+def mix_template(name:str):
+    
+    application_name = name.lower()
+
+    API_PORT = 5555
+    API_HOST = 'localhost'
+    
+    content = f"""{core} 
+from fastapi import FastAPI
+from fastapi.openapi.utils import get_openapi
+
+# importacion de modulos con ruta RELATIVA completa del proyecto desde el inicio de cada carpeta para no tener que usar los puntos '...'
+from configuration.graphql.graphql_configuration import GRAPHQL_ROUTE, GRAPHQL_ALIAS
+from configuration.cors.cors_configuration import CORSMiddleware, origins 
+from configuration.swagger.swagger_configuration import SWAGGER_ROUTE, SWAGGER_REDOC_ROUTE, SWAGGER_REDOC_ALIAS
+
+# INSTANCIA DE FASTAPI, PARA CONFIGURACION E INICIO DE LA APLICACION
+{application_name} = FastAPI()
+
+def custom_openapi():
+    if {application_name}.openapi_schema:
+        return {application_name}.openapi_schema
+        
+    openapi_schema = get_openapi(
+        title="Clean Architecture Api Documentation",
+        version="1.0.1",
+        terms_of_service="http://example.com/terms/",
+        description="Documentation for my custom OpenAPI schema",
+            contact={llave_abre}
+        "name": "Jorge Cardona",
+        "url": "https://github.com/JorgeCardona/portfolio",
+        "email": "jorgecardona@utp.edu.co",
+    {llave_cierra},
+    license_info={llave_abre}
+        "name": "Apache 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.html",
+    {llave_cierra},
+    
+        routes={application_name}.routes,
+    )
+    openapi_schema["info"]["x-logo"] = {llave_abre}
+        "url": "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png"
+    {llave_cierra}
+
+    {application_name}.openapi_schema = openapi_schema
+
+    return {application_name}.openapi_schema
+    
+# SWAGGER CONFIG
+{application_name}.openapi = custom_openapi
+
+# CORS CONFIG
+{application_name}.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# METADATA CONFIG, agrupa los endpoints en el swagger y muestra su etiqueta y descripcion relacionada
+tags_metadata = [
+    {llave_abre}
+        "name": "products",
+        "description": "Operations with products. All operations and logic is also here.",
+    {llave_cierra},
+    {llave_abre}
+        "name": "users",
+        "description": "Manage Users. So _fancy_ they have their own docs.",
+        "externalDocs": {llave_abre}
+            "description": "Users external docs",
+            "url": "https://jorgecardona.com/",
+        {llave_cierra},
+    {llave_cierra},
+]
+
+# adicionadas configuracion de rutas personalizadas para la documentacion de SWAGGER
+{application_name}.docs_url = SWAGGER_ROUTE
+{application_name}.redoc_url = SWAGGER_REDOC_ROUTE
+
+# adicionados la informacion para mostrar en swagger
+{application_name}.openapi_tags = tags_metadata
+
+# REDIRECCIONAMIENTO DE PETICIONES A OTRAS URL
+from starlette.responses import RedirectResponse
+
+# funcion que ejecuta el redireccionamiento solicitado
+def redirect_url_response(url):
+    return RedirectResponse(url=url)
+
+# redireccionamiento a la documentacion cuando se abre el path principal en el navegador
+# include_in_schema=False, oculta el endpoint de la documentacion de swagger
+@{application_name}.get("/", include_in_schema=False)
+def swagger_url(url=SWAGGER_ROUTE):
+    return redirect_url_response(url)
+
+# redireccionamiento para redoc
+@{application_name}.get(SWAGGER_REDOC_ALIAS, include_in_schema=False)
+def swagger_redoc_url(url=SWAGGER_REDOC_ROUTE):
+    return redirect_url_response(url)
+
+# redireccionamiento a la consola graphql cuando se pone un alias
+@{application_name}.get(GRAPHQL_ALIAS, include_in_schema=False)
+def graphql_url(url=GRAPHQL_ROUTE):
+    return redirect_url_response(url)
+    
+# definicion de parametros de configuracion para la API
+API_PORT = {API_PORT}
+API_HOST = '{API_HOST}'
+
+# inicia la aplicacion importando el metodo run_application en el main.py o en el main_debug.py sin usar el comando
+# uvicorn main:{application_name} --host {API_HOST} --reload --port {API_PORT}
+def run_application():
+    import uvicorn
+    uvicorn.run(app='main:{application_name}', 
+                host=API_HOST, 
+                port=API_PORT,
+                reload=True
+                )        
+    """ 
+    return content
+
 def rest_template(name:str):
     
     application_name = name.lower()
     
-    content = f"""{core}
+    content = f"""{core} 
 from fastapi import FastAPI
 from fastapi.openapi.utils import get_openapi
+
+# importacion de modulos con ruta RELATIVA completa del proyecto desde el inicio de cada carpeta para no tener que usar los puntos '...'
+from configuration.graphql.graphql_configuration import GRAPHQL_ROUTE, GRAPHQL_ALIAS
 from configuration.cors.cors_configuration import CORSMiddleware, origins 
-from configuration.swagger.swagger_configuration import SWAGGER_ROUTE, SWAGGER_REDOC_ROUTE
+from configuration.swagger.swagger_configuration import SWAGGER_ROUTE, SWAGGER_REDOC_ROUTE, SWAGGER_REDOC_ALIAS
 
 # INSTANCIA DE FASTAPI, PARA CONFIGURACION E INICIO DE LA APLICACION
 {application_name} = FastAPI()
+
+def custom_openapi():
+    if {application_name}.openapi_schema:
+        return {application_name}.openapi_schema
+        
+    openapi_schema = get_openapi(
+        title="Clean Architecture Api Documentation",
+        version="1.0.1",
+        terms_of_service="http://example.com/terms/",
+        description="Documentation for my custom OpenAPI schema",
+            contact={llave_abre}
+        "name": "Jorge Cardona",
+        "url": "https://github.com/JorgeCardona/portfolio",
+        "email": "jorgecardona@utp.edu.co",
+    {llave_cierra},
+    license_info={llave_abre}
+        "name": "Apache 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.html",
+    {llave_cierra},
+    
+        routes={application_name}.routes,
+    )
+    openapi_schema["info"]["x-logo"] = {llave_abre}
+        "url": "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png"
+    {llave_cierra}
+
+    {application_name}.openapi_schema = openapi_schema
+
+    return {application_name}.openapi_schema
+    
+# SWAGGER CONFIG
+{application_name}.openapi = custom_openapi
+
+# CORS CONFIG
+{application_name}.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# METADATA CONFIG, agrupa los endpoints en el swagger y muestra su etiqueta y descripcion relacionada
+tags_metadata = [
+    {llave_abre}
+        "name": "products",
+        "description": "Operations with products. All operations and logic is also here.",
+    {llave_cierra},
+    {llave_abre}
+        "name": "users",
+        "description": "Manage Users. So _fancy_ they have their own docs.",
+        "externalDocs": {llave_abre}
+            "description": "Users external docs",
+            "url": "https://jorgecardona.com/",
+        {llave_cierra},
+    {llave_cierra},
+]
+
+# adicionadas configuracion de rutas personalizadas para la documentacion de SWAGGER
+{application_name}.docs_url = SWAGGER_ROUTE
+{application_name}.redoc_url = SWAGGER_REDOC_ROUTE
+
+# adicionados la informacion para mostrar en swagger
+{application_name}.openapi_tags = tags_metadata
+
+# REDIRECCIONAMIENTO DE PETICIONES A OTRAS URL
+from starlette.responses import RedirectResponse
+
+# funcion que ejecuta el redireccionamiento solicitado
+def redirect_url_response(url):
+    return RedirectResponse(url=url)
+
+# redireccionamiento a la documentacion cuando se abre el path principal en el navegador
+# include_in_schema=False, oculta el endpoint de la documentacion de swagger
+@{application_name}.get("/", include_in_schema=False)
+def swagger_url(url=SWAGGER_ROUTE):
+    return redirect_url_response(url)
+
+# redireccionamiento para redoc
+@{application_name}.get(SWAGGER_REDOC_ALIAS, include_in_schema=False)
+def swagger_redoc_url(url=SWAGGER_REDOC_ROUTE):
+    return redirect_url_response(url)
+
+# redireccionamiento a la consola graphql cuando se pone un alias
+@{application_name}.get(GRAPHQL_ALIAS, include_in_schema=False)
+def graphql_url(url=GRAPHQL_ROUTE):
+    return redirect_url_response(url)
+    
+# definicion de parametros de configuracion para la API
+API_PORT = 5555
+API_HOST = 'localhost'
+
+def run_application():
+    import uvicorn
+    uvicorn.run(app='main:{application_name}', 
+                host=API_HOST, 
+                port=API_PORT,
+                reload=True
+                )        
     """ 
     return content
 
 def graphql_template(name:str):
     content = f"""{core}
-GRAPHQL_ROUTE = "/graphql"
+GRAPHQL_ROUTE = '/graphql'
+GRAPHQL_ALIAS = '/gql'
     """ 
     return content
 def swagger_template(name:str):
     content = f"""{core}
 SWAGGER_ROUTE ='/docs'
 SWAGGER_REDOC_ROUTE ='/redoc'
+SWAGGER_REDOC_ALIAS = '/rd'
     """ 
     return content    
 
@@ -320,9 +558,6 @@ def usecases_template(name:str, complement='UseCase'):
     
     id = '{id}'
     data = 'data'
-
-    llave_abre = '{'
-    llave_cierra = '}'
 
     content = f"""{core}
 from fastapi import HTTPException, status
