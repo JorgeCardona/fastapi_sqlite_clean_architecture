@@ -1,2 +1,2 @@
 GRAPHQL_ROUTE = '/graphql'
-GRAPHQL_ALIAS = 'rd'
+GRAPHQL_ALIAS = '/gql'

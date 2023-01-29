@@ -10794,3 +10794,1960 @@ FROM products
 2023-01-25 19:49:07,489 | INFO | message = Started server process [12508] | uvicorn.error | line 75 | package server.py | serve
 2023-01-25 19:49:07,491 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
 2023-01-25 19:49:07,495 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:05:34,392 | INFO | message = Started server process [11536] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:05:34,393 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:05:34,393 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:06:05,624 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:06:05,626 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:06:05,627 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:06:05,630 | INFO | message = PRAGMA main.table_info("users") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:06:05,631 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:06:05,632 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:06:05,641 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:06:05,647 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:06:05,647 | INFO | message = [generated in 0.00089s] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:06:05,652 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:06:44,504 | INFO | message = Started server process [9092] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:06:44,505 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:06:44,506 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:06:49,580 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:06:49,581 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:06:49,581 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:06:49,584 | INFO | message = PRAGMA main.table_info("users") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:06:49,586 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:06:49,587 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:06:49,592 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:06:49,597 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:06:49,598 | INFO | message = [generated in 0.00122s] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:06:49,608 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:06:59,769 | INFO | message = Shutting down | uvicorn.error | line 252 | package server.py | shutdown
+2023-01-28 20:06:59,877 | INFO | message = Waiting for application shutdown. | uvicorn.error | line 64 | package on.py | shutdown
+2023-01-28 20:06:59,877 | INFO | message = Application shutdown complete. | uvicorn.error | line 75 | package on.py | shutdown
+2023-01-28 20:06:59,878 | INFO | message = Finished server process [9092] | uvicorn.error | line 85 | package server.py | serve
+2023-01-28 20:07:03,804 | INFO | message = Started server process [16204] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:07:03,805 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:07:03,806 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:07:11,862 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:07:11,863 | INFO | message = PRAGMA main.table_info("products") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:07:11,864 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:07:11,866 | INFO | message = PRAGMA main.table_info("users") | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:07:11,866 | INFO | message = [raw sql] () | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:07:11,869 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:07:11,874 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:07:11,880 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products
+ LIMIT ? OFFSET ? | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:07:11,881 | INFO | message = [generated in 0.00142s] (100, 0) | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:07:11,889 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:07:29,315 | INFO | message = Started server process [2704] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:07:29,316 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:07:29,317 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:07:40,316 | INFO | message = Started server process [9948] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:07:40,316 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:07:40,317 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:09:54,857 | INFO | message = Started server process [11628] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:09:54,858 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:09:54,859 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:10:36,620 | INFO | message = Started server process [18104] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:10:36,620 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:10:36,621 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:10:46,818 | ERROR | message = Exception in ASGI application
+ | uvicorn.error | line 375 | package httptools_impl.py | run_asgi
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\base.py", line 3361, in _wrap_pool_connect
+    return fn()
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\pool\base.py", line 325, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\pool\base.py", line 888, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\pool\base.py", line 491, in checkout
+    rec = pool._do_get()
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\pool\impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\util\compat.py", line 211, in raise_
+    raise exception
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\pool\impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\pool\base.py", line 271, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\pool\base.py", line 386, in __init__
+    self.__connect()
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\pool\base.py", line 684, in __connect
+    with util.safe_reraise():
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\util\compat.py", line 211, in raise_
+    raise exception
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\pool\base.py", line 680, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\psycopg2\__init__.py", line 121, in connect
+    dsn = _ext.make_dsn(dsn, **kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\psycopg2\extensions.py", line 167, in make_dsn
+    parse_dsn(dsn)
+psycopg2.ProgrammingError: invalid dsn: invalid connection option "check_same_thread"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\routing.py", line 217, in app
+    solved_result = await solve_dependencies(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\dependencies\utils.py", line 525, in solve_dependencies
+    solved = await solve_generator(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\dependencies\utils.py", line 449, in solve_generator
+    return await stack.enter_async_context(cm)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 619, in enter_async_context
+    result = await _cm_type.__aenter__(cm)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 199, in __aenter__
+    return await anext(self.gen)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\concurrency.py", line 30, in contextmanager_in_threadpool
+    raise e
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+sqlalchemy.exc.ProgrammingError: (psycopg2.ProgrammingError) invalid dsn: invalid connection option "check_same_thread"
+
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2023-01-28 20:12:11,444 | INFO | message = Started server process [17852] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:12:11,444 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:12:11,445 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:12:16,277 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:16,278 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:16,281 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:16,281 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:16,285 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:16,286 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:16,289 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:16,290 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:16,291 | INFO | message = [generated in 0.00131s] {'name': 'products'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:16,296 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:16,297 | INFO | message = [cached since 0.0071s ago] {'name': 'users'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:16,300 | INFO | message = 
+CREATE TABLE products (
+	id SERIAL NOT NULL, 
+	name VARCHAR(256), 
+	categorie VARCHAR(256), 
+	price INTEGER, 
+	PRIMARY KEY (id)
+)
+
+ | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:16,303 | INFO | message = [no key 0.00297s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:16,326 | INFO | message = 
+CREATE TABLE users (
+	id SERIAL NOT NULL, 
+	email VARCHAR, 
+	hashed_password VARCHAR, 
+	is_active BOOLEAN, 
+	PRIMARY KEY (id)
+)
+
+ | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:16,327 | INFO | message = [no key 0.00154s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:16,340 | INFO | message = CREATE INDEX ix_users_id ON users (id) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:16,340 | INFO | message = [no key 0.00049s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:16,347 | INFO | message = CREATE UNIQUE INDEX ix_users_email ON users (email) | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:16,348 | INFO | message = [no key 0.00054s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:16,356 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:12:16,362 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:16,363 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+ LIMIT %(param_1)s OFFSET %(param_2)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:16,364 | INFO | message = [generated in 0.00108s] {'param_1': 100, 'param_2': 0} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:16,371 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:12:33,558 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:33,560 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:33,560 | INFO | message = [cached since 17.27s ago] {'name': 'products'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:33,592 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:33,593 | INFO | message = [cached since 17.3s ago] {'name': 'users'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:33,595 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:12:33,610 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:33,612 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (%(name)s, %(categorie)s, %(price)s) RETURNING products.id | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:33,613 | INFO | message = [generated in 0.00097s] {'name': 'string', 'categorie': 'string', 'price': 0} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:33,622 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:12:33,631 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:33,634 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = %(pk_1)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:33,635 | INFO | message = [generated in 0.00121s] {'pk_1': 1} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:33,642 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:12:36,559 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:36,560 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:36,560 | INFO | message = [cached since 20.27s ago] {'name': 'products'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:36,564 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:36,565 | INFO | message = [cached since 20.27s ago] {'name': 'users'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:36,567 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:12:36,571 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:36,572 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (%(name)s, %(categorie)s, %(price)s) RETURNING products.id | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:36,573 | INFO | message = [cached since 2.961s ago] {'name': 'string', 'categorie': 'string', 'price': 0} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:36,578 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:12:36,587 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:36,588 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = %(pk_1)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:36,589 | INFO | message = [cached since 2.954s ago] {'pk_1': 2} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:36,594 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:12:37,338 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:37,339 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:37,340 | INFO | message = [cached since 21.05s ago] {'name': 'products'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:37,344 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:37,345 | INFO | message = [cached since 21.05s ago] {'name': 'users'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:37,347 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:12:37,350 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:37,351 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (%(name)s, %(categorie)s, %(price)s) RETURNING products.id | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:37,351 | INFO | message = [cached since 3.739s ago] {'name': 'string', 'categorie': 'string', 'price': 0} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:37,355 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:12:37,362 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:37,363 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = %(pk_1)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:37,364 | INFO | message = [cached since 3.729s ago] {'pk_1': 3} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:37,371 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:12:38,072 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:38,072 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:38,073 | INFO | message = [cached since 21.78s ago] {'name': 'products'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:38,078 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:38,079 | INFO | message = [cached since 21.79s ago] {'name': 'users'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:38,083 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:12:38,088 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:38,089 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (%(name)s, %(categorie)s, %(price)s) RETURNING products.id | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:38,091 | INFO | message = [cached since 4.479s ago] {'name': 'string', 'categorie': 'string', 'price': 0} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:38,094 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:12:38,098 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:38,100 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = %(pk_1)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:38,101 | INFO | message = [cached since 4.467s ago] {'pk_1': 4} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:38,106 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:12:38,810 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:38,811 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:38,812 | INFO | message = [cached since 22.52s ago] {'name': 'products'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:38,815 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:38,816 | INFO | message = [cached since 22.53s ago] {'name': 'users'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:38,818 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:12:38,821 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:38,822 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (%(name)s, %(categorie)s, %(price)s) RETURNING products.id | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:38,823 | INFO | message = [cached since 5.21s ago] {'name': 'string', 'categorie': 'string', 'price': 0} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:38,826 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:12:38,831 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:38,832 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = %(pk_1)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:38,833 | INFO | message = [cached since 5.198s ago] {'pk_1': 5} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:38,838 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:12:39,406 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:39,407 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:39,407 | INFO | message = [cached since 23.12s ago] {'name': 'products'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:39,410 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:39,411 | INFO | message = [cached since 23.12s ago] {'name': 'users'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:39,413 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:12:39,416 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:39,417 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (%(name)s, %(categorie)s, %(price)s) RETURNING products.id | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:39,418 | INFO | message = [cached since 5.805s ago] {'name': 'string', 'categorie': 'string', 'price': 0} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:39,422 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:12:39,438 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:39,439 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products 
+WHERE products.id = %(pk_1)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:39,439 | INFO | message = [cached since 5.805s ago] {'pk_1': 6} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:39,444 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:12:42,827 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:42,827 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:42,828 | INFO | message = [cached since 26.54s ago] {'name': 'products'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:42,832 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:42,832 | INFO | message = [cached since 26.54s ago] {'name': 'users'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:42,834 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:12:42,837 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:12:42,838 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+ LIMIT %(param_1)s OFFSET %(param_2)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:12:42,839 | INFO | message = [cached since 26.48s ago] {'param_1': 100, 'param_2': 0} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:12:42,845 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:13:59,138 | INFO | message = Started server process [19332] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:13:59,139 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:13:59,140 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:14:03,847 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:03,847 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:03,851 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:03,851 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:03,854 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:03,855 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:03,859 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:14:03,861 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:03,862 | INFO | message = [generated in 0.00104s] {'name': 'products'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:03,866 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:03,867 | INFO | message = [cached since 0.006455s ago] {'name': 'users'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:03,869 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:14:03,874 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:14:03,877 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+ LIMIT %(param_1)s OFFSET %(param_2)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:03,878 | INFO | message = [generated in 0.00093s] {'param_1': 100, 'param_2': 0} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:03,883 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:14:04,486 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:14:04,488 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:04,489 | INFO | message = [cached since 0.629s ago] {'name': 'products'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:04,493 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:04,493 | INFO | message = [cached since 0.6335s ago] {'name': 'users'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:04,495 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:14:04,498 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:14:04,499 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+ LIMIT %(param_1)s OFFSET %(param_2)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:04,501 | INFO | message = [cached since 0.6239s ago] {'param_1': 100, 'param_2': 0} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:04,507 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:14:05,000 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:14:05,001 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:05,002 | INFO | message = [cached since 1.141s ago] {'name': 'products'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:05,005 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:05,006 | INFO | message = [cached since 1.146s ago] {'name': 'users'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:05,008 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:14:05,011 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:14:05,012 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+ LIMIT %(param_1)s OFFSET %(param_2)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:05,013 | INFO | message = [cached since 1.135s ago] {'param_1': 100, 'param_2': 0} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:05,039 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:14:05,401 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:14:05,401 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:05,402 | INFO | message = [cached since 1.542s ago] {'name': 'products'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:05,406 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:05,406 | INFO | message = [cached since 1.546s ago] {'name': 'users'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:05,409 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:14:05,411 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:14:05,412 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+ LIMIT %(param_1)s OFFSET %(param_2)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:05,414 | INFO | message = [cached since 1.537s ago] {'param_1': 100, 'param_2': 0} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:05,420 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:14:05,833 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:14:05,834 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:05,834 | INFO | message = [cached since 1.974s ago] {'name': 'products'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:05,838 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:05,838 | INFO | message = [cached since 1.978s ago] {'name': 'users'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:05,841 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:14:05,843 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:14:05,844 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+ LIMIT %(param_1)s OFFSET %(param_2)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:14:05,845 | INFO | message = [cached since 1.968s ago] {'param_1': 100, 'param_2': 0} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:14:05,852 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:15:23,764 | INFO | message = Started server process [20472] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:15:23,765 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:15:23,766 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:20:58,778 | INFO | message = Started server process [11072] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:20:58,779 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:20:58,780 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:23:34,862 | INFO | message = Started server process [6756] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:23:34,863 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:23:34,864 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:24:24,570 | INFO | message = Started server process [18428] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:24:24,571 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:24:24,572 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:24:54,385 | INFO | message = Started server process [17988] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:24:54,386 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:24:54,387 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:25:27,175 | ERROR | message = Environment.__init__() takes 1 positional argument but 2 were given
+
+GraphQL request:2:3
+1 | query rs{
+2 |   getObjectList{
+  |   ^
+3 |     id | strawberry.execution | line 140 | package execute.py | execute
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 519, in _resolver
+    return _get_result(_source, strawberry_info, **kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 511, in _get_result
+    return field.get_result(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\field.py", line 170, in get_result
+    return self.base_resolver(*args, **kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\types\fields\resolver.py", line 186, in __call__
+    return self.wrapped_func(*args, **kwargs)
+  File "C:\z Github\fastapi_sqlite_clean_architecture\deployment\application\.\services\service_product_graphql.py", line 16, in get_object_list
+    return ProductsUseCasesGraphQL().get_all_records()
+  File "C:\z Github\fastapi_sqlite_clean_architecture\deployment\application\.\usecases\usecase_graphql.py", line 48, in get_all_records
+    with Environment('dev').get_connection() as connection:
+TypeError: Environment.__init__() takes 1 positional argument but 2 were given
+Stack (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1906, in _run_once
+    handle._run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\__init__.py", line 48, in __call__
+    await self.http_handler_class(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 50, in handle
+    response = await self.get_http_response(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 153, in get_http_response
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 201, in execute
+    return await self.schema.execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema.py", line 226, in execute
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\execute.py", line 140, in execute
+    process_errors(result.errors, execution_context)
+2023-01-28 20:26:14,157 | INFO | message = Started server process [7780] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:26:14,157 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:26:14,158 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:26:17,672 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:26:17,672 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:26:17,675 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:26:17,676 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:26:17,679 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:26:17,679 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:26:17,687 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:26:17,688 | INFO | message = [generated in 0.00097s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:27:29,620 | ERROR | message = Syntax Error: Expected ':', found ')'.
+
+GraphQL request:3:55
+2 |   
+3 |   addProduct(name:"uno", categorie:"superior", price31){
+  |                                                       ^
+4 |     id | strawberry.execution | line 85 | package execute.py | execute
+Stack (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1906, in _run_once
+    handle._run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\__init__.py", line 48, in __call__
+    await self.http_handler_class(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 50, in handle
+    response = await self.get_http_response(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 153, in get_http_response
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 201, in execute
+    return await self.schema.execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema.py", line 226, in execute
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\execute.py", line 85, in execute
+    process_errors([error], execution_context)
+2023-01-28 20:27:44,378 | ERROR | message = Environment.__init__() takes 1 positional argument but 2 were given
+
+GraphQL request:3:3
+2 |   
+3 |   addProduct(name:"uno", categorie:"superior", price:31){
+  |   ^
+4 |     id | strawberry.execution | line 140 | package execute.py | execute
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 519, in _resolver
+    return _get_result(_source, strawberry_info, **kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 511, in _get_result
+    return field.get_result(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\field.py", line 170, in get_result
+    return self.base_resolver(*args, **kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\types\fields\resolver.py", line 186, in __call__
+    return self.wrapped_func(*args, **kwargs)
+  File "C:\z Github\fastapi_sqlite_clean_architecture\deployment\application\.\services\service_product_graphql.py", line 38, in add_product
+    object_ = ProductsUseCasesGraphQL().insert_one_record(name=name,categorie=categorie,price=price)
+  File "C:\z Github\fastapi_sqlite_clean_architecture\deployment\application\.\usecases\usecase_graphql.py", line 75, in insert_one_record
+    with Environment('dev').get_connection() as connection:
+TypeError: Environment.__init__() takes 1 positional argument but 2 were given
+Stack (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1906, in _run_once
+    handle._run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\__init__.py", line 48, in __call__
+    await self.http_handler_class(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 50, in handle
+    response = await self.get_http_response(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 153, in get_http_response
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 201, in execute
+    return await self.schema.execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema.py", line 226, in execute
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\execute.py", line 140, in execute
+    process_errors(result.errors, execution_context)
+2023-01-28 20:28:28,728 | INFO | message = Started server process [20304] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:28:28,728 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:28:28,729 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:28:31,687 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:28:31,688 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:28:31,691 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:28:31,691 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:28:31,694 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:28:31,695 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:28:31,701 | INFO | message = INSERT INTO products (name, categorie, price) VALUES (%(name)s, %(categorie)s, %(price)s) RETURNING products.id | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:28:31,702 | INFO | message = [generated in 0.00131s] {'name': 'uno', 'categorie': 'superior', 'price': 31} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:28:31,705 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:30:33,010 | INFO | message = Started server process [16732] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:30:33,011 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:30:33,012 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:31:14,735 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:31:14,735 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:31:14,739 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:31:14,739 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:31:14,744 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:31:14,744 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:31:14,748 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:31:14,749 | INFO | message = [generated in 0.00068s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:31:14,764 | ERROR | message = 'Select' object has no attribute 'mappings'
+
+GraphQL request:2:3
+1 | query ee{
+2 |   getFirstObject{
+  |   ^
+3 |     id | strawberry.execution | line 140 | package execute.py | execute
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 519, in _resolver
+    return _get_result(_source, strawberry_info, **kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 511, in _get_result
+    return field.get_result(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\field.py", line 170, in get_result
+    return self.base_resolver(*args, **kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\types\fields\resolver.py", line 186, in __call__
+    return self.wrapped_func(*args, **kwargs)
+  File "C:\z Github\fastapi_sqlite_clean_architecture\deployment\application\.\services\service_product_graphql.py", line 21, in get_first_object
+    return ProductsUseCasesGraphQL().get_first_record()
+  File "C:\z Github\fastapi_sqlite_clean_architecture\deployment\application\.\usecases\usecase_graphql.py", line 88, in get_first_record
+    results_as_dict = query.mappings().first()
+AttributeError: 'Select' object has no attribute 'mappings'
+Stack (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1906, in _run_once
+    handle._run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\__init__.py", line 48, in __call__
+    await self.http_handler_class(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 50, in handle
+    response = await self.get_http_response(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 153, in get_http_response
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 201, in execute
+    return await self.schema.execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema.py", line 226, in execute
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\execute.py", line 140, in execute
+    process_errors(result.errors, execution_context)
+2023-01-28 20:31:40,398 | INFO | message = Started server process [8440] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:31:40,398 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:31:40,399 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:31:44,097 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:31:44,098 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:31:44,102 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:31:44,102 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:31:44,105 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:31:44,106 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:31:44,110 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:31:44,110 | INFO | message = [generated in 0.00080s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:32:52,315 | INFO | message = Started server process [2384] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:32:52,316 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:32:52,317 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:32:57,116 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:32:57,117 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:32:57,120 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:32:57,121 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:32:57,124 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:32:57,124 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:32:57,129 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:32:57,129 | INFO | message = [generated in 0.00067s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:32:57,137 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:32:57,137 | INFO | message = [generated in 0.00078s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:32:57,150 | ERROR | message = Cannot return null for non-nullable field Query.getFirstObject.
+
+GraphQL request:2:3
+1 | query ee{
+2 |   getFirstObject{
+  |   ^
+3 |     id | strawberry.execution | line 140 | package execute.py | execute
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 540, in execute_field
+    completed = self.complete_value(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 620, in complete_value
+    raise TypeError(
+TypeError: Cannot return null for non-nullable field Query.getFirstObject.
+Stack (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1906, in _run_once
+    handle._run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\__init__.py", line 48, in __call__
+    await self.http_handler_class(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 50, in handle
+    response = await self.get_http_response(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 153, in get_http_response
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 201, in execute
+    return await self.schema.execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema.py", line 226, in execute
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\execute.py", line 140, in execute
+    process_errors(result.errors, execution_context)
+2023-01-28 20:33:25,837 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:33:25,842 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:33:25,845 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:33:25,845 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:33:25,848 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:33:25,848 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:33:25,851 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:33:25,852 | INFO | message = [generated in 0.00057s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:33:25,856 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:33:25,856 | INFO | message = [generated in 0.00074s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:33:25,863 | ERROR | message = Cannot return null for non-nullable field Query.getFirstObject.
+
+GraphQL request:2:3
+1 | query ee{
+2 |   getFirstObject{
+  |   ^
+3 |     id, | strawberry.execution | line 140 | package execute.py | execute
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 540, in execute_field
+    completed = self.complete_value(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 620, in complete_value
+    raise TypeError(
+TypeError: Cannot return null for non-nullable field Query.getFirstObject.
+Stack (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1906, in _run_once
+    handle._run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\__init__.py", line 48, in __call__
+    await self.http_handler_class(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 50, in handle
+    response = await self.get_http_response(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 153, in get_http_response
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 201, in execute
+    return await self.schema.execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema.py", line 226, in execute
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\execute.py", line 140, in execute
+    process_errors(result.errors, execution_context)
+2023-01-28 20:33:47,768 | INFO | message = Started server process [18652] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:33:47,769 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:33:47,770 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:33:53,183 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:33:53,183 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:33:53,187 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:33:53,187 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:33:53,191 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:33:53,191 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:33:53,195 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:33:53,196 | INFO | message = [generated in 0.00083s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:33:53,202 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:33:53,202 | INFO | message = [generated in 0.00079s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:33:53,216 | ERROR | message = 'list' object has no attribute 'id'
+
+GraphQL request:3:5
+2 |   getFirstObject{
+3 |     id,
+  |     ^
+4 |     name, | strawberry.execution | line 140 | package execute.py | execute
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 433, in _get_basic_result
+    return field.get_result(_source, info=None, args=[], kwargs={})
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\field.py", line 172, in get_result
+    return self.default_resolver(source, self.python_name)
+AttributeError: 'list' object has no attribute 'id'
+Stack (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1906, in _run_once
+    handle._run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\__init__.py", line 48, in __call__
+    await self.http_handler_class(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 50, in handle
+    response = await self.get_http_response(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 153, in get_http_response
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 201, in execute
+    return await self.schema.execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema.py", line 226, in execute
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\execute.py", line 140, in execute
+    process_errors(result.errors, execution_context)
+2023-01-28 20:34:01,664 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:34:01,665 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:34:01,667 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:34:01,668 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:34:01,671 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:34:01,672 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:34:01,675 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:34:01,676 | INFO | message = [generated in 0.00062s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:34:01,681 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:34:01,682 | INFO | message = [generated in 0.00128s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:34:01,691 | ERROR | message = 'list' object has no attribute 'name'
+
+GraphQL request:4:5
+3 |
+4 |     name,
+  |     ^
+5 |     categorie, | strawberry.execution | line 140 | package execute.py | execute
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 433, in _get_basic_result
+    return field.get_result(_source, info=None, args=[], kwargs={})
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\field.py", line 172, in get_result
+    return self.default_resolver(source, self.python_name)
+AttributeError: 'list' object has no attribute 'name'
+Stack (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1906, in _run_once
+    handle._run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\__init__.py", line 48, in __call__
+    await self.http_handler_class(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 50, in handle
+    response = await self.get_http_response(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 153, in get_http_response
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 201, in execute
+    return await self.schema.execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema.py", line 226, in execute
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\execute.py", line 140, in execute
+    process_errors(result.errors, execution_context)
+2023-01-28 20:34:13,813 | INFO | message = Started server process [5916] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:34:13,813 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:34:13,814 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:34:22,602 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:34:22,602 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:34:22,606 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:34:22,606 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:34:22,609 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:34:22,610 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:34:22,613 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:34:22,614 | INFO | message = [generated in 0.00057s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:34:29,102 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:34:29,103 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:34:29,105 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:34:29,106 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:34:29,109 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:34:29,109 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:34:29,112 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:34:29,113 | INFO | message = [generated in 0.00047s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:35:07,446 | INFO | message = Started server process [14428] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:35:07,454 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:35:07,459 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:35:10,637 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:35:10,637 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:35:10,640 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:35:10,641 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:35:10,644 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:35:10,644 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:35:10,648 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:35:10,648 | INFO | message = [generated in 0.00061s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:35:10,655 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:35:10,656 | INFO | message = [generated in 0.00074s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:35:10,668 | ERROR | message = Cannot return null for non-nullable field Query.getFirstObject.
+
+GraphQL request:2:3
+1 | query ee{
+2 |   getFirstObject{
+  |   ^
+3 | 	id, | strawberry.execution | line 140 | package execute.py | execute
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 540, in execute_field
+    completed = self.complete_value(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 620, in complete_value
+    raise TypeError(
+TypeError: Cannot return null for non-nullable field Query.getFirstObject.
+Stack (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1906, in _run_once
+    handle._run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\__init__.py", line 48, in __call__
+    await self.http_handler_class(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 50, in handle
+    response = await self.get_http_response(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 153, in get_http_response
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 201, in execute
+    return await self.schema.execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema.py", line 226, in execute
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\execute.py", line 140, in execute
+    process_errors(result.errors, execution_context)
+2023-01-28 20:35:39,421 | INFO | message = Started server process [8232] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:35:39,422 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:35:39,423 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:35:43,515 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:35:43,515 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:35:43,519 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:35:43,519 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:35:43,522 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:35:43,523 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:35:43,527 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:35:43,528 | INFO | message = [generated in 0.00082s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:35:43,535 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:35:43,536 | INFO | message = [generated in 0.00122s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:35:43,550 | ERROR | message = This result object is closed.
+
+GraphQL request:2:3
+1 | query ee{
+2 |   getFirstObject{
+  |   ^
+3 | 	id, | strawberry.execution | line 140 | package execute.py | execute
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 519, in _resolver
+    return _get_result(_source, strawberry_info, **kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 511, in _get_result
+    return field.get_result(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\field.py", line 170, in get_result
+    return self.base_resolver(*args, **kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\types\fields\resolver.py", line 186, in __call__
+    return self.wrapped_func(*args, **kwargs)
+  File "C:\z Github\fastapi_sqlite_clean_architecture\deployment\application\.\services\service_product_graphql.py", line 21, in get_first_object
+    return ProductsUseCasesGraphQL().get_first_record()
+  File "C:\z Github\fastapi_sqlite_clean_architecture\deployment\application\.\usecases\usecase_graphql.py", line 90, in get_first_record
+    results_as_dict = result.mappings().all()
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\result.py", line 1619, in all
+    return self._allrows()
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\result.py", line 401, in _allrows
+    rows = self._fetchall_impl()
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\result.py", line 1389, in _fetchall_impl
+    return self._real_result._fetchall_impl()
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\cursor.py", line 1819, in _fetchall_impl
+    return self.cursor_strategy.fetchall(self, self.cursor)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\cursor.py", line 887, in fetchall
+    return self._non_result(result, [])
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\cursor.py", line 908, in _non_result
+    util.raise_(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\util\compat.py", line 211, in raise_
+    raise exception
+sqlalchemy.exc.ResourceClosedError: This result object is closed.
+Stack (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1906, in _run_once
+    handle._run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\__init__.py", line 48, in __call__
+    await self.http_handler_class(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 50, in handle
+    response = await self.get_http_response(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 153, in get_http_response
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 201, in execute
+    return await self.schema.execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema.py", line 226, in execute
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\execute.py", line 140, in execute
+    process_errors(result.errors, execution_context)
+2023-01-28 20:35:54,860 | INFO | message = Started server process [32] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:35:54,861 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:35:54,862 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:35:56,485 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:35:56,485 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:35:56,488 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:35:56,489 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:35:56,492 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:35:56,493 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:35:56,496 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:35:56,497 | INFO | message = [generated in 0.00060s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:35:56,503 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:35:56,503 | INFO | message = [generated in 0.00065s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:35:56,515 | ERROR | message = 'list' object has no attribute 'id'
+
+GraphQL request:3:2
+2 |   getFirstObject{
+3 | 	id,
+  |  ^
+4 |     name, | strawberry.execution | line 140 | package execute.py | execute
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 433, in _get_basic_result
+    return field.get_result(_source, info=None, args=[], kwargs={})
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\field.py", line 172, in get_result
+    return self.default_resolver(source, self.python_name)
+AttributeError: 'list' object has no attribute 'id'
+Stack (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1906, in _run_once
+    handle._run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\__init__.py", line 48, in __call__
+    await self.http_handler_class(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 50, in handle
+    response = await self.get_http_response(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 153, in get_http_response
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 201, in execute
+    return await self.schema.execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema.py", line 226, in execute
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\execute.py", line 140, in execute
+    process_errors(result.errors, execution_context)
+2023-01-28 20:36:07,044 | INFO | message = Started server process [9960] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:36:07,045 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:36:07,045 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:36:09,441 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:36:09,442 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:36:09,445 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:36:09,446 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:36:09,449 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:36:09,449 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:36:09,453 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:36:09,453 | INFO | message = [generated in 0.00059s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:36:09,467 | ERROR | message = 'list' object has no attribute 'id'
+
+GraphQL request:3:2
+2 |   getFirstObject{
+3 | 	id,
+  |  ^
+4 |     name, | strawberry.execution | line 140 | package execute.py | execute
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 433, in _get_basic_result
+    return field.get_result(_source, info=None, args=[], kwargs={})
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\field.py", line 172, in get_result
+    return self.default_resolver(source, self.python_name)
+AttributeError: 'list' object has no attribute 'id'
+Stack (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1906, in _run_once
+    handle._run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\__init__.py", line 48, in __call__
+    await self.http_handler_class(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 50, in handle
+    response = await self.get_http_response(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 153, in get_http_response
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 201, in execute
+    return await self.schema.execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema.py", line 226, in execute
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\execute.py", line 140, in execute
+    process_errors(result.errors, execution_context)
+2023-01-28 20:36:25,119 | INFO | message = Started server process [14708] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:36:25,120 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:36:25,121 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:36:41,507 | INFO | message = Started server process [15376] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:36:41,507 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:36:41,508 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:36:43,885 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:36:43,886 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:36:43,889 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:36:43,890 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:36:43,894 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:36:43,894 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:36:43,897 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:36:43,898 | INFO | message = [generated in 0.00055s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:38:15,485 | INFO | message = Started server process [8440] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:38:15,487 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:38:15,489 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:38:19,739 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:38:19,739 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:38:19,743 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:38:19,743 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:38:19,747 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:38:19,748 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:38:19,753 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:38:19,753 | INFO | message = [generated in 0.00063s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:38:19,758 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:38:19,758 | INFO | message = [generated in 0.00071s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:38:19,771 | ERROR | message = Cannot return null for non-nullable field Query.getFirstObject.
+
+GraphQL request:2:3
+1 | query ee{
+2 |   getFirstObject{
+  |   ^
+3 | 	id, | strawberry.execution | line 140 | package execute.py | execute
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 540, in execute_field
+    completed = self.complete_value(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 620, in complete_value
+    raise TypeError(
+TypeError: Cannot return null for non-nullable field Query.getFirstObject.
+Stack (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1906, in _run_once
+    handle._run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\__init__.py", line 48, in __call__
+    await self.http_handler_class(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 50, in handle
+    response = await self.get_http_response(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 153, in get_http_response
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 201, in execute
+    return await self.schema.execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema.py", line 226, in execute
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\execute.py", line 140, in execute
+    process_errors(result.errors, execution_context)
+2023-01-28 20:38:52,257 | INFO | message = Started server process [19560] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:38:52,261 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:38:52,262 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:39:05,999 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:39:05,999 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:39:06,002 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:39:06,003 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:39:06,006 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:39:06,007 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:39:06,011 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:39:06,012 | INFO | message = [generated in 0.00071s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:39:06,017 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:39:06,017 | INFO | message = [generated in 0.00076s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:39:06,029 | ERROR | message = This result object is closed.
+
+GraphQL request:2:3
+1 | query ee{
+2 |   getFirstObject{
+  |   ^
+3 | 	id, | strawberry.execution | line 140 | package execute.py | execute
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 519, in _resolver
+    return _get_result(_source, strawberry_info, **kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 511, in _get_result
+    return field.get_result(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\field.py", line 170, in get_result
+    return self.base_resolver(*args, **kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\types\fields\resolver.py", line 186, in __call__
+    return self.wrapped_func(*args, **kwargs)
+  File "C:\z Github\fastapi_sqlite_clean_architecture\deployment\application\.\services\service_product_graphql.py", line 21, in get_first_object
+    return ProductsUseCasesGraphQL().get_first_record()
+  File "C:\z Github\fastapi_sqlite_clean_architecture\deployment\application\.\usecases\usecase_graphql.py", line 92, in get_first_record
+    results_as_dict = result.mappings().first()
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\result.py", line 1641, in first
+    return self._only_one_row(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\result.py", line 559, in _only_one_row
+    row = onerow(hard_close=True)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\result.py", line 1386, in _fetchone_impl
+    return self._real_result._fetchone_impl(hard_close=hard_close)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\cursor.py", line 1816, in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\cursor.py", line 881, in fetchone
+    return self._non_result(result, None)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\cursor.py", line 908, in _non_result
+    util.raise_(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\util\compat.py", line 211, in raise_
+    raise exception
+sqlalchemy.exc.ResourceClosedError: This result object is closed.
+Stack (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1906, in _run_once
+    handle._run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\__init__.py", line 48, in __call__
+    await self.http_handler_class(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 50, in handle
+    response = await self.get_http_response(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 153, in get_http_response
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 201, in execute
+    return await self.schema.execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema.py", line 226, in execute
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\execute.py", line 140, in execute
+    process_errors(result.errors, execution_context)
+2023-01-28 20:39:18,393 | INFO | message = Started server process [17340] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:39:18,393 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:39:18,394 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:39:27,318 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:39:27,318 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:39:27,322 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:39:27,323 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:39:27,327 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:39:27,327 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:39:27,331 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:39:27,332 | INFO | message = [generated in 0.00048s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:39:27,347 | ERROR | message = This result object is closed.
+
+GraphQL request:2:3
+1 | query ee{
+2 |   getFirstObject{
+  |   ^
+3 | 	id, | strawberry.execution | line 140 | package execute.py | execute
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 519, in _resolver
+    return _get_result(_source, strawberry_info, **kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 511, in _get_result
+    return field.get_result(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\field.py", line 170, in get_result
+    return self.base_resolver(*args, **kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\types\fields\resolver.py", line 186, in __call__
+    return self.wrapped_func(*args, **kwargs)
+  File "C:\z Github\fastapi_sqlite_clean_architecture\deployment\application\.\services\service_product_graphql.py", line 21, in get_first_object
+    return ProductsUseCasesGraphQL().get_first_record()
+  File "C:\z Github\fastapi_sqlite_clean_architecture\deployment\application\.\usecases\usecase_graphql.py", line 92, in get_first_record
+    results_as_dict = result.mappings().first()
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\result.py", line 1641, in first
+    return self._only_one_row(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\result.py", line 559, in _only_one_row
+    row = onerow(hard_close=True)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\result.py", line 1386, in _fetchone_impl
+    return self._real_result._fetchone_impl(hard_close=hard_close)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\cursor.py", line 1816, in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\cursor.py", line 881, in fetchone
+    return self._non_result(result, None)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\engine\cursor.py", line 908, in _non_result
+    util.raise_(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\sqlalchemy\util\compat.py", line 211, in raise_
+    raise exception
+sqlalchemy.exc.ResourceClosedError: This result object is closed.
+Stack (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1906, in _run_once
+    handle._run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\__init__.py", line 48, in __call__
+    await self.http_handler_class(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 50, in handle
+    response = await self.get_http_response(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 153, in get_http_response
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 201, in execute
+    return await self.schema.execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema.py", line 226, in execute
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\execute.py", line 140, in execute
+    process_errors(result.errors, execution_context)
+2023-01-28 20:39:46,176 | INFO | message = Started server process [9928] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:39:46,206 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:39:46,247 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:39:52,126 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:39:52,126 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:39:52,130 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:39:52,130 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:39:52,134 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:39:52,135 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:39:52,138 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:39:52,139 | INFO | message = [generated in 0.00050s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:41:16,434 | INFO | message = Started server process [13752] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:41:16,435 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:41:16,437 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:41:25,332 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:41:25,333 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:41:25,336 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:41:25,337 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:41:25,340 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:41:25,341 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:41:25,345 | INFO | message = SELECT * FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:41:25,346 | INFO | message = [generated in 0.00065s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:41:25,352 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:41:25,353 | INFO | message = [generated in 0.00070s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:41:38,364 | INFO | message = Started server process [20384] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:41:38,364 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:41:38,365 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:42:06,867 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:42:06,867 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:42:06,871 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:42:06,871 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:42:06,875 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:42:06,876 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:42:06,881 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:42:06,882 | INFO | message = [generated in 0.00073s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:43:17,623 | INFO | message = Started server process [16376] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:43:17,624 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:43:17,625 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:43:34,652 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:43:34,653 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:43:34,656 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:43:34,657 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:43:34,661 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:43:34,661 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:43:34,667 | INFO | message = SELECT products.id, products.name, products.categorie, products.price 
+FROM products | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:43:34,669 | INFO | message = [generated in 0.00120s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:43:34,679 | ERROR | message = 'MappingResult' object has no attribute 'last'
+
+GraphQL request:2:3
+1 | query ee{
+2 |   getLastObject{
+  |   ^
+3 | 	id, | strawberry.execution | line 140 | package execute.py | execute
+Traceback (most recent call last):
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 519, in _resolver
+    return _get_result(_source, strawberry_info, **kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema_converter.py", line 511, in _get_result
+    return field.get_result(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\field.py", line 170, in get_result
+    return self.base_resolver(*args, **kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\types\fields\resolver.py", line 186, in __call__
+    return self.wrapped_func(*args, **kwargs)
+  File "C:\z Github\fastapi_sqlite_clean_architecture\deployment\application\.\services\service_product_graphql.py", line 26, in get_last_object
+    return ProductsUseCasesGraphQL().get_last_record()
+  File "C:\z Github\fastapi_sqlite_clean_architecture\deployment\application\.\usecases\usecase_graphql.py", line 99, in get_last_record
+    results_as_dict = result.mappings().last()
+AttributeError: 'MappingResult' object has no attribute 'last'
+Stack (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1906, in _run_once
+    handle._run()
+  File "C:\Users\QiDimMak\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\__init__.py", line 48, in __call__
+    await self.http_handler_class(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 50, in handle
+    response = await self.get_http_response(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 153, in get_http_response
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\asgi\handlers\http_handler.py", line 201, in execute
+    return await self.schema.execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\schema.py", line 226, in execute
+    result = await execute(
+  File "C:\z_GitHub_Virtual_Environment\Mach_Eight\lib\site-packages\strawberry\schema\execute.py", line 140, in execute
+    process_errors(result.errors, execution_context)
+2023-01-28 20:49:52,312 | INFO | message = Started server process [3332] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:49:52,314 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:49:52,315 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:50:24,435 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:50:24,435 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:50:24,438 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:50:24,439 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:50:24,444 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:50:24,444 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:50:24,448 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:50:24,449 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:50:24,450 | INFO | message = [generated in 0.00086s] {'name': 'products'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:50:24,454 | INFO | message = select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where pg_catalog.pg_table_is_visible(c.oid) and relname=%(name)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:50:24,455 | INFO | message = [cached since 0.005786s ago] {'name': 'users'} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:50:24,458 | INFO | message = COMMIT | sqlalchemy.engine.Engine | line 1087 | package base.py | _commit_impl
+2023-01-28 20:50:24,464 | INFO | message = BEGIN (implicit) | sqlalchemy.engine.Engine | line 1027 | package base.py | _begin_impl
+2023-01-28 20:50:24,468 | INFO | message = SELECT products.id AS products_id, products.name AS products_name, products.categorie AS products_categorie, products.price AS products_price 
+FROM products 
+ LIMIT %(param_1)s OFFSET %(param_2)s | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:50:24,469 | INFO | message = [generated in 0.00110s] {'param_1': 100, 'param_2': 0} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:50:24,477 | INFO | message = ROLLBACK | sqlalchemy.engine.Engine | line 1055 | package base.py | _rollback_impl
+2023-01-28 20:50:27,089 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:50:27,090 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:50:27,093 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:50:27,093 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:50:27,097 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:50:27,097 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:50:27,100 | INFO | message = SELECT * FROM products ORDER BY id DESC | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:50:27,101 | INFO | message = [generated in 0.00054s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:50:28,154 | INFO | message = select pg_catalog.version() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:50:28,154 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:50:28,157 | INFO | message = select current_schema() | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:50:28,158 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:50:28,161 | INFO | message = show standard_conforming_strings | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:50:28,161 | INFO | message = [raw sql] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:50:28,164 | INFO | message = SELECT * FROM products ORDER BY id DESC | sqlalchemy.engine.Engine | line 1853 | package base.py | _execute_context
+2023-01-28 20:50:28,165 | INFO | message = [generated in 0.00054s] {} | sqlalchemy.engine.Engine | line 1858 | package base.py | _execute_context
+2023-01-28 20:50:44,789 | INFO | message = Started server process [16748] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:50:44,791 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:50:44,792 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:51:30,811 | INFO | message = Started server process [13388] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:51:30,811 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:51:30,812 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:51:49,418 | INFO | message = Started server process [15960] | uvicorn.error | line 75 | package server.py | serve
+2023-01-28 20:51:49,419 | INFO | message = Waiting for application startup. | uvicorn.error | line 45 | package on.py | startup
+2023-01-28 20:51:49,420 | INFO | message = Application startup complete. | uvicorn.error | line 59 | package on.py | startup
+2023-01-28 20:56:24,671 | INFO | message = Shutting down | uvicorn.error | line 252 | package server.py | shutdown

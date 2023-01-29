@@ -45,10 +45,10 @@ class ProductsUseCasesGraphQL:
 
     def get_all_records(self):
           
-        with Environment('dev').get_connection() as connection:
+        with Environment().get_connection() as connection:
           # las 2 lineas siguientes son equivalente          
           query = select(model)
-          query_alternativo = text("SELECT * FROM products")
+          #query_alternativo = text("SELECT * FROM products")
 
           #result = connection.execute(query_alternativo)
           result = connection.execute(query)
@@ -59,7 +59,7 @@ class ProductsUseCasesGraphQL:
       
     def get_record(self, id) -> model:
           
-        with Environment('dev').get_connection() as connection:
+        with Environment().get_connection() as connection:
           
           query = select(model).where(model.id == id)
 
@@ -72,7 +72,7 @@ class ProductsUseCasesGraphQL:
            
     def insert_one_record(self, name, categorie, price) -> int:
     
-        with Environment('dev').get_connection() as connection:
+        with Environment().get_connection() as connection:
             
             query = insert(model).values(name=name, categorie=categorie, price=price)
             
@@ -82,29 +82,30 @@ class ProductsUseCasesGraphQL:
     
     def get_first_record(self) -> model:
 
-        with Environment('dev').get_connection() as connection:
-            result = connection.execute(text("SELECT * FROM products"))
+        with Environment().get_connection() as connection:
+          
+            query = select(model)
+            result = connection.execute(query)          
             results_as_dict = result.mappings().first()
-        
+
         return results_as_dict
     
     def get_last_record(self) -> model:
     
-        with Environment('dev').get_connection() as connection:
+        with Environment().get_connection() as connection:
+
             result = connection.execute(text("SELECT * FROM products ORDER BY id DESC"))
             
             results_as_dict = result.mappings().first()
         
         return results_as_dict
-           
-
       
     def delete_record(self, id) -> int:
     
       record = self.get_record(id)
       
       if record:
-        with Environment('dev').get_connection() as connection:
+        with Environment().get_connection() as connection:
             
             query = delete(model).where(model.id == id)
             result = connection.execute(query)
@@ -130,7 +131,7 @@ class ProductsUseCasesGraphQL:
                 if value is not None:
                   values[key] = value
 
-          with Environment('dev').get_connection() as connection:
+          with Environment().get_connection() as connection:
               
               query = update(model).where(model.id == entity.id).values(
                 values

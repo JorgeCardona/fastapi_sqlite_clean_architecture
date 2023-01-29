@@ -100,7 +100,7 @@ def graphql_url(url=GRAPHQL_ROUTE):
 API_PORT = 5555
 API_HOST = 'localhost'
 
-
+# metodo para iniciar la aplicacion equivalente a uvicorn main:clean_architecture --host localhost --reload --port 5555
 def run_application():
     import uvicorn
     uvicorn.run(app='main:clean_architecture', 

@@ -10,14 +10,11 @@ class Environment:
          
     def __init__(self) -> None:
         
-        # eliminar la siguiente linea, es solo para definir que esta en ambiente de prueba
-        os.environ.setdefault('ENVIRONMENT', 'local')
-        
         # environment variables
-        self.environment       = os.getenv('ENVIRONMENT', None)
-        
+        self.environment = os.getenv('ENVIRONMENT', None)
+                      
         # obtains the database url for connection               
-        self.data_base_url     = self.get_database_url()
+        self.data_base_url = self.get_database_url()
         
         # since the function returns nothing then you don't need parentheses when assigning the variable to a function
         self.get_sessiones = self.get_session
@@ -29,24 +26,27 @@ class Environment:
     def get_database_url(self):
         
         # if does not exist environment defined, use the local environment database connection
-        if self.environment:
+        if  self.environment:
+            
+            self.database_dialect        = os.getenv('DB_DIALECT', 'postgresql')
+            self.database_user           = os.getenv('DB_USER', 'postgres')
+            self.database_password       = os.getenv('DB_PASSWORD', 'postgres')
+            self.database_host           = os.getenv('DB_HOST', 'localhost')
+            self.database_port           = os.getenv('DB_PORT', 5432)           
+            self.database_database_name  = os.getenv('DB_NAME', 'clean_architecture_db')
+            
+            self.complete_data_base_url = "{DB_DIALECT}://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}" \
+                                           .format(DB_DIALECT=self.database_dialect, DB_USER=self.database_user, \
+                                                   DB_PASSWORD=self.database_password, DB_HOST=self.database_host, \
+                                                   DB_PORT=self.database_port, DB_NAME=self.database_database_name)
+        else:
             self.database_dialect  = 'sqlite'
             self.database_host     = 'configuration/database/sqlite_local'
             self.database_name     = 'clean_architecture.db'
                         
             self.complete_data_base_url = "{DB_DIALECT}:///{DB_HOST}/{DB_NAME}" \
-                                          .format(DB_DIALECT=self.database_dialect, DB_HOST=self.database_host, DB_NAME=self.database_name)                                          
-        else:
-            self.database_dialect       = os.environ["DB_DIALECT"]
-            self.database_user          = os.environ["DB_USER"]
-            self.database_password      = os.environ["DB_PASSWORD"]
-            self.database_host          = os.environ["DB_HOST"]
-            self.database_port          = os.environ["DB_PORT"]
-            self.database_database_name = os.environ["DB_NAME"]
-            self.complete_data_base_url = "{DB_DIALECT}://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}" \
-                                           .format(DB_DIALECT=self.database_dialect, DB_USER=self.database_user, \
-                                                   DB_PASSWORD=self.database_password, DB_HOST=self.database_host, \
-                                                   DB_PORT=self.database_port, DB_NAME=self.database_name)       
+                                            .format(DB_DIALECT=self.database_dialect, DB_HOST=self.database_host, DB_NAME=self.database_name)                                          
+    
         return self.complete_data_base_url
         
         
@@ -65,7 +65,7 @@ class Environment:
         #Creates database engine
         engine = create_engine(
             self.complete_data_base_url,
-            connect_args={'check_same_thread': False},
+            #connect_args={'check_same_thread': False},
             echo =True,
             pool_recycle=3600
         )

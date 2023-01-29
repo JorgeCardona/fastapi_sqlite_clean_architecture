@@ -11,5 +11,9 @@ clean_architecture.add_websocket_route(GRAPHQL_ROUTE, graphql_app)
 
 
 
+# tset
+
+"""
 if __name__ == "__main__":
     run_application()
+"""
